@@ -1,0 +1,160 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    border: 1px solid purple;
+    height: 50px;
+    background-color: gold;
+}
+header form {
+    float: right;
+    margin-top: 10px;
+}
+header form input{
+    margin-right: 10px;
+}
+header form output{
+    display: inline-block;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#content {
+    background-image:  url('background.jpg');
+    height: 750px;
+}
+.cardBack {
+    background-color: lightblue;
+    border-radius: 30px;
+    width: 347px;
+    height: 520px;
+    position: relative;
+    border: 1px solid black;
+}
+.cardBack:before {
+  border-radius: 30px;
+  background: none;
+  border: 13px solid rgb(247,247,246);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+.card {
+  background-color: rgb(247, 247, 246);
+  border-radius: 30px;
+  width: 321px;
+  height: 520px;
+  border: 1px solid black;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.upperPart {
+    height: 48px;
+}
+.id, .name {
+    padding-top: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.id {
+    color: rgb(255, 26, 140);
+    float:left;
+}
+.name {
+    float: right;
+}
+img {
+    width: 317px;
+    height: 317px;
+    display: block;
+    /*clear: both;*/
+    background-size: contain;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+.prop {
+    text-align: left;
+}
+.val {
+    text-align: right;
+    color: rgb(255, 26, 140);
+}
+
+#cardA {
+    float: left;
+    margin-left: 200px;
+    margin-top: 30px;
+    display: inline-block;
+}
+#cardBackA {
+    float: left;
+    margin-left: 200px;
+    /*it just doesnt have a left margin. cardA is still present, althrough is not visible.  */
+    margin-top: 30px;
+    display: inline-block;
+}
+#cardB {
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 30px;
+    display: inline-block;
+}
+#cardBackB {
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 30px;
+    display: inline-block;
+}
+#statusText {
+    position: absolute;
+    left: 600px;
+    top: 250px;
+    height: 90px;
+    width: 420px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px purple;
+    text-align: center;
+    font-size: large;
+    cursor: pointer; 
+}
+.coin {
+    background-size: contain;
+    position: absolute;
+    margin-left: 480px;
+    top: 300px;
+    height: 180px;
+    width: 180px;
+}
+footer {
+    border: 1px solid purple;
+    height: 50px;
+    background-color: gold;
+}
+#standings label {
+    float: left;
+    margin-left: 150px;
+}
+#info {
+    float: left;
+    font-size: x-small;
+}

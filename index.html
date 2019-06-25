@@ -1,0 +1,171 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="assets/css/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/styles.min.css">
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id='loader' class="active"></div>
+        <style type="text/css">
+            #loader {
+                background: url('data:image/png;base64,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');
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 40px;
+                height: 40px;
+                z-index: 999;
+                animation: rotating 1.33s linear infinite;
+                display: none;
+            }
+            #loader.active {
+                display: block;
+            }
+            @keyframes rotating {
+                to {
+                    transform: rotate(-360deg);
+                }
+            }
+            #wrapper.overlayed:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #777;
+                opacity: 0.5;
+            }
+        </style>
+
+        <div id='wrapper' class='overlayed'>
+            <header>
+                <form>
+                    <label>AI skill</label>
+                    <input type='range' id='intelligenceInput' value='50'>
+                    <output name='intelligenceOutput' for='intelligenceInput'>50%</output>
+                </form>
+            </header>
+
+            <div id='content'>
+                <section id="cardADeep"></section>
+                <section id="cardBDeep"></section>
+
+                <div id='cardA' class='card-container'>
+                    <div class="card">
+                        <div class="card-front">
+                            <div class='inner'>
+                               <div class='upperPart'>
+                                    <div class='id'></div>
+                                    <label class='name'></label>
+                                </div>
+                                <img alt="car's picture" src='assets/images/default.jpg'/>
+                                <table>
+                                    <tr>
+                                        <td class='prop'>Motor:</td>
+                                        <td class='val zyl'> zyl.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='prop'>Leistung:</td>
+                                        <td class='val kw'> kW</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='prop'>Hubraum:</td>
+                                        <td class='val ccm'> ccm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='prop'>Geschwindigkeit:</td>
+                                        <td class='val kmh'> km/h</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div><!-- cardA-->
+
+                <div id='cardB' class='card-container'>
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="inner">
+                                <div class='upperPart'>
+                                    <div class='id'></div>
+                                    <label class='name'></label>
+                                </div>
+                                <img alt="car's picture" src='assets/images/default.jpg'/>
+                                <table>
+                                    <tr>
+                                        <td class='prop'>Motor:</td>
+                                        <td class='val zyl'> zyl.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='prop'>Leistung:</td>
+                                        <td class='val kw'> kW</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='prop'>Hubraum:</td>
+                                        <td class='val ccm'> ccm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='prop'>Geschwindigkeit:</td>
+                                        <td class='val kmh'> km/h</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div><!-- cardA-->
+                <div id='statusText'></div>
+                <div class='coin' hidden='hidden'></div>
+            </div><!-- content<-->
+            <footer>
+                <div id='standings'>
+                    <label id='laba'>Cards AI (X): </label>
+                    <details id='cara'></details>
+                    <label id='labb'>Cards User (Y): </label>
+                    <details id="carb"></details>
+                </div>
+                <button disabled id='populateCookies'><span>populate cookies</span></button>
+                <button disabled id='resetCookies'>reset cookies</button>
+                <button disabled id='getCookies'>get cookies</button>
+            </footer>
+            <div class="end-game end-game__correct">
+                <div class="inner">
+                    <p class="numOfUserActions"></p>
+                </div>
+            </div>
+            <div class="end-game end-game__wrong">
+                <div class="inner">
+                    <p>better luck next time</p>
+                    <p class="numOfUserActions"></p>
+                </div>
+            </div>
+            <div id='info'>...</div>
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js'></script>
+        <script src="assets/js/src/app.js"></script>
+    </body>
+</html>

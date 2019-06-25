@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Beat them up</title>
+    <link rel='stylesheet' href='les08.css'>
+    <script src='script-js'></script>
+    <script src='../jquery-2.2.0.min.js'></script>
+</head>
+
+<body>
+    <header>
+        <form>
+            <label>AI skill</label>
+            <input type='range' id='intelligenceInput' value='50'>
+            <output name='intelligenceOutput' for='intelligenceInput'>50%</output>
+        </form>
+    </header>
+    
+    <div id='content'>
+        <div id='cardA' class='card'>
+            <div class='upperPart'>
+                <div class='id'></div>
+                <label class='name'></label>
+            </div>
+            <img alt="car's picture" src='default.jpg'/>
+            <table>
+                <tr>
+                    <td class='prop'>Motor:</td>
+                    <td class='val zyl'> zyl.</td>
+                </tr>
+                <tr>
+                    <td class='prop'>Leistung:</td>
+                    <td class='val kw'> kW</td>
+                </tr>
+                <tr>
+                    <td class='prop'>Hubraum:</td>
+                    <td class='val ccm'> ccm</td>
+                </tr>
+                <tr>
+                    <td class='prop'>Geschwindigkeit:</td>
+                    <td class='val kmh'> km/h</td>
+                </tr>
+            </table>     
+        </div><!-- cardA-->
+        <div id='cardB' class='card'>
+            <div class='upperPart'>
+                <div class='id'></div>
+                <label class='name'>...</label>
+            </div>
+            <img alt="car's picture" src='default.jpg'/>
+            <table>
+                <tr>
+                    <td class='prop'>Motor:</td>
+                    <td class='val zyl'> zyl.</td>
+                </tr>
+                <tr>
+                    <td class='prop'>Leistung:</td>
+                    <td class='val kw'> kW</td>
+                </tr>
+                <tr>
+                    <td class='prop'>Hubraum:</td>
+                    <td class='val ccm'> ccm</td>
+                </tr>
+                <tr>
+                    <td class='prop'>Geschwindigkeit:</td>
+                    <td class='val kmh'> km/h</td>
+                </tr>
+            </table>     
+        </div><!-- cardB-->
+        <div id='cardBackA' class='cardBack'></div>
+        <div id='cardBackB' class='cardBack'></div>
+        <div id='statusText'></div>
+        <div class='coin' hidden='hidden'></div>
+    </div><!-- content<-->
+    <footer>
+        <div id='standings'>
+            <label id='laba'>Cards AI(X): </label>
+            <label id='labb'>Cards User(Y): </label>
+        </div>
+    </footer>
+    <div id='info'>...</div>
+</body>
+</html>
