@@ -1,3 +1,5 @@
+let numOfCards = undefined
+
 window.onload = function() {
     var numReturnPressed = 0;
     var turnx = true;
@@ -55,7 +57,7 @@ window.onload = function() {
 
 
     shuffle(cars);
-    const numOfCards = cars.length;
+    numOfCards = cars.length;
 
     var b1 = true;
     for (var i=0; i<cars.length; i++) {
@@ -478,16 +480,23 @@ window.onload = function() {
 
         }
     }//compareCards
+
+    $("#cardBDeep").hover(function(e) {
+        // console.log("prva karta spodaj ima z-index 32, ta hoverana karta je ", (numOfCards - e.target.style["z-index"] + 1), ". po vrsti")
+        console.log("🚀 ~ file: app.js ~ line 620 ~ $ ~ cardX", cardY[(numOfCards - e.target.style["z-index"] + 1)])
+    })
+
+
 }//window.onload
 
 function updateCardLengthGraphicView(c, d) {
     $('#cardADeep').empty()
     for( let i=0; i<c-1; i++ ) {
-        $('#cardADeep').append("<div class='inner' style='z-index:"+(32-i)+"; transform: translate("+(i*2)+"px, "+(i*2)+"px)'></div>")
+        $('#cardADeep').append("<div class='inner' style='z-index:"+(numOfCards-i)+"; transform: translate("+(i*2)+"px, "+(i*2)+"px)'></div>")
     }
     $('#cardBDeep').empty()
     for( let i=0; i<d-1; i++ ) {
-        $('#cardBDeep').append("<div class='inner' style='z-index:"+(32-i)+"; transform: translate("+(i*2)+"px, "+(i*2)+"px)'></div>")
+        $('#cardBDeep').append("<div class='inner' style='z-index:"+(numOfCards-i)+"; transform: translate("+(i*2)+"px, "+(i*2)+"px)'></div>")
     }
 }
 
@@ -611,3 +620,4 @@ function enableUserActions() {
 function disableUserActions() {
     $('#cardB .val').addClass('disabled')
 }
+
