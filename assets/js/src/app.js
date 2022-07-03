@@ -502,6 +502,22 @@ window.onload = function() {
         }
     }
 
+    $('#checkbox-toggle-button').change(function() {
+        console.log("🚀 ~ file: app.js ~ line 508 ~ $ ~ this.checked", this.checked)
+        if(this.checked) {
+            applyBlueTheme()
+        } else {
+            applyMagentaTheme()
+        }
+    });
+
+    function applyBlueTheme() {
+        $("#wrapper").addClass("blueTheme")
+    }
+
+    function applyMagentaTheme() {
+        $("#wrapper").removeClass("blueTheme")
+    }
 }//window.onload
 
 function updateCardLengthGraphicView(c, d) {
