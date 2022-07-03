@@ -117,6 +117,7 @@ window.onload = function() {
 
 
     loadCurrentCards()
+    updateUserCardsDetails()
 
     $('#cardB').addClass('active')
     //following two events that do the same. click on statusText div and enter (return) hit.
@@ -220,7 +221,7 @@ window.onload = function() {
             $('#cardA').addClass('active')
             setTimeout(function() {
                 $('#cardA .'+val).addClass('active')
-            }, 500)
+            }, 400)
             // setTimeout(function() {
             //     $(statusText).empty().removeClass();
             //     $(statusText).append('Comparing values...');
@@ -228,7 +229,7 @@ window.onload = function() {
             // }, 1000)
             setTimeout(function() {
                 compareCards('fromUserMove');
-            }, 1000)
+            }, 900)
             // setTimeout(function() {
             //     $(statusText).removeClass('active')
             //     $(statusText).empty();
@@ -244,12 +245,12 @@ window.onload = function() {
         $(statusText).removeClass('correct wrong active')
         setTimeout(function() {
             $('#cardA').addClass('active')
-        }, 800)
+        }, 700)
 
         var tempCurrent = [cardX[0].zyl, cardX[0].kw, cardX[0].ccm, cardX[0].kmh];
         var tempCurrent2 = [cardY[0].zyl, cardY[0].kw, cardY[0].ccm, cardY[0].kmh];
 
-        Promise.delay(firstAiPart, 1150)
+        Promise.delay(firstAiPart, 1050)
         .delay(secondAiPart, 200)
         .delay(fourthAiPart, 200)
 
@@ -264,28 +265,28 @@ window.onload = function() {
                             $('#cardA .zyl').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .zyl').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     case 1:
                             $(statusText).empty().append('AI says: '+cardX[0].kw+' kW.');
                             $('#cardA .kw').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .kw').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     case 2:
                             $(statusText).empty().append('AI says: '+cardX[0].ccm+' ccm.');
                             $('#cardA .ccm').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .ccm').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     case 3:
                             $(statusText).empty().append('AI says: '+cardX[0].kmh+' km/h.');
                             $('#cardA .kmh').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .kmh').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     default:
                         console.warn("Unexpected value")
@@ -301,28 +302,28 @@ window.onload = function() {
                             $('#cardA .zyl').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .zyl').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     case 1:
                             $(statusText).empty().append('AI says: '+cardX[0].kw+' kW.');
                             $('#cardA .kw').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .kw').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     case 2:
                             $(statusText).empty().append('AI says: '+cardX[0].ccm+' ccm.');
                             $('#cardA .ccm').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .ccm').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     case 3:
                             $(statusText).empty().append('AI says: '+cardX[0].kmh+' km/h.');
                             $('#cardA .kmh').addClass('active')
                             setTimeout(function() {
                                 $('#cardB .kmh').addClass('active')
-                            }, 400)
+                            }, 300)
                         break;
                     default:
                         console.warn("Unexpected value")
@@ -361,10 +362,10 @@ window.onload = function() {
     }
 
     function compareCards(previousMethod) {
-        Promise.delay(firstPart, 1400)
-        .delay(secondPart, 800)
+        Promise.delay(firstPart, 1300)
+        .delay(secondPart, 700)
         .delay(thirdPart, 200)
-        .delay(fourthPart, 1000)
+        .delay(fourthPart, 900)
 
 // addDuelResult
         function firstPart() {
@@ -428,6 +429,7 @@ window.onload = function() {
         function thirdPart() {
            $(statusText).removeClass('active')
            updateCardLengthGraphicView(cardX.length, cardY.length)
+           updateUserCardsDetails()
         }
 
         function fourthPart() {
@@ -481,11 +483,24 @@ window.onload = function() {
         }
     }//compareCards
 
-    $("#cardBDeep").hover(function(e) {
-        // console.log("prva karta spodaj ima z-index 32, ta hoverana karta je ", (numOfCards - e.target.style["z-index"] + 1), ". po vrsti")
-        console.log("🚀 ~ file: app.js ~ line 620 ~ $ ~ cardX", cardY[(numOfCards - e.target.style["z-index"] + 1)])
-    })
-
+    // $("#cardBDeep").click(function(e) {
+    //     // na click dela ampak na hover nekako noce dela,t , kot da bi bil kak debounce efekt vmes, delay
+    //     // console.log("prva karta spodaj ima z-index 32, ta hoverana karta je ", (numOfCards - e.target.style["z-index"] + 1), ". po vrsti")
+    //     console.log("🚀 ~ file: app.js ~ line 620 ~ $ ~ cardX", cardY[(numOfCards - e.target.style["z-index"] + 1)].name )
+    // })
+    // let els = document.querySelectorAll("#cardBDeep .inner")
+    // for(let i=0; i<els.length; i++) {
+    //     els[i].addEventListener("mouseenter", function(e) {
+    //         console.log("🚀 ~ file: app.js ~ line 493 ~ el.addEventListener ~ e", this)
+    //         // console.log("🚀 ~ file: app.js ~ line 620 ~ $ ~ cardX", cardY[(numOfCards - e.target.style["z-index"] + 1)].name )
+    //     })
+    // }
+    function updateUserCardsDetails(){
+        $("#userCards").empty()
+        for( let i=0; i<cardY.length; i++) {
+            $('#userCards').append("<p>" + cardY[i].name + "</p>")
+        }
+    }
 
 }//window.onload
 

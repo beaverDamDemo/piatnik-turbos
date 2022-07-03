@@ -96,6 +96,11 @@ footer {
     height: 60px;
     background: url('../images/background-dark.jpg');
     color: #fff;
+    #detailsContainer {
+        details {
+            font-family: cursive;
+        }
+    }
 }
 #standings {
     display: flex;
@@ -114,7 +119,7 @@ details {
    }
    &#carb {
 
-   } 
+   }
 }
 #info {
     float: left;

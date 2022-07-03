@@ -1,0 +1,383 @@
+@font-face {
+	font-family: 'tannenberg_fettregular';
+	src: url("../fonts/tannenbergfett-webfont.woff2") format("woff2"), url("../fonts/tannenbergfett-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	font-family: 'tannenberg_fettregular', 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url("../images/background-dark.jpg");
+}
+
+#wrapper {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1024px;
+}
+
+header {
+	height: 40px;
+	background: url("../images/background-dark.jpg");
+	color: #fff;
+	line-height: 40px;
+}
+
+header form {
+	text-align: center;
+}
+
+header form output {
+	font-size: 20px;
+}
+
+#content {
+	background-image: url("../images/background-wood-gray.jpg");
+	height: 640px;
+	position: relative;
+	border-radius: 12px;
+}
+
+#statusText {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 60px;
+	width: 320px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 7px 3px rebeccapurple;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 20px 30px;
+	transform: scaleY(0);
+	transition: all 0.166s;
+	transform-origin: center bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#statusText.wrong {
+	background-color: darksalmon;
+}
+
+#statusText.correct {
+	background: lightgreen;
+}
+
+#statusText.active {
+	transform: scaleY(1);
+	transition: transform 0.15s;
+}
+
+.coin {
+	background-size: contain;
+	position: absolute;
+	height: 180px;
+	width: 180px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	animation: scalex_an 0.5s ease-in-out infinite;
+}
+
+@keyframes scalex_an {
+	from, to {
+		transform: scaleX(1);
+	}
+
+	50% {
+		transform: scaleX(-1);
+	}
+}
+
+footer {
+	height: 60px;
+	background: url("../images/background-dark.jpg");
+	color: #fff;
+}
+footer #detailsContainer {
+	text-align: right;
+}
+footer #detailsContainer details {
+	font-size: 0.75em;
+	line-height: 1em;
+}
+
+#standings {
+	display: flex;
+	justify-content: space-evenly;
+	height: 32px;
+	line-height: 32px;
+	font-size: 18px;
+}
+
+#info {
+	float: left;
+	font-size: x-small;
+}
+
+@media screen and (max-width: 900px) {
+	#wrapper {
+		width: 600px;
+	}
+
+	#content {
+		height: 1200px;
+	}
+}
+
+.upperPart {
+	height: 48px;
+}
+
+.id, .name {
+	padding-top: 22px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.id {
+	color: #ff1a8c;
+	float: left;
+}
+
+.name {
+	float: right;
+}
+
+img {
+	width: 317px;
+	height: 317px;
+	display: block;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-bottom: 5px;
+	object-fit: contain;
+	background-color: #bbb;
+}
+
+table {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.prop {
+	text-align: left;
+}
+
+.val {
+	text-align: right;
+	color: #ff1a8c;
+	transition: all 0.3s;
+}
+
+.val.active {
+	color: #fff;
+	background: #ff1a8c;
+	font-weight: bold;
+}
+
+.val.active.correct {
+	background: green;
+}
+
+.val.active.tie {
+	background: darkslategray;
+}
+
+.val.active.wrong {
+	background: firebrick;
+}
+
+.val:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.val.disabled {
+	pointer-events: none;
+}
+
+#cardA {
+	position: absolute;
+	left: 0;
+	margin-left: 100px;
+}
+
+#cardB {
+	position: absolute;
+	right: 0;
+	margin-right: 100px;
+}
+
+.card-container {
+	perspective: 1200;
+	width: 347px;
+	height: 520px;
+	margin-top: 32px;
+}
+
+.card-container .card {
+	height: 100%;
+	width: 100%;
+	font-family: 'Arial', sans-serif;
+	transform-style: preserve-3d;
+	transition: all .4s ease-in;
+	transition: all 0.2s ease-out;
+	transform: rotateY(179.9deg);
+}
+
+.card-container .card-front, .card-container .card-back {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+}
+
+.card-container .card-front {
+	background-color: #f7f7f6;
+	border-radius: 33px;
+	border: 1px solid #333;
+}
+
+.card-container .card-front .inner {
+	padding: 0 13px;
+}
+
+.card-container .card-back {
+	background: url("../images/piatnik.jpg");
+	background-size: 347px auto;
+	border-radius: 33px;
+	position: relative;
+	border: 1px solid #444;
+	transform: rotateY(179.9deg);
+}
+
+.card-container.active .card {
+	transform: rotateY(0deg);
+	outline: none;
+}
+
+#cardADeep, #cardBDeep {
+	position: absolute;
+	width: 350px;
+	height: 522px;
+	left: 100px;
+	margin-top: 32px;
+	z-index: 0;
+}
+
+#cardADeep .inner, #cardBDeep .inner {
+	width: 350px;
+	height: 522px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #777;
+	border-radius: 39px;
+	background: url("../images/piatnik.jpg");
+	background-size: 347px auto;
+}
+
+#cardADeep .inner:nth-of-type(2n), #cardBDeep .inner:nth-of-type(2n) {
+	border-color: #444;
+}
+
+#cardBDeep {
+	left: 577px;
+}
+
+@media screen and (max-width: 900px) {
+	#cardADeep, #cardA, #cardBackA {
+		left: 100px;
+		margin-left: 0;
+		margin-top: 16px;
+		top: 0;
+	}
+
+	#cardBDeep, #cardB, #cardBackB {
+		left: 100px;
+		margin-left: 0;
+		margin-top: 40px;
+		top: 600px;
+	}
+}
+
+.end-game {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-100%);
+	transition: transform 0.4s ease-in;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.end-game.active {
+	transform: translateY(0);
+}
+
+.end-game.end-game__correct {
+	background: rgba(60, 179, 113, 0.75);
+}
+
+.end-game.end-game__correct .inner {
+	background: url("../images/gratulation.png");
+	width: 600px;
+	height: 141px;
+	background-repeat: no-repeat;
+}
+
+.end-game.end-game__correct .inner .numOfUserActions {
+	margin-top: 160px;
+	text-align: center;
+	color: #eee;
+	text-shadow: 1px 1px #000;
+	font-size: 32px;
+}
+
+.end-game.end-game__correct.active .inner {
+	animation: scale-up-an 1.5s 1;
+}
+
+.end-game.end-game__wrong {
+	background: rgba(178, 34, 34, 0.8);
+	font-size: 60px;
+}
+
+.end-game.end-game__wrong .inner .numOfUserActions {
+	font-size: 32px;
+	text-align: center;
+	color: #eee;
+	text-shadow: 1px 1px #000;
+}
+
+@keyframes scale-up-an {
+	50%, 87.5% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(1.3);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
