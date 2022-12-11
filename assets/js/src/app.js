@@ -569,9 +569,7 @@ window.onload = function () {
   $("#btnSendData").on("click", function () {
     $.ajax({
       url: "http://localhost:3000/cars/statistics",
-      data: {
-        sentData: window.statistics,
-      },
+      data: window.statistics,
       type: "PUT",
       success: function (result) {
         console.log("⛳ ~ result", result);
@@ -644,25 +642,34 @@ function fillUpcars() {
         r == "win" ? this.duelsWon++ : this.duelsLost++;
       }
 
-        if (r == "tie") {
-          if (window.statistics[this.name] && window.statistics[this.name].duelsTie) {
-            window.statistics[this.name].duelsTie++;
-          } else {
-            window.statistics[this.name].duelsTie = 1;
-          }
-        } else if (r == "win") {
-          if (window.statistics[this.name] && window.statistics[this.name].duelsWon) {
-              window.statistics[this.name].duelsWon++;
-            } else {
-              window.statistics[this.name].duelsWon = 1;
-            }
+      if (r == "tie") {
+        if (
+          window.statistics[this.name] &&
+          window.statistics[this.name].duelsTie
+        ) {
+          window.statistics[this.name].duelsTie++;
         } else {
-          if (window.statistics[this.name] && window.statistics[this.name].duelsLost) {
-              window.statistics[this.name].duelsLost++;
-            } else {
-              window.statistics[this.name].duelsLost = 1;
-            }
+          window.statistics[this.name].duelsTie = 1;
         }
+      } else if (r == "win") {
+        if (
+          window.statistics[this.name] &&
+          window.statistics[this.name].duelsWon
+        ) {
+          window.statistics[this.name].duelsWon++;
+        } else {
+          window.statistics[this.name].duelsWon = 1;
+        }
+      } else {
+        if (
+          window.statistics[this.name] &&
+          window.statistics[this.name].duelsLost
+        ) {
+          window.statistics[this.name].duelsLost++;
+        } else {
+          window.statistics[this.name].duelsLost = 1;
+        }
+      }
     };
     this.getDuelStats = function () {
       return (
