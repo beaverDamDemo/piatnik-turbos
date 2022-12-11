@@ -1,4 +1,5 @@
 let numOfCards = undefined;
+window.statistics = {};
 
 window.onload = function () {
   var numReturnPressed = 0;
@@ -567,15 +568,14 @@ window.onload = function () {
 
   $("#btnSendData").on("click", function () {
     $.ajax({
-        url: 'http://localhost:3000/cars/statistics',
-        data: {
-            "body": " i am the body",
-            "key": "value"
-        },
-        type: 'PUT',
-        success: function(result) {
-            console.log("⛳ ~ result", result)
-        }
+      url: "http://localhost:3000/cars/statistics",
+      data: {
+        sentData: window.statistics,
+      },
+      type: "PUT",
+      success: function (result) {
+        console.log("⛳ ~ result", result);
+      },
     });
   });
 }; //window.onload
@@ -643,6 +643,26 @@ function fillUpcars() {
       } else {
         r == "win" ? this.duelsWon++ : this.duelsLost++;
       }
+
+        if (r == "tie") {
+          if (window.statistics[this.id] && window.statistics[this.id].duelsTie) {
+            window.statistics[this.id].duelsTie++;
+          } else {
+            window.statistics[this.id].duelsTie = 1;
+          }
+        } else if (r == "win") {
+          if (window.statistics[this.id] && window.statistics[this.id].duelsWon) {
+              window.statistics[this.id].duelsWon++;
+            } else {
+              window.statistics[this.id].duelsWon = 1;
+            }
+        } else {
+          if (window.statistics[this.id] && window.statistics[this.id].duelsLost) {
+              window.statistics[this.id].duelsLost++;
+            } else {
+              window.statistics[this.id].duelsLost = 1;
+            }
+        }
     };
     this.getDuelStats = function () {
       return (
@@ -653,6 +673,12 @@ function fillUpcars() {
         ", lost: " +
         this.duelsLost
       );
+    };
+
+    window.statistics[name] = {
+      duelsWon: 0,
+      duelsTie: 0,
+      duelsLost: 0,
     };
   }
   var A1 = new Car(
