@@ -645,22 +645,22 @@ function fillUpcars() {
       }
 
         if (r == "tie") {
-          if (window.statistics[this.id] && window.statistics[this.id].duelsTie) {
-            window.statistics[this.id].duelsTie++;
+          if (window.statistics[this.name] && window.statistics[this.name].duelsTie) {
+            window.statistics[this.name].duelsTie++;
           } else {
-            window.statistics[this.id].duelsTie = 1;
+            window.statistics[this.name].duelsTie = 1;
           }
         } else if (r == "win") {
-          if (window.statistics[this.id] && window.statistics[this.id].duelsWon) {
-              window.statistics[this.id].duelsWon++;
+          if (window.statistics[this.name] && window.statistics[this.name].duelsWon) {
+              window.statistics[this.name].duelsWon++;
             } else {
-              window.statistics[this.id].duelsWon = 1;
+              window.statistics[this.name].duelsWon = 1;
             }
         } else {
-          if (window.statistics[this.id] && window.statistics[this.id].duelsLost) {
-              window.statistics[this.id].duelsLost++;
+          if (window.statistics[this.name] && window.statistics[this.name].duelsLost) {
+              window.statistics[this.name].duelsLost++;
             } else {
-              window.statistics[this.id].duelsLost = 1;
+              window.statistics[this.name].duelsLost = 1;
             }
         }
     };
