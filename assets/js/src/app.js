@@ -362,7 +362,9 @@ window.onload = function() {
 
         console.log("⛳ ~ cardY[0]", cardY[0])
         // console.log("⛳ bottom :" , cardY[0].img_x + "px right " + cardY[0].img_y)
-        $('#cardB img').attr('style', 'object-position: bottom ' + cardY[0].img_y + "px right " + cardY[0].img_x );
+        $('#cardB img').attr('style', 'object-position: top ' + (0.125)*cardY[0].img_y + "px left " + (-0.125) * cardY[0].img_x + "px" );
+        $('#cardB img').attr('style', 'transform: scale(8)');
+
     }
 
 
@@ -539,19 +541,33 @@ function updateCardLengthGraphicView(c, d) {
 
 function fillUpcars() {
     var array = [];
-    function Car(id, name, zyl, kw, ccm, kmh, img, c1, c2, img_x, img_y)
+    function Car(id, name, zyl, kw, ccm, kmh, img, c1, c2, kajjeto, img_x, img_y)
     {
         this.id = id;
+        console.log("this.id: ", this.id)
         this.name = name;
+        console.log("this.name: ", this.name)
         this.zyl = zyl;
+        console.log("this.zyl: ", this.zyl)
         this.kw = kw;
+        console.log("this.kw: ", this.kw)
         this.ccm = ccm;
+        console.log("this.ccm: ", this.ccm)
         this.kmh= kmh;
+        console.log("this.kmh: ", this.kmh)
         this.img = img;
+        console.log("this.img: ", this.img)
         this.firstChoice = c1;
+        console.log("this.firstChoice: ", this.firstChoice)
         this.secondChoice = c2;
-        this.img_x = img_x
-        this.img_y = img_y
+        console.log("this.secondChoice: ", this.secondChoice)
+
+        console.log("kajjetox: ", kajjeto)
+
+        this.img_x = kajjeto
+
+        this.img_y = img_x
+
         this.duelsWon = 0;
         this.duelsLost = 0;
         this.duelsTie = 0;
@@ -569,40 +585,39 @@ function fillUpcars() {
             return "won: "+this.duelsWon+", tie: "+this.duelsTie+", lost: "+this.duelsLost
         }
     }
-    var A1 = new Car(_A1[0], _A1[1], _A1[2], _A1[3], _A1[4], _A1[5], _A1[6], _A1[7], _A1[9], _A1[10])
-    var B1 = new Car(_B1[0], _B1[1], _B1[2], _B1[3], _B1[4], _B1[5], _B1[6], _B1[7], _B1[9], _B1[10])
-    var C1 = new Car(_C1[0], _C1[1], _C1[2], _C1[3], _C1[4], _C1[5], _C1[6], _C1[7], _C1[9], _C1[10])
-    var D1 = new Car(_D1[0], _D1[1], _D1[2], _D1[3], _D1[4], _D1[5], _D1[6], _D1[7], _D1[9], _D1[10])
-    console.log("⛳ ~ _D1", _D1)
-    var A2 = new Car(_A2[0], _A2[1], _A2[2], _A2[3], _A2[4], _A2[5], _A2[6], _A2[7], _A2[9], _A2[10])
-    var B2 = new Car(_B2[0], _B2[1], _B2[2], _B2[3], _B2[4], _B2[5], _B2[6], _B2[7], _B2[9], _B2[10])
-    var C2 = new Car(_C2[0], _C2[1], _C2[2], _C2[3], _C2[4], _C2[5], _C2[6], _C2[7], _C2[9], _C2[10])
-    console.log("⛳ ~ _C2", _C2)
-    var D2 = new Car(_D2[0], _D2[1], _D2[2], _D2[3], _D2[4], _D2[5], _D2[6], _D2[7], _D2[9], _D2[10])
-    var A3 = new Car(_A3[0], _A3[1], _A3[2], _A3[3], _A3[4], _A3[5], _A3[6], _A3[7], _A3[9], _A3[10])
-    var B3 = new Car(_B3[0], _B3[1], _B3[2], _B3[3], _B3[4], _B3[5], _B3[6], _B3[7], _B3[9], _B3[10])
-    var C3 = new Car(_C3[0], _C3[1], _C3[2], _C3[3], _C3[4], _C3[5], _C3[6], _C3[7], _C3[9], _C3[10])
-    var D3 = new Car(_D3[0], _D3[1], _D3[2], _D3[3], _D3[4], _D3[5], _D3[6], _D3[7], _D3[9], _D3[10])
-    var A4 = new Car(_A4[0], _A4[1], _A4[2], _A4[3], _A4[4], _A4[5], _A4[6], _A4[7], _A4[9], _A4[10])
-    var B4 = new Car(_B4[0], _B4[1], _B4[2], _B4[3], _B4[4], _B4[5], _B4[6], _B4[7], _B4[9], _B4[10])
-    var C4 = new Car(_C4[0], _C4[1], _C4[2], _C4[3], _C4[4], _C4[5], _C4[6], _C4[7], _C4[9], _C4[10])
-    var D4 = new Car(_D4[0], _D4[1], _D4[2], _D4[3], _D4[4], _D4[5], _D4[6], _D4[7], _D4[9], _D4[10])
-    var A5 = new Car(_A5[0], _A5[1], _A5[2], _A5[3], _A5[4], _A5[5], _A5[6], _A5[7], _A5[9], _A5[10])
-    var B5 = new Car(_B5[0], _B5[1], _B5[2], _B5[3], _B5[4], _B5[5], _B5[6], _B5[7], _B5[9], _B5[10])
-    var C5 = new Car(_C5[0], _C5[1], _C5[2], _C5[3], _C5[4], _C5[5], _C5[6], _C5[7], _C5[9], _C5[10])
-    var D5 = new Car(_D5[0], _D5[1], _D5[2], _D5[3], _D5[4], _D5[5], _D5[6], _D5[7], _D5[9], _D5[10])
-    var A6 = new Car(_A6[0], _A6[1], _A6[2], _A6[3], _A6[4], _A6[5], _A6[6], _A6[7], _A6[9], _A6[10])
-    var B6 = new Car(_B6[0], _B6[1], _B6[2], _B6[3], _B6[4], _B6[5], _B6[6], _B6[7], _B6[9], _B6[10])
-    var C6 = new Car(_C6[0], _C6[1], _C6[2], _C6[3], _C6[4], _C6[5], _C6[6], _C6[7], _C6[9], _C6[10])
-    var D6 = new Car(_D6[0], _D6[1], _D6[2], _D6[3], _D6[4], _D6[5], _D6[6], _D6[7], _D6[9], _D6[10])
-    var A7 = new Car(_A7[0], _A7[1], _A7[2], _A7[3], _A7[4], _A7[5], _A7[6], _A7[7], _A7[9], _A7[10])
-    var B7 = new Car(_B7[0], _B7[1], _B7[2], _B7[3], _B7[4], _B7[5], _B7[6], _B7[7], _B7[9], _B7[10])
-    var C7 = new Car(_C7[0], _C7[1], _C7[2], _C7[3], _C7[4], _C7[5], _C7[6], _C7[7], _C7[9], _C7[10])
-    var D7 = new Car(_D7[0], _D7[1], _D7[2], _D7[3], _D7[4], _D7[5], _D7[6], _D7[7], _D7[9], _D7[10])
-    var A8 = new Car(_A8[0], _A8[1], _A8[2], _A8[3], _A8[4], _A8[5], _A8[6], _A8[7], _A8[9], _A8[10])
-    var B8 = new Car(_B8[0], _B8[1], _B8[2], _B8[3], _B8[4], _B8[5], _B8[6], _B8[7], _B8[9], _B8[10])
-    var C8 = new Car(_C8[0], _C8[1], _C8[2], _C8[3], _C8[4], _C8[5], _C8[6], _C8[7], _C8[9], _C8[10])
-    var D8 = new Car(_D8[0], _D8[1], _D8[2], _D8[3], _D8[4], _D8[5], _D8[6], _D8[7], _D8[9], _D8[10])
+
+    var A1 = new Car(_A1[0], _A1[1], _A1[2], _A1[3], _A1[4], _A1[5], _A1[6], _A1[7], _A1[8], _A1[9], _A1[10])
+    var B1 = new Car(_B1[0], _B1[1], _B1[2], _B1[3], _B1[4], _B1[5], _B1[6], _B1[7], _B1[8], _B1[9], _B1[10])
+    var C1 = new Car(_C1[0], _C1[1], _C1[2], _C1[3], _C1[4], _C1[5], _C1[6], _C1[7], _C1[8], _C1[9], _C1[10])
+    var D1 = new Car(_D1[0], _D1[1], _D1[2], _D1[3], _D1[4], _D1[5], _D1[6], _D1[7], _D1[8], _D1[9], _D1[10])
+    var A2 = new Car(_A2[0], _A2[1], _A2[2], _A2[3], _A2[4], _A2[5], _A2[6], _A2[7], _A2[8], _A2[9], _A2[10])
+    var B2 = new Car(_B2[0], _B2[1], _B2[2], _B2[3], _B2[4], _B2[5], _B2[6], _B2[7], _B2[8], _B2[9], _B2[10])
+    var C2 = new Car(_C2[0], _C2[1], _C2[2], _C2[3], _C2[4], _C2[5], _C2[6], _C2[7], _C2[8], _C2[9], _C2[10])
+    var D2 = new Car(_D2[0], _D2[1], _D2[2], _D2[3], _D2[4], _D2[5], _D2[6], _D2[7], _D2[8], _D2[9], _D2[10])
+    var A3 = new Car(_A3[0], _A3[1], _A3[2], _A3[3], _A3[4], _A3[5], _A3[6], _A3[7], _A3[8], _A3[9], _A3[10])
+    var B3 = new Car(_B3[0], _B3[1], _B3[2], _B3[3], _B3[4], _B3[5], _B3[6], _B3[7], _B3[8], _B3[9], _B3[10])
+    var C3 = new Car(_C3[0], _C3[1], _C3[2], _C3[3], _C3[4], _C3[5], _C3[6], _C3[7], _C3[8], _C3[9], _C3[10])
+    var D3 = new Car(_D3[0], _D3[1], _D3[2], _D3[3], _D3[4], _D3[5], _D3[6], _D3[7], _D3[8], _D3[9], _D3[10])
+    var A4 = new Car(_A4[0], _A4[1], _A4[2], _A4[3], _A4[4], _A4[5], _A4[6], _A4[7], _A4[8], _A4[9], _A4[10])
+    var B4 = new Car(_B4[0], _B4[1], _B4[2], _B4[3], _B4[4], _B4[5], _B4[6], _B4[7], _B4[8], _B4[9], _B4[10])
+    var C4 = new Car(_C4[0], _C4[1], _C4[2], _C4[3], _C4[4], _C4[5], _C4[6], _C4[7], _C4[8], _C4[9], _C4[10])
+    var D4 = new Car(_D4[0], _D4[1], _D4[2], _D4[3], _D4[4], _D4[5], _D4[6], _D4[7], _D4[8], _D4[9], _D4[10])
+    var A5 = new Car(_A5[0], _A5[1], _A5[2], _A5[3], _A5[4], _A5[5], _A5[6], _A5[7], _A5[8], _A5[9], _A5[10])
+    var B5 = new Car(_B5[0], _B5[1], _B5[2], _B5[3], _B5[4], _B5[5], _B5[6], _B5[7], _B5[8], _B5[9], _B5[10])
+    var C5 = new Car(_C5[0], _C5[1], _C5[2], _C5[3], _C5[4], _C5[5], _C5[6], _C5[7], _C5[8], _C5[9], _C5[10])
+    var D5 = new Car(_D5[0], _D5[1], _D5[2], _D5[3], _D5[4], _D5[5], _D5[6], _D5[7], _D5[8], _D5[9], _D5[10])
+    var A6 = new Car(_A6[0], _A6[1], _A6[2], _A6[3], _A6[4], _A6[5], _A6[6], _A6[7], _A6[8], _A6[9], _A6[10])
+    var B6 = new Car(_B6[0], _B6[1], _B6[2], _B6[3], _B6[4], _B6[5], _B6[6], _B6[7], _B6[8], _B6[9], _B6[10])
+    var C6 = new Car(_C6[0], _C6[1], _C6[2], _C6[3], _C6[4], _C6[5], _C6[6], _C6[7], _C6[8], _C6[9], _C6[10])
+    var D6 = new Car(_D6[0], _D6[1], _D6[2], _D6[3], _D6[4], _D6[5], _D6[6], _D6[7], _D6[8], _D6[9], _D6[10])
+    var A7 = new Car(_A7[0], _A7[1], _A7[2], _A7[3], _A7[4], _A7[5], _A7[6], _A7[7], _A7[8], _A7[9], _A7[10])
+    var B7 = new Car(_B7[0], _B7[1], _B7[2], _B7[3], _B7[4], _B7[5], _B7[6], _B7[7], _B7[8], _B7[9], _B7[10])
+    var C7 = new Car(_C7[0], _C7[1], _C7[2], _C7[3], _C7[4], _C7[5], _C7[6], _C7[7], _C7[8], _C7[9], _C7[10])
+    var D7 = new Car(_D7[0], _D7[1], _D7[2], _D7[3], _D7[4], _D7[5], _D7[6], _D7[7], _D7[8], _D7[9], _D7[10])
+    var A8 = new Car(_A8[0], _A8[1], _A8[2], _A8[3], _A8[4], _A8[5], _A8[6], _A8[7], _A8[8], _A8[9], _A8[10])
+    var B8 = new Car(_B8[0], _B8[1], _B8[2], _B8[3], _B8[4], _B8[5], _B8[6], _B8[7], _B8[8], _B8[9], _B8[10])
+    var C8 = new Car(_C8[0], _C8[1], _C8[2], _C8[3], _C8[4], _C8[5], _C8[6], _C8[7], _C8[8], _C8[9], _C8[10])
+    var D8 = new Car(_D8[0], _D8[1], _D8[2], _D8[3], _D8[4], _D8[5], _D8[6], _D8[7], _D8[8], _D8[9], _D8[10])
 
     // var E1 = new Car(_E1[0], _E1[1], _E1[2], _E1[3], _E1[4], _E1[5], _E1[6], _E1[7])
     // var E2 = new Car(_E2[0], _E2[1], _E2[2], _E2[3], _E2[4], _E2[5], _E2[6], _E2[7])
