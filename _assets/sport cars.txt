@@ -1,150 +1,189 @@
-﻿﻿
+﻿1A
+Ferrari Testarossa
+12 Zyl.
+286 kW
+4942 ccm
+290 km/h
+
+2A
+Ford Sierra Cosworth 4 x 4
+4 Zyl.
+162 kW
+1994 ccm
+240 km/h
+
+3A
+Ferrari 3,2 Mondial
+8 Zyl.
+198 kW
+3185 ccm
+250 km/h
 
 4A
 Ferrari F40
-1A
-Ferrari Testarossa
-2A Ford Sierra Cosworth 4 x 4
-3A
-Ferrari 3,2 Mondial
+8 Zyl.
+351 kW
+2936 ccm
+324 km/h
+
 5A
 Chevrolet 2 E Chaparral
+8 Zyl.
+190 kW
+3000 ccm
+258 km/h
+
 6A
 Honda NSX
+6 Zyl.
+224 kW
+3000 ccm
+270 km/h
+
 7A
 Porsche 928 GT
-BA
+8 Zyl.
+243 kW
+5000 ccm
+275 km/h
+
+8A
 Geiger Corvette ZR-1
-Motor:
-Leistung:
-Hubraum:
-Geschwindigkeit:
-12 Zyl 286 kW
-Motor:
-4 Zyl
-4942 ccm
-Leistung: Hubraum:
-162 kW 1994 ccm
-Motor: Leistung: Hubraum:
-290 km/h
-Geschwindigkeit:
-240 km/h
-8 Zyl. 198 kW 3185 ccm
-Geschwindigkeit:
-250 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-8 Zyl 351 kW 2936 ccm 324 km/h
-Motor: Leistung: Hubraum:
-8 Zyl 190 kW
-Geschwindigkeit:
-3000 com 258 km h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-6 Zyl 224 kW 3000 com
-270 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-8 Zyl 243 kW 5000 ccm 275 km/h
+8 Zyl.
+300 kW
+5990 ccm
+299 km/h
+
+
+
+
+
+
 1B
 Alfa Romeo Zagato S.Z.
-2B
-BMW 320i Coupé
-3B
-Audi Quattro 20V
-4B
-Maserati Shamal
-5B Lancia Delta HF Integrale
-6B
-Audi Coupé S2
-78
-Bugatti EB-110
-Motor:
-Leistung: Hubraum:
 6 Zyl.
-Motor:
 154 kW
 2959 ccm
-Geschwindigkeit:
-245 kin/h
+245 km/h
+
+2B
+BMW 320i Coupé
 6 Zyl.
-Leistung:
-Hubraum:
 95 kW
 1991 ccm
-Geschwindigkeit:
 214 km/h
-am UNN
-Motor: Leistung: Hubraum:
+
+3B
+Audi Quattro 20V
 5 Zyl.
 162 kW
 2226 ccm
-Geschwindigkeit:
 230 km/h
-Motor: Leistung: Hubraum:
-Geschwindigkeit:
+
+4B
+Maserati Shamal
 8 Zyl.
-237 kW 3217 ccm 260 km/h
-Motor:
-Leistung: Hubraum: Geschwindigkeit:
-4 Zyl 183 kW 1981 ccm 215 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-5 Zyl 162 kW 2226.com 248 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-12 Zyl. 390 kW 3500 ccm 345 km/h
-Motor: Leistung Hubraum: Geschwindigkeit:
-300 W
-5990 com 299 km/h
+237 kW
+3217 ccm
+260 km/h
+
+5B Lancia Delta HF Integrale
+4 Zyl
+183 kW
+1981 ccm
+215 km/h
+
+6B Audi Coupé S2
+5 Zyl
+162 kW
+2226.ccm
+248 km/h
+
+7B Bugatti EB-110
+12 Zyl.
+390 kW
+3500 ccm
+345 km/h
+
 8B Mitsubishi Eclipse 2 WD
-Motor: Leistung: Hubraum: Geschwindigkeit:
-4 Zy
-147 kW 1997 ccm 220 kmh
+4 Zyl.
+147 kW
+1997 ccm
+220 kmh
+
+
+
+
+
+
+
 1C
 Nissan 200 SX
+
 2C
 BMW M5
+
 3C
 Toyota MR 2 CT-i 16
+
 4C
 BMW 850i
+
 5C
 Lamborghini Countach
+
 6C
 Opel Calibra 16V
+
 7C
 Alfa Romeo Spider 2,0
+
 8C
 Porsche 911 Strosek
+
 1-4
 MIDZ 6982
-Motor:
-Leistung: Hubraum:
+
 4 Zyl.
 124 kW
-Motor:
-Leistung:
-Geschwindigkeit:
-1800 ccm 205 km/h
-Hubraum:
-Geschwindigkeit:
-6 Zyl. 232 kW 3535 ccm 250 km/h
-Motor:
-Leistung: Hubraum:
-4 Zyl. 115 kW 1998 ccm
-Geschwindigkeit:
+1800 ccm
+205 km/h
+
+6 Zyl.
+232 kW
+3535 ccm
+250 km/h
+
+4 Zyl.
+115 kW
+1998 ccm
 220 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-12 Zyl. 220 kW 4988 ccm 250 km/h
-Motor: Leistung:
-Hubraum: Geschwindigkeit:
-12 Zyl. 258 kW 4700 ccm 290 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-4 Zyl. 110 kW 1998 ccm 223 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
+
+12 Zyl.
+220 kW
+4988 ccm
+250 km/h
+
+12 Zyl.
+258 kW
+4700 ccm
+290 km/h
+
+4 Zyl.
+110 kW
+1998 ccm
+223 km/h
+
 4 Zyl
 85 kW
-1962 ccm 185 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
-6 Zyl 195 kW
-3600 com
+1962 ccm
+185 km/h
+
+6 Zyl
+195 kW
+3600 ccm
 270 km/h
+
 1D
 Elegant 427 Roadster
 2D
@@ -161,41 +200,43 @@ Porsche 911 Carrera
 Wolfrace
 8D
 Chevrolet Corvette ZR-1
-Motor: Leistung:
-Hubraum:
-Geschwindigkeit:
+
 8 Zyl.
-182 kW 5733 ccm
+182 kW
+5733 ccm
 235 km/h
-Motor:
-Leistung: Hubraum:
-Geschwindigkeit:
+
 12 Zyl.
-250 kW 4942 ccm
+250 kW
+4942 ccm
 250 km/h
-Motor:
-Leistung: Hubraum:
-Geschwindigkeit:
-6 Zyl. 135 kW 3590 ccm 220 km/h
-Motor: Leistung: Hubraum: Geschwindigkeit:
+
+6 Zyl.
+135 kW
+3590 ccm
+220 km/h
+
 92
-8 Zyl. 340 kW
+8 Zyl.
+340 kW
 4942 ccm
 290 km/h
-Motor: Leistung:
-Hubraum:
-Geschwindigkeit:
-8 Zyl. 470 kW 5800 ccm
+
+8 Zyl.
+470 kW
+5800 ccm
 368 km/h
-Motor:
-Leistung: Hubraum:
-Geschwindigkeit:
-6 Zyl. 184 kW 3600 ccm
+
+6 Zyl.
+184 kW
+3600 ccm
 263 km/h
-Motor: Leistung: Hubraum:
-Geschwindigkeit:
-8 Zyl. 320 kW 3500 ccm
+
+8 Zyl.
+320 kW
+3500 ccm
 310 km/h
-Motor: Leistung: Hubraum:
-Geschwindigkeit
-285 KW 5700 com über 290 km/h
+
+285 KW
+5700 ccm
+über 290 km/h
