@@ -13,7 +13,8 @@
 .name {
     float: right;
 }
-img {
+img,
+.img {
     width: 317px;
     height: 317px;
     display: block;
@@ -87,7 +88,7 @@ table {
     transition: all 0.2s ease-out;
 
     transform:rotateY(179.9deg);
-  }  
+  }
   & .card-front, & .card-back{
     height:100%;
     width:100%;

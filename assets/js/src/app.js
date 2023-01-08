@@ -349,8 +349,7 @@ window.onload = function() {
         $('#cardA .ccm').html(cardX[0].ccm+' ccm');
         $('#cardA .kmh').html(cardX[0].kmh+' km/h');
         $('#cardA img').attr('src', cardX[0].img);
-
-
+        $('#cardA .img').attr('style', 'background: url("' + cardX[0].img + '") ' + (-1.15)*cardX[0].img_x + 'px ' + (-1)*cardX[0].img_y + 'px; background-size: 2922px 1980px');
 
         $('#cardB .id').html(cardY[0].id);
         $('#cardB .name').html(cardY[0].name);
@@ -358,16 +357,8 @@ window.onload = function() {
         $('#cardB .kw').html(cardY[0].kw+' kW');
         $('#cardB .ccm').html(cardY[0].ccm+' ccm');
         $('#cardB .kmh').html(cardY[0].kmh+' km/h');
-        $('#cardB img').attr('src', cardY[0].img);
-
-        console.log("⛳ ~ cardY[0]", cardY[0])
-        // console.log("⛳ bottom :" , cardY[0].img_x + "px right " + cardY[0].img_y)
-        $('#cardB img').attr('style', 'object-position: top ' + (0.125)*cardY[0].img_y + "px left " + (-0.125) * cardY[0].img_x + "px" );
-        $('#cardB img').attr('style', 'transform: scale(8)');
-
+        $('#cardB .img').attr('style', 'background: url("' + cardY[0].img + '") ' + (-1.15)*cardY[0].img_x + 'px ' + (-1)*cardY[0].img_y + 'px; background-size: 2922px 1980px');
     }
-
-
 
     function compareCards(previousMethod) {
         Promise.delay(firstPart, 1300)

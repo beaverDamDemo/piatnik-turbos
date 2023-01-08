@@ -157,7 +157,7 @@ footer #detailsContainer details {
 	float: right;
 }
 
-img {
+img, .img {
 	width: 317px;
 	height: 317px;
 	display: block;
