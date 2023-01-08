@@ -1,4 +1,4 @@
-var _1A = [
+var _A1 = [
   "1A",
   "Ferrari Testarossa",
   12,
@@ -6,9 +6,11 @@ var _1A = [
   4942,
   290,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _2A = [
+var _A2 = [
   "2A",
   "Ford Sierra Cosworth 4 x 4",
   4,
@@ -16,9 +18,11 @@ var _2A = [
   1994,
   240,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _3A = [
+var _A3 = [
   "3A",
   "Ferrari 3,2 Mondial",
   8,
@@ -26,9 +30,11 @@ var _3A = [
   3185,
   250,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _4A = [
+var _A4 = [
   "4A",
   "Ferrari F40",
   8,
@@ -36,9 +42,11 @@ var _4A = [
   2936,
   324,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _5A = [
+var _A5 = [
   "5A",
   "Chevrolet 2 E Chaparral",
   8,
@@ -46,9 +54,11 @@ var _5A = [
   3000,
   258,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _6A = [
+var _A6 = [
   "6A",
   "Honda NSX",
   6,
@@ -56,9 +66,11 @@ var _6A = [
   3000,
   270,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _7A = [
+var _A7 = [
   "7A",
   "Porsche 928 GT",
   8,
@@ -66,9 +78,11 @@ var _7A = [
   5000,
   275,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _8A = [
+var _A8 = [
   "8A",
   "Geiger Corvette ZR-1",
   8,
@@ -76,9 +90,11 @@ var _8A = [
   5990,
   299,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _1B = [
+var _B1 = [
   "1B",
   "Alfa Romeo Zagato S.Z.",
   6,
@@ -86,9 +102,11 @@ var _1B = [
   2959,
   245,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _2B = [
+var _B2 = [
   "2B",
   "BMW 320i Coupé",
   6,
@@ -96,9 +114,11 @@ var _2B = [
   1991,
   214,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _3B = [
+var _B3 = [
   "3B",
   "Audi Quattro 20V",
   5,
@@ -106,9 +126,11 @@ var _3B = [
   2226,
   230,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _4B = [
+var _B4 = [
   "4B",
   "Maserati Shamal",
   8,
@@ -116,9 +138,11 @@ var _4B = [
   3217,
   260,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _5B = [
+var _B5 = [
   "5B",
   "Lancia Delta HF Integrale",
   4,
@@ -126,9 +150,11 @@ var _5B = [
   1981,
   215,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _6B = [
+var _B6 = [
   "6B",
   "Audi Coupé S2",
   5,
@@ -136,9 +162,11 @@ var _6B = [
   2226,
   248,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _7B = [
+var _B7 = [
   "7B",
   "Bugatti EB-110",
   12,
@@ -146,9 +174,11 @@ var _7B = [
   3500,
   345,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _8B = [
+var _B8 = [
   "8B",
   "Mitsubishi Eclipse 2 WD",
   4,
@@ -156,9 +186,11 @@ var _8B = [
   1997,
   22,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _1C = [
+var _C1 = [
   "1C",
   "Nissan 200 SX",
   4,
@@ -166,9 +198,11 @@ var _1C = [
   1800,
   205,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _2C = [
+var _C2 = [
   "2C",
   "BMW M5",
   6,
@@ -176,9 +210,11 @@ var _2C = [
   3535,
   250,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _3C = [
+var _C3 = [
   "3C",
   "Toyota MR 2 CT-i 16",
   4,
@@ -186,9 +222,11 @@ var _3C = [
   1998,
   220,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _4C = [
+var _C4 = [
   "4C",
   "BMW 850i",
   12,
@@ -196,9 +234,11 @@ var _4C = [
   4988,
   250,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _5C = [
+var _C5 = [
   "5C",
   "Lamborghini Countach",
   12,
@@ -206,9 +246,11 @@ var _5C = [
   4700,
   290,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _6C = [
+var _C6 = [
   "6C",
   "Opel Calibra 16V",
   4,
@@ -216,9 +258,11 @@ var _6C = [
   1998,
   223,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _7C = [
+var _C7 = [
   "7C",
   "Alfa Romeo Spider 2,0",
   4,
@@ -226,9 +270,11 @@ var _7C = [
   1962,
   185,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _8C = [
+var _C8 = [
   "8C",
   "Porsche 911 Strosek",
   6,
@@ -236,9 +282,11 @@ var _8C = [
   3600,
   270,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _1D = [
+var _D1 = [
   "1D",
   "Elegant 427 Roadster",
   8,
@@ -246,9 +294,11 @@ var _1D = [
   5733,
   235,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _2D = [
+var _D2 = [
   "2D",
   "Ferrari 412",
   12,
@@ -256,9 +306,11 @@ var _2D = [
   4942,
   250,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _3D = [
+var _D3 = [
   "3D",
   "Jaguar XJ-S 3,6",
   6,
@@ -266,9 +318,11 @@ var _3D = [
   3590,
   220,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _4D = [
+var _D4 = [
   "4D",
   "Ford GT 40 Mk 1",
   8,
@@ -276,9 +330,11 @@ var _4D = [
   4942,
   290,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _5D = [
+var _D5 = [
   "5D",
   "Vector",
   8,
@@ -286,9 +342,11 @@ var _5D = [
   5800,
   368,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _6D = [
+var _D6 = [
   "6D",
   "Porsche 911 Carrera",
   6,
@@ -296,9 +354,11 @@ var _6D = [
   3600,
   263,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _7D = [
+var _D7 = [
   "7D",
   "Wolfrace",
   8,
@@ -306,9 +366,11 @@ var _7D = [
   3500,
   310,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];
 
-var _8D = [
+var _D8 = [
   "8D",
   "Chevrolet Corvette ZR-1",
   8,
@@ -316,4 +378,6 @@ var _8D = [
   5700,
   290,
   "assets/images/sportCars/sport cars.jpg",
+  2,
+  3,
 ];

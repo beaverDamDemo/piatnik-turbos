@@ -594,13 +594,13 @@ function fillUpcars() {
     var C8 = new Car(_C8[0], _C8[1], _C8[2], _C8[3], _C8[4], _C8[5], _C8[6], _C8[7])
     var D8 = new Car(_D8[0], _D8[1], _D8[2], _D8[3], _D8[4], _D8[5], _D8[6], _D8[7])
 
-    var E1 = new Car(_E1[0], _E1[1], _E1[2], _E1[3], _E1[4], _E1[5], _E1[6], _E1[7])
-    var E2 = new Car(_E2[0], _E2[1], _E2[2], _E2[3], _E2[4], _E2[5], _E2[6], _E2[7])
-    var E3 = new Car(_E3[0], _E3[1], _E3[2], _E3[3], _E3[4], _E3[5], _E3[6], _E3[7])
-    var E4 = new Car(_E4[0], _E4[1], _E4[2], _E4[3], _E4[4], _E4[5], _E4[6], _E4[7])
+    // var E1 = new Car(_E1[0], _E1[1], _E1[2], _E1[3], _E1[4], _E1[5], _E1[6], _E1[7])
+    // var E2 = new Car(_E2[0], _E2[1], _E2[2], _E2[3], _E2[4], _E2[5], _E2[6], _E2[7])
+    // var E3 = new Car(_E3[0], _E3[1], _E3[2], _E3[3], _E3[4], _E3[5], _E3[6], _E3[7])
+    // var E4 = new Car(_E4[0], _E4[1], _E4[2], _E4[3], _E4[4], _E4[5], _E4[6], _E4[7])
 
     array.push(A1,B1,C1,D1,A2,B2,C2,D2,A3,B3,C3,D3,A4,B4,C4,D4,A5,B5,C5,D5,A6,B6,C6,D6,A7,B7,C7,D7,A8,B8,C8,D8);
-    array.push(E1, E2, E3, E4);
+    // array.push(E1, E2, E3, E4);
 
     shuffle(array)
     // array.length = 8
