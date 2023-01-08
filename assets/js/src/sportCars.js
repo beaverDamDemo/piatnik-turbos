@@ -8,6 +8,9 @@ var _A1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (1-1)*320,
+  0
+
 ];
 
 var _A2 = [
@@ -20,6 +23,8 @@ var _A2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (2-1)*320,
+  0
 ];
 
 var _A3 = [
@@ -32,6 +37,8 @@ var _A3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (3-1)*320,
+  0
 ];
 
 var _A4 = [
@@ -44,6 +51,8 @@ var _A4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (4-1)*320,
+  0
 ];
 
 var _A5 = [
@@ -56,6 +65,8 @@ var _A5 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (5-1)*320,
+  0
 ];
 
 var _A6 = [
@@ -68,6 +79,8 @@ var _A6 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (6-1)*320,
+  0
 ];
 
 var _A7 = [
@@ -80,6 +93,8 @@ var _A7 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (7-1)*320,
+  0
 ];
 
 var _A8 = [
@@ -92,6 +107,8 @@ var _A8 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (8-1)*320,
+  0
 ];
 
 var _B1 = [
@@ -104,6 +121,8 @@ var _B1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (1-1)*320
 ];
 
 var _B2 = [
@@ -116,6 +135,8 @@ var _B2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (2-1)*320
 ];
 
 var _B3 = [
@@ -128,6 +149,8 @@ var _B3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (3-1)*320
 ];
 
 var _B4 = [
@@ -140,6 +163,8 @@ var _B4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (4-1)*320
 ];
 
 var _B5 = [
@@ -152,6 +177,8 @@ var _B5 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (5-1)*320
 ];
 
 var _B6 = [
@@ -164,6 +191,8 @@ var _B6 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (6-1)*320
 ];
 
 var _B7 = [
@@ -176,6 +205,8 @@ var _B7 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (7-1)*320
 ];
 
 var _B8 = [
@@ -188,6 +219,8 @@ var _B8 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  540,
+  (8-1)*320
 ];
 
 var _C1 = [
@@ -200,6 +233,8 @@ var _C1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (1-1)*320,
+  1080
 ];
 
 var _C2 = [
@@ -212,6 +247,8 @@ var _C2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (2-1)*320,
+  1080
 ];
 
 var _C3 = [
@@ -224,6 +261,8 @@ var _C3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (3-1)*320,
+  1080
 ];
 
 var _C4 = [
@@ -236,6 +275,8 @@ var _C4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (4-1)*320,
+  1080
 ];
 
 var _C5 = [
@@ -248,6 +289,8 @@ var _C5 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (5-1)*320,
+  1080
 ];
 
 var _C6 = [
@@ -260,6 +303,8 @@ var _C6 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (6-1)*320,
+  1080
 ];
 
 var _C7 = [
@@ -272,6 +317,8 @@ var _C7 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (7-1)*320,
+  1080
 ];
 
 var _C8 = [
@@ -284,6 +331,8 @@ var _C8 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (8-1)*320,
+  1080
 ];
 
 var _D1 = [
@@ -296,6 +345,7 @@ var _D1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (1-1)*320, 1620
 ];
 
 var _D2 = [
@@ -308,6 +358,7 @@ var _D2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (2-1)*320, 1620
 ];
 
 var _D3 = [
@@ -320,6 +371,7 @@ var _D3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (3-1)*320, 1620
 ];
 
 var _D4 = [
@@ -332,6 +384,7 @@ var _D4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (4-1)*320, 1620
 ];
 
 var _D5 = [
@@ -344,6 +397,7 @@ var _D5 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (5-1)*320, 1620
 ];
 
 var _D6 = [
@@ -356,6 +410,7 @@ var _D6 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (6-1)*320, 1620
 ];
 
 var _D7 = [
@@ -368,6 +423,7 @@ var _D7 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (7-1)*320, 1620
 ];
 
 var _D8 = [
@@ -380,4 +436,5 @@ var _D8 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
+  (8-1)*320, 1620
 ];
