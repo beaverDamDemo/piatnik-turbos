@@ -8,7 +8,7 @@ var _A1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (1-1)*320,
+  0*320,
   0
 
 ];
@@ -23,7 +23,7 @@ var _A2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (2-1)*320,
+  1*320,
   0
 ];
 
@@ -37,7 +37,7 @@ var _A3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (3-1)*320,
+  2*320,
   0
 ];
 
@@ -51,7 +51,7 @@ var _A4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (4-1)*320,
+  3*320,
   0
 ];
 
@@ -122,7 +122,7 @@ var _B1 = [
   2,
   3,
   540,
-  (1-1)*320
+  0*320
 ];
 
 var _B2 = [
@@ -136,7 +136,7 @@ var _B2 = [
   2,
   3,
   540,
-  (2-1)*320
+  1*320
 ];
 
 var _B3 = [
@@ -150,7 +150,7 @@ var _B3 = [
   2,
   3,
   540,
-  (3-1)*320
+  2*320
 ];
 
 var _B4 = [
@@ -164,7 +164,7 @@ var _B4 = [
   2,
   3,
   540,
-  (4-1)*320
+  3*320
 ];
 
 var _B5 = [
@@ -233,7 +233,7 @@ var _C1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (1-1)*320,
+  0*320,
   1080
 ];
 
@@ -247,7 +247,7 @@ var _C2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (2-1)*320,
+  1*320,
   1080
 ];
 
@@ -261,7 +261,7 @@ var _C3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (3-1)*320,
+  2*320,
   1080
 ];
 
@@ -275,7 +275,7 @@ var _C4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (4-1)*320,
+  3*320,
   1080
 ];
 
@@ -345,7 +345,7 @@ var _D1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (1-1)*320, 1620
+  0*320, 1620
 ];
 
 var _D2 = [
@@ -358,7 +358,7 @@ var _D2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (2-1)*320, 1620
+  1*320, 1620
 ];
 
 var _D3 = [
@@ -371,7 +371,7 @@ var _D3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (3-1)*320, 1620
+  2*320, 1620
 ];
 
 var _D4 = [
@@ -384,7 +384,7 @@ var _D4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (4-1)*320, 1620
+  3*320, 1620
 ];
 
 var _D5 = [
@@ -436,5 +436,6 @@ var _D8 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  (8-1)*320, 1620
+  (8-1)*320,
+  1620
 ];
