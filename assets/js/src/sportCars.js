@@ -120,8 +120,8 @@ var _B1 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   0 * 320,
+  540,
 ];
 
 var _B2 = [
@@ -134,8 +134,8 @@ var _B2 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   1 * 320,
+  540,
 ];
 
 var _B3 = [
@@ -148,8 +148,8 @@ var _B3 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   2 * 320,
+  540,
 ];
 
 var _B4 = [
@@ -162,8 +162,8 @@ var _B4 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   3 * 320,
+  540,
 ];
 
 var _B5 = [
@@ -176,8 +176,8 @@ var _B5 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   (5 - 1) * 320,
+  540,
 ];
 
 var _B6 = [
@@ -190,8 +190,8 @@ var _B6 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   (6 - 1) * 320,
+  540,
 ];
 
 var _B7 = [
@@ -204,8 +204,8 @@ var _B7 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   (7 - 1) * 320,
+  540,
 ];
 
 var _B8 = [
@@ -218,8 +218,8 @@ var _B8 = [
   "assets/images/sportCars/sport cars loaded.jpg",
   2,
   3,
-  540,
   (8 - 1) * 320,
+  540,
 ];
 
 var _C1 = [
