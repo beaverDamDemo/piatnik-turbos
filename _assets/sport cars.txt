@@ -1,0 +1,352 @@
+﻿
+
+4A
+Ferrari F40
+1A
+Ferrari Testarossa
+2A Ford Sierra Cosworth 4 x 4
+3A
+Ferrari 3,2 Mondial
+5A
+Chevrolet 2 E Chaparral
+6A
+Honda NSX
+7A
+Porsche 928 GT
+BA
+Geiger Corvette ZR-1
+
+Motor:
+Leistung:
+Hubraum:
+Geschwindigkeit:
+b) Alfa Romeo Zagato 5.2.
+8 Zyl 243 kW
+5000 ccm
+275 km/h
+Alfa Romeo Spider 2.0
+Motor: Leistung Hubraum:
+Geschwindigkeit:
+300 W 5990 com
+299 km/h
+b) Mubishi Ecipe 2 WD Porsche 911 Stok di Chevrolet
+12 Zyl
+Motor:
+286 kW
+4942 ccm
+Leistung:
+Hubraum:
+4 Zyl 162 kW
+1994 ccm
+Motor: Leistung:
+Hubraum:
+8 Zyl 198 kW 3185 ccm
+290 km/h
+Geschwindigkeit:
+240 km/h
+Geschwindigkeit:
+250 km/h
+Motor: Leistung: Hubraum:
+Geschwindigkeit:
+8 Zyl 351 kW
+2936 ccm
+324 km/h
+Motor: Leistung:
+Hubraum:
+Geschwindigkeit:
+c) Nissan 200SX
+b) BMW 320i Coupé
+c) BMW MS
+b) Maserati Shamal
+c) BMW 850
+b) Audi Quattro 20V
+c) Toyota MR 2 CT-116
+d) Elegant 427 Roadster
+d) Ferrari 412
+d) Ford GT 40 Mk1
+d) Jaguar XJ-S 3.6
+b) Lancia Delta HF Integrale c) Lamborghini Countach d) Vector
+8 Zyl 190 kW
+3000 com
+258 km h
+b) Audi Coupe 52
+4) Porsche 911 Carrera
+Motor: Leistung: Hubraum:
+Geschwindigkeit:
+6 Zyl
+224 kW
+3000 ccm
+270 km/h
+Opel Calibra 16V
+Motor: Leistung: Hubraum: Geschwindigkeit:
+b) Bugat EB-110
+d) Wolfrace
+1B
+Alfa Romeo Zagato S.Z.
+2B
+BMW 320i Coupé
+3B
+Audi Quattro 20 V
+4B
+Maserati Shamal
+5B Lancia Delta HF Integrale
+6B
+Audi Coupé S2
+7B
+Motor:
+Leistung:
+Hubraum:
+6 Zyl.
+154 kW
+2959 ccm
+Geschwindigkeit:
+245 kin/h
+a) Ferrari Testarossa
+c) Nissan 200 SX
+d) Elegant 427 Roadster
+1C
+Motor:
+Leistung:
+Hubraum:
+Geschwindigkeit:
+a) Ford Sierra Cosworth 4 x 4
+Nissan 200 SX
+2C
+6 Zyl.
+95 kW
+1991 ccm
+214 km/h
+c) BMW MS
+d) Ferrari 412
+MIDZ 6982
+amm
+Bugatti EB-110
+8B Mitsubishi Eclipse 2 WD
+5 Zyl 162 kW
+2226 com
+248 km/h
+Opel Calibra 16V
+Motor: Leistung: Hubraum:
+Geschwindigkeit:
+a) Porsche 928 GT
+12 Zyl
+390 kW
+3500 ccm
+345 km/h
+c) Alfa Romeo Spider 2.0 d) Wolfrace
+Motor: Leistung: Hubraum:
+Geschwindigkeit:
+a) Geiger Corvette ZR-1
+4 Zy
+147 kW
+1997 ccm
+220 km/h
+c) Porsche 911 Strowe
+d) Chevrolet Corvette ZR-1
+Motor:
+Leistung:
+Hubraum: Geschwindigkeit:
+a) Ferrari 3,2 Mondial
+2226 ccm
+230 km/h
+5 Zyl. 162 kW
+Motor: Leistung:
+Hubraum:
+Geschwindigkeit:
+8 Zyl. 237 kW
+Motor:
+Leistung:
+4 Zyl 183 kW
+3217 ccm
+Hubraum:
+260 km/h
+Geschwindigkeit:
+1981 ccm 215 km/h
+Motor: Leistung: Hubraum:
+Geschwindigkeit:
+c) Toyota MR 2 CT-i 16
+a) Ferrari F40
+c) BMW 850
+a) Honda NSX
+d) Jaguar XJ-S 3.6
+d) Ford GT 40 Mk 1
+a) Chevrolet 2 E Chaparral c) Lamborghini Countach d) Vector
+d) Porsche 911 Camera
+BMW M5
+3C
+Toyota MR 2 CT-i 16
+4C
+Motor:
+Leistung: Hubraum:
+4 Zyl.
+124 kW 1800 ccm
+Motor:
+Leistung:
+Hubraum:
+Geschwindigkeit:
+205 km/h
+a) Ferrari Testarossa
+b) Alfa Romeo Zagato S.Z.
+d) Elegant 427 Roadster
+Geschwindigkeit:
+6 Zyl. 232 kW
+Motor:
+3535 ccm
+250 km/h
+a) Ford Sierra Cosworth 4 x 4 b) BMW 320i Coupé d) Ferrari 412
+Leistung: Hubraum:
+Geschwindigkeit:
+a) Ferrari 3.2 Mondial
+1D
+Elegant 427 Roadster
+2D
+Ferrari 412
+3D
+BMW 850i
+5C
+Lamborghini Countach
+6C
+Opel Calibra 16V
+7C
+Alfa Romeo Spider 2,0
+4 Zyl.
+110 kW
+Motor: Leistung:
+Hubraum:
+1998 ccm
+223 km/h
+Geschwindigkeit:
+a) Porsche 928 GT b) Audi Coupé $2
+4 Zyl. 115 kW
+Motor:
+12 Zyl.
+Motor:
+12 Zyl.
+Motor:
+1998 ccm
+Leistung: Hubraum:
+220 kW
+Leistung:
+258 kW
+4988 ccm
+Hubraum:
+4700 ccm
+Leistung: Hubraum:
+220 km/h
+Geschwindigkeit:
+250 km/h
+Geschwindigkeit:
+290 km/h
+Geschwindigkeit:
+b) Audi Quattro 20V
+a) Ferrari F40
+b) Maserati Shamal
+a) Chevrolet 2 E Chaparral b) Lancia Delta HF Integrale
+a) Honda NSX
+d) Jaguar XJ-S 3,6
+d) Ford GT 40 Mk 1
+d) Vector
+d) Porsche 911 Carrera
+Jaguar XJ-S 3,6
+4D
+Ford GT 40 Mk 1
+5D
+Motor:
+Leistung: Hubraum:
+Geschwindigkeit:
+a) Ferrari Testarossa
+8 Zyl.
+182 kW
+Motor:
+Leistung:
+5733 ccm
+235 km/h
+b) Alfa Romeo Zagato S.Z.
+c) Nissan 200 SX
+Hubraum:
+Geschwindigkeit:
+12 Zyl.
+250 kW
+4942 ccm
+250 km/h
+a) Ford Sierra Cosworth 4 x 4 b) BMW 320i Coupé
+c) BMW M5
+Motor:
+Leistung: Hubraum:
+Geschwindigkeit:
+a) Ferrari 3,2 Mondial
+6 Zyl. 135 kW
+3590 ccm 220 km/h
+b) Audi Quattro 20V
+c) Toyota MR 2 CT-i 16
+Motor:
+Leistung: Hubraum:
+Geschwindigkeit:
+a) Ferrari F40
+92
+8 Zyl. 340 kW
+4942 ccm
+290 km/h
+b) Maserati Shamal
+c) BMW 8501
+6D
+Vector
+Porsche 911 Carrera
+7D
+8C
+Porsche 911 Strosek
+Motor:
+4 Zyl
+85 kW
+1962 ccm
+185 km/h
+b) Bugatti EB-110
+d) Wolfrace
+Leistung: Hubraum: Geschwindigkeit:
+al Geiger Corvette ZR-1
+62y
+195 kW
+3600 com
+270 kmh
+Mish Exipwe 2WD
+d) Chevrolet Corvette ZR1
+Wolfrace
+8D
+3600 ccm
+263 km/h
+Motor Leistung:
+Hubraum: Geschwindigkeit:
+a) Porsche 928 GT
+c) Alfa Romeo Spider 2.0
+Motor:
+Leistung:
+Hubraum:
+8 Zyl.
+Motor:
+470 kW
+5800 ccm
+Leistung: Hubraum:
+6 Zyl. 184 kW
+Geschwindigkeit:
+a) Chevrolet 2E Chaparral b) Lancia Delta HF Integrale
+368 km/h
+Geschwindigkeit:
+aj Honda NSX
+b) Audi Coupé S2
+c) Opel Calibra 16V
+c) Lamborghini Countach
+8 Zyl
+320 kW
+3500 ccm
+310 km/h
+b) Bugam EB-110
+Motor:
+Chevrolet Corvette ZR-1
+82
+Leistung:
+Hubraum:
+Geschwindigkeit
+al Geiger Corvette
+285 kW
+5700 com
+über 290 kmh
