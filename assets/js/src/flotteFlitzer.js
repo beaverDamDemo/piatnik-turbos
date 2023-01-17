@@ -1,224 +1,222 @@
+2850;
+3299;
+5600;
+2184;
+6;
+8;
+4;
+4942;
+12;
+221 / 300;
+331 / 450;
+108 / 147;
+5500;
+280;
+6000;
+4300;
+240.0;
 
-Porsche 959
-Sbarro Challenge III
-Jehle Pantera
-Ford Probe GT
-Ferrari Testarossa
-Jehle Saphir
-2850
-3299
-5600
-2184
-6
-8
-4
-4942
-12
-221/300
-331/450
-108/147
-5500
-280
-6000
-4300
-240.000
-305
-150.000
-205
-331/450
-6500
-320
-420.000
-30.000
-287/390
-6300
-290
-240.000
-Ferrari F 40
-Callaway Corvette Twin Turbo
-2936
-8
-351/478
-7000
-324
-444.000
-Arrow C1
-Irmscher GT
-Vector W2 Twin Turbo
-Sbarro Ferrari P4
-5733
-5700
-8
-8
-281/382
-4250
-304
-150.000
-447/600
-6000
-389
-450.000
-Aston Martin Zagato
-4973
-3590
-8
-6
-228/310 6000 300
-130.000
-145/197 5200 245
-74.000
-Alfa Romeo Spider
-1948
-4
-92/125
-5500
-190
-33.500
-Maserati Karif
-Ferrari GTO
-2790
-6
-184/250
-5600
-245
-120.000
-Cadillac Allante
-5341
-8
-318/432
-6250
-299
-400.000
-Cizeta Moroder V16T
-2000
-110/150
-6500
-230
-43.000
-Midas Gold
-5995
-16
-412/560
-8000
-328
-527.250
-1380
-76/102
-6200
-195
-39.500
-Lamborghini Countach
-Sethera
-Alfa Romeo SZ
-3185
-5167
-8
-12
-2664
-199/270
-7000
-260
-250.000
-335/455
-7000
-298
-235.000
-6
-105/142
-5500
-190
-40.000
-2959
-154/210
-6200
-245
-100.000
-Ford Sierra RS Cosworth
-1993
-150/204
-6000
-240
-49.500
-Isdera Imperator 108i
-De Tomaso Pantera
-Koenig Mercedes 560 SEC
-Lotus Esprit Turbo
-4087
-8
-127/172
- 4300
-194
-145.000
-5547
-8
-220/300
-5600
-282
-375.000
-5769
-8
-221/300
-6000
-250
-145.000
-5547
-8
-368/500
- 6500
-300
-250.000
-2174
-160/218
-6000
-245
-92.900
-Lamborghini Jalpa
-2855
-8
-294/400
-7000
-303
-500.000
-Pontiac Firebird GTA
-3485
-8
-188/255
- 7000
-243
-118.500
-TVR 420 Saloon
-Chevrolet Camaro
-MVS Venturi
-5733
-8
-168/228
-4400
-4228
-5002
-2458
-8
-8
-241
-85.000
-195/265
-5500
-172/233
-3200
-215
-48.500
-6
-147/200
-6100
-250
-108.000
-228
-60.000
+305;
+150.0;
 
+205;
+331 / 450;
+6500;
+320;
+420.0;
 
+30.0;
+
+287 / 390;
+6300;
+290;
+240.0;
+
+2936;
+8;
+351 / 478;
+7000;
+324;
+444.0;
+
+5733;
+5700;
+8;
+8;
+281 / 382;
+4250;
+304;
+150.0;
+
+447 / 600;
+6000;
+389;
+450.0;
+
+4973;
+3590;
+8;
+6;
+228 / 310;
+6000;
+300;
+130.0;
+
+145 / 197;
+5200;
+245;
+74.0;
+
+1948;
+4;
+92 / 125;
+5500;
+190;
+33.5;
+
+2790;
+6;
+184 / 250;
+5600;
+245;
+120.0;
+
+5341;
+8;
+318 / 432;
+6250;
+299;
+400.0;
+
+2000;
+110 / 150;
+6500;
+230;
+43.0;
+
+5995;
+16;
+412 / 560;
+8000;
+328;
+527.25;
+1380;
+76 / 102;
+6200;
+195;
+39.5;
+
+3185;
+5167;
+8;
+12;
+2664;
+199 / 270;
+7000;
+260;
+250.0;
+
+335 / 455;
+7000;
+298;
+235.0;
+
+6;
+105 / 142;
+5500;
+190;
+40.0;
+
+2959;
+154 / 210;
+6200;
+245;
+100.0;
+
+1993;
+150 / 204;
+6000;
+240;
+49.5;
+
+4087;
+8;
+127 / 172;
+4300;
+194;
+145.0;
+
+5547;
+8;
+220 / 300;
+5600;
+282;
+375.0;
+
+5769;
+8;
+221 / 300;
+6000;
+250;
+145.0;
+
+5547;
+8;
+368 / 500;
+6500;
+300;
+250.0;
+
+2174;
+160 / 218;
+6000;
+245;
+92.9;
+2855;
+8;
+294 / 400;
+7000;
+303;
+500.0;
+
+3485;
+8;
+188 / 255;
+7000;
+243;
+118.5;
+
+5733;
+8;
+168 / 228;
+4400;
+4228;
+5002;
+2458;
+8;
+8;
+241;
+85.0;
+
+195 / 265;
+5500;
+172 / 233;
+3200;
+215;
+48.5;
+
+6;
+147 / 200;
+6100;
+250;
+108.0;
+
+228;
+60.0;
 
 var _A1 = [
   "1A",
-  "Name_Name_Name_Name",
+  "Porsche 959",
   16,
   333,
   5555,
@@ -232,7 +230,7 @@ var _A1 = [
 
 var _A2 = [
   "2A",
-  "Name_Name_Name_Name",
+  "Sbarro Challenge III",
   16,
   333,
   5555,
@@ -246,7 +244,7 @@ var _A2 = [
 
 var _A3 = [
   "3A",
-  "Name_Name_Name_Name",
+  "Jehle Pantera",
   16,
   333,
   5555,
@@ -260,7 +258,7 @@ var _A3 = [
 
 var _A4 = [
   "4A",
-  "Name_Name_Name_Name",
+  "Ford Probe GT",
   16,
   333,
   5555,
@@ -274,7 +272,7 @@ var _A4 = [
 
 var _A5 = [
   "5A",
-  "Name_Name_Name_Name",
+  "Ferrari Testarossa",
   16,
   333,
   5555,
@@ -288,7 +286,7 @@ var _A5 = [
 
 var _A6 = [
   "6A",
-  "Name_Name_Name_Name",
+  "Jehle Saphir",
   16,
   333,
   5555,
@@ -302,7 +300,7 @@ var _A6 = [
 
 var _A7 = [
   "7A",
-  "Name_Name_Name_Name",
+  "Ferrari F 40",
   16,
   333,
   5555,
@@ -316,7 +314,7 @@ var _A7 = [
 
 var _A8 = [
   "8A",
-  "Name_Name_Name_Name",
+  "Callaway Corvette Twin Turbo",
   16,
   333,
   5555,
@@ -330,7 +328,7 @@ var _A8 = [
 
 var _B1 = [
   "1B",
-  "Name_Name_Name_Name",
+  "Arrow C1",
   16,
   333,
   5555,
@@ -344,7 +342,7 @@ var _B1 = [
 
 var _B2 = [
   "2B",
-  "Name_Name_Name_Name",
+  "Irmscher GT",
   16,
   333,
   5555,
@@ -358,7 +356,7 @@ var _B2 = [
 
 var _B3 = [
   "3B",
-  "Name_Name_Name_Name",
+  "Vector W2 Twin Turbo",
   16,
   333,
   5555,
@@ -372,7 +370,7 @@ var _B3 = [
 
 var _B4 = [
   "4B",
-  "Name_Name_Name_Name",
+  "Sbarro Ferrari P4",
   16,
   333,
   5555,
@@ -386,7 +384,7 @@ var _B4 = [
 
 var _B5 = [
   "5B",
-  "Name_Name_Name_Name",
+  "Aston Martin Zagato",
   16,
   333,
   5555,
@@ -400,7 +398,7 @@ var _B5 = [
 
 var _B6 = [
   "6B",
-  "Name_Name_Name_Name",
+  "Alfa Romeo Spider",
   16,
   333,
   5555,
@@ -414,7 +412,7 @@ var _B6 = [
 
 var _B7 = [
   "7B",
-  "Name_Name_Name_Name",
+  "Maserati Karif",
   16,
   333,
   5555,
@@ -428,7 +426,7 @@ var _B7 = [
 
 var _B8 = [
   "8B",
-  "Name_Name_Name_Name",
+  "Ferrari GTO",
   16,
   333,
   5555,
@@ -442,7 +440,7 @@ var _B8 = [
 
 var _C1 = [
   "1C",
-  "Name_Name_Name_Name",
+  "Cadillac Allante",
   16,
   333,
   5555,
@@ -456,7 +454,7 @@ var _C1 = [
 
 var _C2 = [
   "2C",
-  "Name_Name_Name_Name",
+  "Cizeta Moroder V16T",
   16,
   333,
   5555,
@@ -470,7 +468,7 @@ var _C2 = [
 
 var _C3 = [
   "3C",
-  "Name_Name_Name_Name",
+  "Midas Gold",
   16,
   333,
   5555,
@@ -484,7 +482,7 @@ var _C3 = [
 
 var _C4 = [
   "4C",
-  "Name_Name_Name_Name",
+  "Lamborghini Countach",
   16,
   333,
   5555,
@@ -498,7 +496,7 @@ var _C4 = [
 
 var _C5 = [
   "5C",
-  "Name_Name_Name_Name",
+  "Sethera",
   16,
   333,
   5555,
@@ -512,7 +510,7 @@ var _C5 = [
 
 var _C6 = [
   "6C",
-  "Name_Name_Name_Name",
+  "Alfa Romeo SZ",
   16,
   333,
   5555,
@@ -526,7 +524,7 @@ var _C6 = [
 
 var _C7 = [
   "7C",
-  "Name_Name_Name_Name",
+  "Ford Sierra RS Cosworth",
   16,
   333,
   5555,
@@ -540,7 +538,7 @@ var _C7 = [
 
 var _C8 = [
   "8C",
-  "Name_Name_Name_Name",
+  "Isdera Imperator 108i",
   16,
   333,
   5555,
@@ -554,7 +552,7 @@ var _C8 = [
 
 var _D1 = [
   "1D",
-  "Name_Name_Name_Name",
+  "De Tomaso Pantera",
   16,
   333,
   5555,
@@ -568,7 +566,7 @@ var _D1 = [
 
 var _D2 = [
   "2D",
-  "Name_Name_Name_Name",
+  "Koenig Mercedes 560 SEC",
   16,
   333,
   5555,
@@ -582,7 +580,7 @@ var _D2 = [
 
 var _D3 = [
   "3D",
-  "Name_Name_Name_Name",
+  "Lotus Esprit Turbo",
   16,
   333,
   5555,
@@ -596,7 +594,7 @@ var _D3 = [
 
 var _D4 = [
   "4D",
-  "Name_Name_Name_Name",
+  "Lamborghini Jalpa",
   16,
   333,
   5555,
@@ -610,7 +608,7 @@ var _D4 = [
 
 var _D5 = [
   "5D",
-  "Name_Name_Name_Name",
+  "Pontiac Firebird GTA",
   16,
   333,
   5555,
@@ -624,7 +622,7 @@ var _D5 = [
 
 var _D6 = [
   "6D",
-  "Name_Name_Name_Name",
+  "TVR 420 Saloon",
   16,
   333,
   5555,
@@ -638,7 +636,7 @@ var _D6 = [
 
 var _D7 = [
   "7D",
-  "Name_Name_Name_Name",
+  "Chevrolet Camaro",
   16,
   333,
   5555,
@@ -652,7 +650,7 @@ var _D7 = [
 
 var _D8 = [
   "8D",
-  "Name_Name_Name_Name",
+  "MVS Venturi",
   16,
   333,
   5555,
