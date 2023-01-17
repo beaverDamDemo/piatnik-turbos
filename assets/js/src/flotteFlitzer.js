@@ -5,359 +5,214 @@ Jehle Pantera
 Ford Probe GT
 Ferrari Testarossa
 Jehle Saphir
-Hubraum:
-2850 ccm
-Hubraum:
-3299 ccm
-Hubraum:
-5600 ccm
-Hubraum:
-2184 ccm
-Hubraum:
-Zylinder:
-Zylinder:
+2850
+3299
+5600
+2184
 6
-Zylinder:
 8
-Zylinder:
 4
-Zylinder:
-4942 ccm 12
-kW/PS:
-kW/PS:
+4942
+12
 221/300
-kW/PS:
 331/450
-kW/PS:
 108/147
-Umdreh./Min.:
-Umdreh./Min.:
-Geschwindigkeit:
 5500
-280 km/h
-Umdreh./Min.:
+280
 6000
-Umdreh./Min.:
 4300
-Geschwindigkeit:
-Geschwindigkeit:
-Preis:
-240.000,- DM
-Preis:
-305 km/h 150.000,- DM
-Geschwindigkeit:
-205 km/h
-Preis:
-331/450 6500
-320 km/h 420.000,- DM
-kW/PS: Umdreh./Min.: Geschwindigkeit:
-Preis:
-30.000,- DM
-Preis:
-287/390 6300 290 km/h 240.000,- DM
-Hubraum: Zylinder: kW/PS: Umdreh./Min.: Geschwindigkeit:
-Preis:
-1B
+240.000
+305
+150.000
+205
+331/450
+6500
+320
+420.000
+30.000
+287/390
+6300
+290
+240.000
 Ferrari F 40
-2B
 Callaway Corvette Twin Turbo
-Hubraum:
-2936 ccm
-Hubraum:
-Zylinder:
+2936
 8
-Zylinder:
-kW/PS:
 351/478
-kW/PS:
-Umdreh./Min.:
 7000
-Umdreh./Min.:
-Geschwindigkeit:
-324 km/h
-Geschwindigkeit:
-Preis:
-444.000,- DM
-Preis:
-IC
+324
+444.000
 Arrow C1
-Hubraum:
-Zylinder:
-kW/PS:
-Umdreh./Min.:
-Geschwindigkeit:
-Preis:
-1D
-2C
 Irmscher GT
-3B
 Vector W2 Twin Turbo
-4B
 Sbarro Ferrari P4
-Hubraum:
-5733 ccm
-Hubraum:
-5700 ccm
-Zylinder:
+5733
+5700
 8
-Zylinder:
 8
-kW/PS:
-281/382 4250 304 km/h
-150.000,- DM
-Preis:
-kW/PS:
+281/382
+4250
+304
+150.000
 447/600
-Umdreh./Min.:
-Umdreh./Min.:.
 6000
-Geschwindigkeit:
-Geschwindigkeit:
-389 km/h
-Preis:
-450.000,- DM
-3C
+389
+450.000
 Aston Martin Zagato
-4973 ccm
-Hubraum:
-3590 ccm
-Hubraum:
+4973
+3590
 8
-Zylinder:
 6
-Zylinder:
-228/310 6000 300 km/h
-130.000,- DM
-kW/PS:
-Umdreh./Min.: Geschwindigkeit:
-145/197 5200 245 km/h
-kW/PS:
-Umdreh./Min.:
-Geschwindigkeit:
-Preis:
-74.000,- DM
-Preis:
+228/310 6000 300
+130.000
+145/197 5200 245
+74.000
 Alfa Romeo Spider
-Hubraum:
-Zylinder:
-kW/PS:
-Umdreh./Min.:
-1948 ccm
+1948
 4
-92/125 5500
-Geschwindigkeit:
-Preis:
-190 km/h
-33.500,- DM
-2D
+92/125
+5500
+190
+33.500
 Maserati Karif
-Hubraum:
-Zylinder:
-kW/PS:
-3D
 Ferrari GTO
-Hubraum:
-2790 ccm
+2790
 6
-Zylinder:
 184/250
-kW/PS:
-Umdreh./Min.:
-Umdreh./Min.:
-Geschwindigkeit:
-Preis:
-5600 245 km/h
-120.000,- DM
-4C
+5600
+245
+120.000
 Cadillac Allante
-5341 ccm
-Hubraum:
+5341
 8
-Zylinder:
 318/432
-kW/PS:
 6250
-299 km/h
-400.000,- DM
-Umdreh./Min.:
-Geschwindigkeit:
-Preis:
-4D
-5B
-6B
+299
+400.000
 Cizeta Moroder V16T
-2000 ccm
-Hubraum: Zylinder:
-110/150 6500
-kW/PS: Umdreh/Min.: Geschwindigkeit:
-230 km/h 43.000,-DM
-Preis:
-7B
+2000
+110/150
+6500
+230
+43.000
 Midas Gold
-5995 com 16 412/560 8000 328 km/h 527.250,-DM
-Hubraum: Zylinder: KW/PS:
-1380.com
+5995
+16
+412/560
+8000
+328
+527.250
+1380
 76/102
-Umdreh/Min: Geschwindigkeit
-Preis:
 6200
-195 km/h 39.500,-DM
-8B
+195
+39.500
 Lamborghini Countach
 Sethera
 Alfa Romeo SZ
-3185 ccm
-Hubraum:
-5167 ccm
+3185
+5167
 8
-Zylinder:
 12
-Hubraum: Zylinder:
-2664 com
-Hubraum:
+2664
 199/270
-kW/PS:
-7000 260 km/h 250.000,- DM
-Umdreh./Min.:
-335/455 7000
-kW/PS:
-Geschwindigkeit:
-298 km/h
-Umdreh./Min.: Geschwindigkeit:
-Preis:
-235.000,- DM
-Preis:
-6 105/142 5500 190 km/h 40.000,-DM
-Zylinder:
-kW/PS: Umdreh./Min.: Geschwindigkeit:
-Preis:
-2959 ccm
+7000
+260
+250.000
+335/455
+7000
+298
+235.000
+6
+105/142
+5500
+190
+40.000
+2959
 154/210
 6200
-245 km/h 100.000,- DM
+245
+100.000
 Ford Sierra RS Cosworth
-Hubraum:
-Zylinder:
-kW/PS:
-Umdreh./Min.: Geschwindigkeit:
-Preis:
-1993 ccm
+1993
 150/204
 6000
-240 km/h 49.500,-DM
-5C
+240
+49.500
 Isdera Imperator 108i
-6C
 De Tomaso Pantera
-7C
 Koenig Mercedes 560 SEC
-8C
 Lotus Esprit Turbo
-4087 ccm
-Hubraum:
+4087
 8
-Zylinder:
-127/172 4300
-kW/PS:
-194 km/h 145.000,- DM
-Umdreh./Min.: Geschwindigkeit:
-Preis:
-5547 ccm
-Hubraum:
+127/172
+ 4300
+194
+145.000
+5547
 8
-Zylinder:
 220/300
-kW/PS:
 5600
-Umdreh./Min.:
-282 km/h 375.000,- DM
-Geschwindigkeit:
-Preis:
-5769 ccm
-Hubraum:
+282
+375.000
+5769
 8
-Zylinder:
 221/300
 6000
-250 km/h 145.000,- DM
-kW/PS:
-Umdreh./Min.: Geschwindigkeit:
-Preis:
-5547 ccm
-Hubraum:
+250
+145.000
+5547
 8
-Zylinder:
-368/500 6500
-300 km/h 250.000,-DM
-kW/PS:
-Umdreh./Min.:
-Geschwindigkeit:
-Preis:
-2174.com
+368/500
+ 6500
+300
+250.000
+2174
 160/218
-6000 245 km/h
-92.900,-DM
+6000
+245
+92.900
 Lamborghini Jalpa
-2855 ccm
-Hubraum:
+2855
 8
-Zylinder:
-kW/PS:
-Umdreh./Min.:
-Geschwindigkeit:
-Preis:
-294/400 7000 303 km/h 500.000,- DM
-5D
+294/400
+7000
+303
+500.000
 Pontiac Firebird GTA
-3485 ccm
-Hubraum:
+3485
 8
-Zylinder:
-188/255 7000
-Geschwindigkeit:
-Preis:
-243 km/h 118.500,- DM
-6D
-7D
-8D
+188/255
+ 7000
+243
+118.500
 TVR 420 Saloon
 Chevrolet Camaro
 MVS Venturi
-5733 ccm
-Hubraum:
+5733
 8
-Zylinder:
 168/228
 4400
-4228 ccm
-Hubraum:
-5002 ccm
-Hubraum:
-2458 com
+4228
+5002
+2458
 8
-Zylinder:
 8
-Zylinder:
-kW/PS:
-Umdreh./Min.: Geschwindigkeit:
-Preis:
-241 km/h 85.000,- DM
-kW/PS:
-Umdreh./Min.: Geschwindigkeit:
-Preis:
+241
+85.000
 195/265
 5500
-172/233 3200 215 km/h
-48.500,-DM
-Preis:
-kW/PS:
-Umdreh/Min.:
-Geschwindigkeit:
-6 147/200 6100 250 km/h 108.000-DM
-kW/PS:
-Umdreh./Min.: Geschwindigkeit:
-Preis:
-228 km/h 60.000,- DM
+172/233
+3200
+215
+48.500
+6
+147/200
+6100
+250
+108.000
+228
+60.000
 
 
 
