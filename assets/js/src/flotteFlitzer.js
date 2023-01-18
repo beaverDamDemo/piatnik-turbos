@@ -31,8 +31,8 @@
 
 // 3152 * 2211
 var backgroundSize = {
-  width: 3152,
-  height: 2211
+  width: 2751,
+  height: 1221
 }
 
 var _A1 = [
@@ -42,24 +42,25 @@ var _A1 = [
   221,
   3299,
   280,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 0 * 435,
-  120,
+  0,
+  0,
 ]
 
 var _A2 = [
   "2A",
+  "Jehle Pantera",
   8,
   331,
   5600,
   305,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 1 * 435,
-  120,
+  344,
+  0,
 ]
 
 var _A3 = [
@@ -69,11 +70,11 @@ var _A3 = [
   108,
   2184,
   205,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 2 * 435,
-  120,
+  684,
+  0,
 ]
 
 var _A4 = [
@@ -83,11 +84,11 @@ var _A4 = [
   331,
   2850,
   320,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 3 * 435,
-  120,
+  1039,
+  0,
 ]
 
 var _A5 = [
@@ -97,11 +98,11 @@ var _A5 = [
   287,
   4942,
   290,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (5 - 1) * 435,
-  120,
+  1397,
+  0,
 ]
 
 // 6500
@@ -113,11 +114,11 @@ var _A6 = [
   110,
   2000,
   230,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (6 - 1) * 435,
-  120,
+  1749,
+  0,
 ]
 
 // 8000
@@ -130,11 +131,11 @@ var _A7 = [
   412,
   5995,
   328,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (7 - 1) * 435,
-  120,
+  2086,
+  0,
 ]
 
 // 6200
@@ -146,11 +147,11 @@ var _A8 = [
   76,
   1380,
   195,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (8 - 1) * 435,
-  120,
+  2429,
+  0,
 ]
 
 var _B1 = [
@@ -160,11 +161,11 @@ var _B1 = [
   351,
   2936,
   324,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 0 * 435,
-  700,
+  0,
+  322,
 ]
 
 var _B2 = [
@@ -174,11 +175,11 @@ var _B2 = [
   281,
   5733,
   304,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 1 * 435,
-  700,
+  344,
+  322,
 ]
 
 var _B3 = [
@@ -188,11 +189,11 @@ var _B3 = [
   447,
   5700,
   389,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 2 * 435,
-  700,
+  684,
+  322,
 ]
 
 // 7000
@@ -204,11 +205,11 @@ var _B4 = [
   199,
   3185,
   260,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 3 * 435,
-  700,
+  1039,
+  322,
 ]
 
 // 7000
@@ -220,11 +221,11 @@ var _B5 = [
   335,
   5167,
   298,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (5 - 1) * 435,
-  700,
+  1397,
+  322,
 ]
 
 // 5500
@@ -236,11 +237,11 @@ var _B6 = [
   105,
   2664,
   190,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (6 - 1) * 435,
-  700,
+  1749,
+  322,
 ]
 
 // 6200
@@ -252,11 +253,11 @@ var _B7 = [
   154,
   2959,
   245,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (7 - 1) * 435,
-  700,
+  2086,
+  322,
 ]
 
 // 6000
@@ -268,11 +269,11 @@ var _B8 = [
   150,
   1993,
   240,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (8 - 1) * 435,
-  700,
+  2429,
+  322,
 ]
 
 var _C1 = [
@@ -282,11 +283,11 @@ var _C1 = [
   228,
   4973,
   300,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 0 * 435,
-  1320,
+  0,
+  644,
 ]
 
 // 5200  km/h
@@ -298,11 +299,11 @@ var _C2 = [
   145,
   3590,
   245,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 1 * 435,
-  1320,
+  344,
+  644,
 ]
 
 // Aston Martin Zagato
@@ -321,11 +322,11 @@ var _C3 = [
   318,
   5341,
   299,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 2 * 435,
-  1320,
+  684,
+  644,
 ]
 
 
@@ -342,11 +343,11 @@ var _C4 = [
   127,
   4087,
   194,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 3 * 435,
-  1320,
+  1039,
+  644,
 ]
 
 
@@ -363,11 +364,11 @@ var _C5 = [
   220,
   5547,
   282,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (5 - 1) * 435,
-  1320,
+  1397,
+  644,
 ]
 
 
@@ -382,11 +383,11 @@ var _C6 = [
   221,
   5769,
   250,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (6 - 1) * 435,
-  1320,
+  1749,
+  644,
 ]
 
 // Koenig Mercedes 560 SEC
@@ -403,11 +404,11 @@ var _C7 = [
   368,
   5547,
   300,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (7 - 1) * 435,
-  1320,
+  2086,
+  644,
 ]
 
 // Lotus Esprit Turbo
@@ -423,11 +424,11 @@ var _C8 = [
   160,
   2174,
   245,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (8 - 1) * 435,
-  1320,
+  2429,
+  644,
 ]
 
 // 5500
@@ -439,11 +440,11 @@ var _D1 = [
   92,
   1948,
   190,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 0 * 435,
-  1850,
+  0,
+  940,
 ]
 
 // 5600
@@ -455,11 +456,11 @@ var _D2 = [
   184,
   2790,
   245,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 1 * 435,
-  1850,
+  344,
+  940,
 ]
 
 // 7000
@@ -471,11 +472,11 @@ var _D3 = [
   294,
   2855,
   303,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 2 * 435,
-  1850,
+  684,
+  940,
 ]
 
 // 7000
@@ -487,11 +488,11 @@ var _D4 = [
   188,
   3485,
   243,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + 3 * 435,
-  1850,
+  1039,
+  940,
 ]
 
 // 4400
@@ -503,11 +504,11 @@ var _D5 = [
   168,
   5733,
   228,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (5 - 1) * 435,
-  1850,
+  1397,
+  940,
 ]
 
 // 85.0
@@ -519,11 +520,11 @@ var _D6 = [
   195,
   4228,
   241,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (6 - 1) * 435,
-  1850,
+  1749,
+  940,
 ]
 // 3200
 // 48.5
@@ -534,11 +535,11 @@ var _D7 = [
   172,
   5002,
   215,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (7 - 1) * 435,
-  1850,
+  2086,
+  940,
 ]
 
 // 6100
@@ -550,9 +551,9 @@ var _D8 = [
   147,
   2458,
   250,
-  "assets/images/flotteFlitzer/flotteFlitzer.jpg",
+  "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
   2,
   3,
-  60 + (8 - 1) * 435,
-  1850,
+  2429,
+  940,
 ]
