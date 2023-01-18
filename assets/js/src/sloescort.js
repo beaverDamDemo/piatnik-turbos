@@ -4,7 +4,7 @@ var backgroundSize = {
 };
 
 var v = "assets/images/sloescort/sloescort loaded.png";
-var propertiesLabels = ["name", "age", "height", "weight", "boobSize"]
+var propertiesLabels = ["", "age:", "height:", "weight:", "boobSize:"]
 var propertiesUnits = ["", "let", "cm", "kg", ""]
 
 var karte = [
