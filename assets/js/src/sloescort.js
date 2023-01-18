@@ -41,3 +41,5 @@ var karte = [
   ["7D", "Natasha", 35, 170, 64, 2, "assets/images/sloescort/Natasha.jpg", 1, 2, 111, 222],
   ["8D", "Tara aka anita36", 49, 171, 80, 4, "assets/images/sloescort/Tara aka anita36.jpg", 1, 2, 111, 222],
 ];
+
+// ["8D", "Bojana", 26, 175, 55, 3, "assets/images/sloescort/Bojana.jpg", 1, 2, 111, 222]
