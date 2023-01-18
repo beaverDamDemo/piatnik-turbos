@@ -281,7 +281,7 @@ window.onload = function () {
           case 0:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].zyl + " zyl.");
+              .append("AI says: " + cardX[0].zyl + " " + propertiesUnits[1] + ".");
             $("#cardA .zyl").addClass("active");
             setTimeout(function () {
               $("#cardB .zyl").addClass("active");
@@ -290,7 +290,7 @@ window.onload = function () {
           case 1:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].kw + " kW.");
+              .append("AI says: " + cardX[0].kw + " " + propertiesUnits[2] + ".");
             $("#cardA .kw").addClass("active");
             setTimeout(function () {
               $("#cardB .kw").addClass("active");
@@ -299,7 +299,7 @@ window.onload = function () {
           case 2:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].ccm + " ccm.");
+              .append("AI says: " + cardX[0].ccm + " " + propertiesUnits[3] + ".");
             $("#cardA .ccm").addClass("active");
             setTimeout(function () {
               $("#cardB .ccm").addClass("active");
@@ -308,7 +308,7 @@ window.onload = function () {
           case 3:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].kmh + " km/h.");
+              .append("AI says: " + cardX[0].kmh + " " + propertiesUnits[4] + ".");
             $("#cardA .kmh").addClass("active");
             setTimeout(function () {
               $("#cardB .kmh").addClass("active");
