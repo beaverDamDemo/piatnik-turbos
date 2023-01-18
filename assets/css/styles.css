@@ -201,7 +201,7 @@ table {
 	background: firebrick;
 }
 
-.val:hover {
+#cardB .val:hover {
 	font-weight: bold;
 	cursor: pointer;
 }
