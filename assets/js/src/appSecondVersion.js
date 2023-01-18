@@ -407,7 +407,7 @@ window.onload = function () {
       "style",
       'background: url("' +
         cardY[0].img +
-        '"); background-size: cover'
+        '"); background-size: contain'
     );
   }
 
