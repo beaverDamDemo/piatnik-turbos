@@ -19,7 +19,7 @@ var _A1 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  0,
+  0 - 60,
   0,
 ];
 
@@ -33,7 +33,7 @@ var _A2 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  210,
+  210 - 60,
   0,
 ];
 
@@ -47,7 +47,7 @@ var _A3 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  420,
+  420 - 60,
   0,
 ];
 
@@ -61,7 +61,7 @@ var _A4 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  630,
+  630 - 60,
   0,
 ];
 
@@ -75,7 +75,7 @@ var _A5 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  315,
+  315 - 60,
   0,
 ];
 
@@ -89,7 +89,7 @@ var _A6 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1050,
+  1050 - 60,
   0,
 ];
 
@@ -104,7 +104,7 @@ var _A7 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   1,
-  1260,
+  1260 - 60,
   0,
 ];
 
@@ -118,7 +118,7 @@ var _A8 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   1,
-  1470,
+  1470 - 60,
   0,
 ];
 
@@ -132,7 +132,7 @@ var _B1 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  0,
+  0 - 60,
   315,
 ];
 
@@ -146,7 +146,7 @@ var _B2 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  210,
+  210 - 60,
   315,
 ];
 
@@ -160,7 +160,7 @@ var _B3 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  420,
+  420 - 60,
   315,
 ];
 
@@ -174,7 +174,7 @@ var _B4 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  630,
+  630 - 60,
   315,
 ];
 
@@ -188,7 +188,7 @@ var _B5 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  315,
+  315 - 60,
   315,
 ];
 
@@ -202,7 +202,7 @@ var _B6 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1050,
+  1050 - 60,
   315,
 ];
 
@@ -216,7 +216,7 @@ var _B7 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1260,
+  1260 - 60,
   315,
 ];
 
@@ -230,7 +230,7 @@ var _B8 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1470,
+  1470 - 60,
   315,
 ];
 
@@ -244,7 +244,7 @@ var _C1 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  0,
+  0 - 60,
   630,
 ];
 
@@ -258,7 +258,7 @@ var _C2 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  210,
+  210 - 60,
   630,
 ];
 
@@ -272,7 +272,7 @@ var _C3 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  420,
+  420 - 60,
   630,
 ];
 
@@ -286,7 +286,7 @@ var _C4 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  630,
+  630 - 60,
   630,
 ];
 
@@ -300,7 +300,7 @@ var _C5 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   1,
   3,
-  315,
+  315 - 60,
   630,
 ];
 
@@ -314,7 +314,7 @@ var _C6 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1050,
+  1050 - 60,
   630,
 ];
 
@@ -328,7 +328,7 @@ var _C7 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1260,
+  1260 - 60,
   630,
 ];
 
@@ -342,7 +342,7 @@ var _C8 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1470,
+  1470 - 60,
   630,
 ];
 
@@ -356,7 +356,7 @@ var _D1 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  0,
+  0 - 60,
   945,
 ];
 
@@ -370,7 +370,7 @@ var _D2 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  210,
+  210 - 60,
   945,
 ];
 
@@ -384,7 +384,7 @@ var _D3 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  420,
+  420 - 60,
   945,
 ];
 
@@ -398,7 +398,7 @@ var _D4 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  630,
+  630 - 60,
   945,
 ];
 
@@ -412,7 +412,7 @@ var _D5 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  315,
+  315 - 60,
   945,
 ];
 
@@ -426,7 +426,7 @@ var _D6 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1050,
+  1050 - 60,
   945,
 ];
 var _D7 = [
@@ -439,7 +439,7 @@ var _D7 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1260,
+  1260 - 60,
   945,
 ];
 
@@ -453,6 +453,6 @@ var _D8 = [
   "assets/images/sloescort/sloescort loaded.jpg",
   2,
   3,
-  1470,
+  1470 - 60,
   945,
 ];
