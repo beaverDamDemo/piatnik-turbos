@@ -394,15 +394,7 @@ window.onload = function () {
       "style",
       'background: url("' +
         cardX[0].img +
-        '") ' +
-        -1 * cardX[0].img_x +
-        "px " +
-        -1 * cardX[0].img_y +
-        "px; background-size: " +
-        backgroundSize.width +
-        "px " +
-        backgroundSize.height +
-        "px"
+        '"); background-size: contain'
     );
 
     $("#cardB .id").html(cardY[0].id);
@@ -415,15 +407,7 @@ window.onload = function () {
       "style",
       'background: url("' +
         cardY[0].img +
-        '") ' +
-        -1 * cardY[0].img_x +
-        "px " +
-        -1 * cardY[0].img_y +
-        "px; background-size: " +
-        backgroundSize.width +
-        "px " +
-        backgroundSize.height +
-        "px"
+        '"); background-size: cover'
     );
   }
 
