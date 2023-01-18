@@ -378,12 +378,17 @@ window.onload = function () {
   }
 
   function loadCurrentCards() {
+    $(".card .inner tr:nth-child(1) td").html(propertiesLabels[1]);
+    $(".card .inner tr:nth-child(2) td").html(propertiesLabels[2]);
+    $(".card .inner tr:nth-child(3) td").html(propertiesLabels[3]);
+    $(".card .inner tr:nth-child(4) td").html(propertiesLabels[4]);
+
     $("#cardA .id").html(cardX[0].id);
     $("#cardA .name").html(cardX[0].name);
-    $("#cardA .zyl").html(cardX[0].zyl + " zyl");
-    $("#cardA .kw").html(cardX[0].kw + " kW");
-    $("#cardA .ccm").html(cardX[0].ccm + " ccm");
-    $("#cardA .kmh").html(cardX[0].kmh + " km/h");
+    $("#cardA .zyl").html(cardX[0].zyl + " " + propertiesUnits[1]);
+    $("#cardA .kw").html(cardX[0].kw + " " + propertiesUnits[2]);
+    $("#cardA .ccm").html(cardX[0].ccm + " " + propertiesUnits[3]);
+    $("#cardA .kmh").html(cardX[0].kmh + " " + propertiesUnits[4]);
     $("#cardA img").attr("src", cardX[0].img);
     $("#cardA .img").attr(
       "style",
@@ -402,10 +407,10 @@ window.onload = function () {
 
     $("#cardB .id").html(cardY[0].id);
     $("#cardB .name").html(cardY[0].name);
-    $("#cardB .zyl").html(cardY[0].zyl + " zyl");
-    $("#cardB .kw").html(cardY[0].kw + " kW");
-    $("#cardB .ccm").html(cardY[0].ccm + " ccm");
-    $("#cardB .kmh").html(cardY[0].kmh + " km/h");
+    $("#cardB .zyl").html(cardY[0].zyl + " " + propertiesUnits[1]);
+    $("#cardB .kw").html(cardY[0].kw + " " + propertiesUnits[2]);
+    $("#cardB .ccm").html(cardY[0].ccm + " " + propertiesUnits[3]);
+    $("#cardB .kmh").html(cardY[0].kmh + " " + propertiesUnits[4]);
     $("#cardB .img").attr(
       "style",
       'background: url("' +
@@ -705,19 +710,19 @@ function fillUpcars() {
 
   for (let i = 0; i < karte.length; i++) {
     var tmp = new Car(
-        karte[i][1-1],
-        karte[i][2-1],
-        karte[i][3-1],
-        karte[i][4-1],
-        karte[i][5-1],
-        karte[i][6-1],
-        karte[i][7-1],
-        karte[i][8-1],
-        karte[i][9-1],
-        karte[i][10-1],
-        karte[i][11-1],
-    )
-    array.push(tmp)
+      karte[i][1 - 1],
+      karte[i][2 - 1],
+      karte[i][3 - 1],
+      karte[i][4 - 1],
+      karte[i][5 - 1],
+      karte[i][6 - 1],
+      karte[i][7 - 1],
+      karte[i][8 - 1],
+      karte[i][9 - 1],
+      karte[i][10 - 1],
+      karte[i][11 - 1]
+    );
+    array.push(tmp);
   }
 
   shuffle(array);
