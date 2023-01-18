@@ -359,6 +359,7 @@ window.onload = function() {
         $('#cardB .kmh').html(cardY[0].kmh+' km/h');
         $('#cardB .img').attr('style', 'background: url("' + cardY[0].img + '") ' + (-1.15)*cardY[0].img_x + 'px ' + (-1.025)*cardY[0].img_y + 'px; background-size: 2922px 1980px');
     }
+        console.log("⛳ ~ backgroundSize.width", backgroundSize.width)
 
     function compareCards(previousMethod) {
         Promise.delay(firstPart, 1300)
