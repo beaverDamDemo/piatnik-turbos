@@ -117,7 +117,7 @@ window.onload = function () {
    * audio part end
    */
 
-  var currentAttrX, currentAttrY;
+  var currentAttrX, currentAttrY, currentHigherIsBetter;
 
   loadCurrentCards();
   updateUserCardsDetails();
@@ -201,6 +201,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].zyl;
         currentAttrX = cardX[0].zyl;
+        currentHigherIsBetter = propertiesHigherIsBetter[1]
         $("#cardB .zyl").addClass("active");
         disableUserActions();
         secondPart("zyl");
@@ -210,6 +211,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].kw;
         currentAttrX = cardX[0].kw;
+        currentHigherIsBetter = propertiesHigherIsBetter[2]
         $("#cardB .kw").addClass("active");
         disableUserActions();
         secondPart("kw");
@@ -219,6 +221,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].ccm;
         currentAttrX = cardX[0].ccm;
+        currentHigherIsBetter = propertiesHigherIsBetter[3]
         $("#cardB .ccm").addClass("active");
         disableUserActions();
         secondPart("ccm");
@@ -228,6 +231,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].kmh;
         currentAttrX = cardX[0].kmh;
+        currentHigherIsBetter = propertiesHigherIsBetter[4]
         $("#cardB .kmh").addClass("active");
         disableUserActions();
         secondPart("kmh");
@@ -275,6 +279,9 @@ window.onload = function () {
       if (Math.random() < intelligence) {
         //firstChoice
         currentAttrX = tempCurrent[cardX[0].firstChoice];
+        currentHigherIsBetter = propertiesHigherIsBetter[cardX[0].firstChoice + 1]
+        console.log("currentHigherIsBetter: ", currentHigherIsBetter)
+
         currentAttrY = tempCurrent2[cardX[0].firstChoice];
 
         switch (cardX[0].firstChoice) {
@@ -322,6 +329,8 @@ window.onload = function () {
         //secondChoice
         currentAttrX = tempCurrent[cardX[0].secondChoice];
         currentAttrY = tempCurrent2[cardX[0].secondChoice];
+        currentHigherIsBetter = propertiesHigherIsBetter[cardX[0].secondChoice + 1]
+        console.log("currentHigherIsBetter: ", currentHigherIsBetter)
 
         switch (cardX[0].secondChoice) {
           case 0:
@@ -378,10 +387,10 @@ window.onload = function () {
   }
 
   function loadCurrentCards() {
-    $(".card .inner tr:nth-child(1) td").html(propertiesLabels[1]);
-    $(".card .inner tr:nth-child(2) td").html(propertiesLabels[2]);
-    $(".card .inner tr:nth-child(3) td").html(propertiesLabels[3]);
-    $(".card .inner tr:nth-child(4) td").html(propertiesLabels[4]);
+    $(".card .inner tr:nth-child(1) td").html(propertiesLabels[1].charAt(0).toUpperCase() + propertiesLabels[1].slice(1));
+    $(".card .inner tr:nth-child(2) td").html(propertiesLabels[2].charAt(0).toUpperCase() + propertiesLabels[2].slice(1));
+    $(".card .inner tr:nth-child(3) td").html(propertiesLabels[3].charAt(0).toUpperCase() + propertiesLabels[3].slice(1));
+    $(".card .inner tr:nth-child(4) td").html(propertiesLabels[4].charAt(0).toUpperCase() + propertiesLabels[4].slice(1));
 
     $("#cardA .id").html(cardX[0].id);
     $("#cardA .name").html(cardX[0].name);
@@ -419,6 +428,9 @@ window.onload = function () {
 
     // addDuelResult
     function firstPart() {
+      console.log(" currentHigherIsBetter: ", currentHigherIsBetter)
+
+
       if (currentAttrX > currentAttrY) {
         //AI wins
         cardX[0].addDuelResult("win");
@@ -631,25 +643,25 @@ function fillUpcars() {
     img_y
   ) {
     this.id = id;
-    console.log("this.id: ", this.id);
+    // console.log("this.id: ", this.id);
     this.name = name;
-    console.log("this.name: ", this.name);
+    // console.log("this.name: ", this.name);
     this.zyl = zyl;
-    console.log("this.zyl: ", this.zyl);
+    // console.log("this.zyl: ", this.zyl);
     this.kw = kw;
-    console.log("this.kw: ", this.kw);
+    // console.log("this.kw: ", this.kw);
     this.ccm = ccm;
-    console.log("this.ccm: ", this.ccm);
+    // console.log("this.ccm: ", this.ccm);
     this.kmh = kmh;
-    console.log("this.kmh: ", this.kmh);
+    // console.log("this.kmh: ", this.kmh);
     this.img = img;
-    console.log("this.img: ", this.img);
+    // console.log("this.img: ", this.img);
     this.firstChoice = c1;
-    console.log("this.firstChoice: ", this.firstChoice);
+    // console.log("this.firstChoice: ", this.firstChoice);
     this.secondChoice = c2;
-    console.log("this.secondChoice: ", this.secondChoice);
+    // console.log("this.secondChoice: ", this.secondChoice);
 
-    console.log("kajjetox: ", kajjeto);
+    // console.log("kajjetox: ", kajjeto);
 
     this.img_x = kajjeto;
 

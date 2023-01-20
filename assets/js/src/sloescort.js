@@ -6,6 +6,7 @@ var backgroundSize = {
 var v = "assets/images/sloescort/sloescort loaded.png";
 var propertiesLabels = ["", "age:", "height:", "weight:", "boobSize:"]
 var propertiesUnits = ["", "let", "cm", "kg", ""]
+var propertiesHigherIsBetter = [undefined, false, true, false, true]
 
 var karte = [
   ["1A", "Petra1", 45, 168, 55, 3, "assets/images/sloescort/Petra1.jpg", 1, 2, 111, 222],
