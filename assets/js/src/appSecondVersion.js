@@ -117,7 +117,7 @@ window.onload = function () {
    * audio part end
    */
 
-  var currentAttrX, currentAttrY, currentHigherIsBetter;
+  var currentAttrX, currentAttrY, currentHigherIsBetter, xWon = undefined;
 
   loadCurrentCards();
   updateUserCardsDetails();
@@ -201,7 +201,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].zyl;
         currentAttrX = cardX[0].zyl;
-        currentHigherIsBetter = propertiesHigherIsBetter[1]
+        currentHigherIsBetter = propertiesHigherIsBetter[1];
         $("#cardB .zyl").addClass("active");
         disableUserActions();
         secondPart("zyl");
@@ -211,7 +211,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].kw;
         currentAttrX = cardX[0].kw;
-        currentHigherIsBetter = propertiesHigherIsBetter[2]
+        currentHigherIsBetter = propertiesHigherIsBetter[2];
         $("#cardB .kw").addClass("active");
         disableUserActions();
         secondPart("kw");
@@ -221,7 +221,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].ccm;
         currentAttrX = cardX[0].ccm;
-        currentHigherIsBetter = propertiesHigherIsBetter[3]
+        currentHigherIsBetter = propertiesHigherIsBetter[3];
         $("#cardB .ccm").addClass("active");
         disableUserActions();
         secondPart("ccm");
@@ -231,7 +231,7 @@ window.onload = function () {
       .click(function () {
         currentAttrY = cardY[0].kmh;
         currentAttrX = cardX[0].kmh;
-        currentHigherIsBetter = propertiesHigherIsBetter[4]
+        currentHigherIsBetter = propertiesHigherIsBetter[4];
         $("#cardB .kmh").addClass("active");
         disableUserActions();
         secondPart("kmh");
@@ -279,8 +279,8 @@ window.onload = function () {
       if (Math.random() < intelligence) {
         //firstChoice
         currentAttrX = tempCurrent[cardX[0].firstChoice];
-        currentHigherIsBetter = propertiesHigherIsBetter[cardX[0].firstChoice + 1]
-        console.log("currentHigherIsBetter: ", currentHigherIsBetter)
+        currentHigherIsBetter =
+          propertiesHigherIsBetter[cardX[0].firstChoice + 1];
 
         currentAttrY = tempCurrent2[cardX[0].firstChoice];
 
@@ -288,7 +288,9 @@ window.onload = function () {
           case 0:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].zyl + " " + propertiesUnits[1] + ".");
+              .append(
+                "AI says: " + cardX[0].zyl + " " + propertiesUnits[1] + "."
+              );
             $("#cardA .zyl").addClass("active");
             setTimeout(function () {
               $("#cardB .zyl").addClass("active");
@@ -297,7 +299,9 @@ window.onload = function () {
           case 1:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].kw + " " + propertiesUnits[2] + ".");
+              .append(
+                "AI says: " + cardX[0].kw + " " + propertiesUnits[2] + "."
+              );
             $("#cardA .kw").addClass("active");
             setTimeout(function () {
               $("#cardB .kw").addClass("active");
@@ -306,7 +310,9 @@ window.onload = function () {
           case 2:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].ccm + " " + propertiesUnits[3] + ".");
+              .append(
+                "AI says: " + cardX[0].ccm + " " + propertiesUnits[3] + "."
+              );
             $("#cardA .ccm").addClass("active");
             setTimeout(function () {
               $("#cardB .ccm").addClass("active");
@@ -315,7 +321,9 @@ window.onload = function () {
           case 3:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].kmh + " " + propertiesUnits[4] + ".");
+              .append(
+                "AI says: " + cardX[0].kmh + " " + propertiesUnits[4] + "."
+              );
             $("#cardA .kmh").addClass("active");
             setTimeout(function () {
               $("#cardB .kmh").addClass("active");
@@ -329,8 +337,8 @@ window.onload = function () {
         //secondChoice
         currentAttrX = tempCurrent[cardX[0].secondChoice];
         currentAttrY = tempCurrent2[cardX[0].secondChoice];
-        currentHigherIsBetter = propertiesHigherIsBetter[cardX[0].secondChoice + 1]
-        console.log("currentHigherIsBetter: ", currentHigherIsBetter)
+        currentHigherIsBetter =
+          propertiesHigherIsBetter[cardX[0].secondChoice + 1];
 
         switch (cardX[0].secondChoice) {
           case 0:
@@ -387,10 +395,18 @@ window.onload = function () {
   }
 
   function loadCurrentCards() {
-    $(".card .inner tr:nth-child(1) td").html(propertiesLabels[1].charAt(0).toUpperCase() + propertiesLabels[1].slice(1));
-    $(".card .inner tr:nth-child(2) td").html(propertiesLabels[2].charAt(0).toUpperCase() + propertiesLabels[2].slice(1));
-    $(".card .inner tr:nth-child(3) td").html(propertiesLabels[3].charAt(0).toUpperCase() + propertiesLabels[3].slice(1));
-    $(".card .inner tr:nth-child(4) td").html(propertiesLabels[4].charAt(0).toUpperCase() + propertiesLabels[4].slice(1));
+    $(".card .inner tr:nth-child(1) td").html(
+      propertiesLabels[1].charAt(0).toUpperCase() + propertiesLabels[1].slice(1)
+    );
+    $(".card .inner tr:nth-child(2) td").html(
+      propertiesLabels[2].charAt(0).toUpperCase() + propertiesLabels[2].slice(1)
+    );
+    $(".card .inner tr:nth-child(3) td").html(
+      propertiesLabels[3].charAt(0).toUpperCase() + propertiesLabels[3].slice(1)
+    );
+    $(".card .inner tr:nth-child(4) td").html(
+      propertiesLabels[4].charAt(0).toUpperCase() + propertiesLabels[4].slice(1)
+    );
 
     $("#cardA .id").html(cardX[0].id);
     $("#cardA .name").html(cardX[0].name);
@@ -401,9 +417,7 @@ window.onload = function () {
     $("#cardA img").attr("src", cardX[0].img);
     $("#cardA .img").attr(
       "style",
-      'background: url("' +
-        cardX[0].img +
-        '"); background-size: contain'
+      'background: url("' + cardX[0].img + '"); background-size: contain'
     );
 
     $("#cardB .id").html(cardY[0].id);
@@ -414,9 +428,7 @@ window.onload = function () {
     $("#cardB .kmh").html(cardY[0].kmh + " " + propertiesUnits[4]);
     $("#cardB .img").attr(
       "style",
-      'background: url("' +
-        cardY[0].img +
-        '"); background-size: contain'
+      'background: url("' + cardY[0].img + '"); background-size: contain'
     );
   }
 
@@ -428,11 +440,25 @@ window.onload = function () {
 
     // addDuelResult
     function firstPart() {
-      console.log(" currentHigherIsBetter: ", currentHigherIsBetter)
-
-
-      if (currentAttrX > currentAttrY) {
+      if (currentAttrX == currentAttrY) {
+        xWon = undefined
+        cardX[0].addDuelResult("tie");
+        cardY[0].addDuelResult("tie");
+        cardX.push(cardX[0]);
+        cardY.push(cardY[0]);
+        $(statusText)
+          .empty()
+          .append("it's a tie.")
+          .removeClass("correct wrong");
+        $("#cardA .val.active").addClass("tie");
+        $("#cardB .val.active").addClass("tie");
+        handleAudio("tie_audio");
+      } else if (
+        currentHigherIsBetter & (currentAttrX > currentAttrY) ||
+        !currentHigherIsBetter & (currentAttrX < currentAttrY)
+      ) {
         //AI wins
+        xWon = true
         cardX[0].addDuelResult("win");
         cardY[0].addDuelResult("lose");
         if (Math.random() < 0.5) {
@@ -451,7 +477,8 @@ window.onload = function () {
         $("#cardA .val.active").addClass("correct");
         $("#cardB .val.active").addClass("wrong");
         handleAudio("wrong_audio");
-      } else if (currentAttrX < currentAttrY) {
+      } else {
+        xWon = false
         cardX[0].addDuelResult("lose");
         cardY[0].addDuelResult("win");
         if (Math.random() < 0.5) {
@@ -470,18 +497,6 @@ window.onload = function () {
         $("#cardA .val.active").addClass("wrong");
         $("#cardB .val.active").addClass("correct");
         handleAudio("correct_audio");
-      } else {
-        cardX[0].addDuelResult("tie");
-        cardY[0].addDuelResult("tie");
-        cardX.push(cardX[0]);
-        cardY.push(cardY[0]);
-        $(statusText)
-          .empty()
-          .append("it's a tie.")
-          .removeClass("correct wrong");
-        $("#cardA .val.active").addClass("tie");
-        $("#cardB .val.active").addClass("tie");
-        handleAudio("tie_audio");
       }
       cardX.shift();
       cardY.shift();
@@ -521,10 +536,10 @@ window.onload = function () {
         // saveCookies(cars)
       } else {
         loadCurrentCards();
-        if (currentAttrX > currentAttrY) {
+        if (xWon == true) {
           //AI wins
           makeAiMove();
-        } else if (currentAttrX < currentAttrY) {
+        } else if (xWon == false) {
           userMove();
         } else {
           if (previousMethod == "fromUserMove") {
