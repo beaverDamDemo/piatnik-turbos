@@ -60,7 +60,7 @@ window.onload = function () {
   //     }
   // })
 
-  shuffle(cars);
+  // shuffle(cars);
   numOfCards = cars.length;
 
   var b1 = true;
@@ -427,17 +427,44 @@ window.onload = function () {
     $("#cardB img").attr("src", cardY[0].img);
 
     if (backgroundSize) {
+      var cardX_idNumber = cardX[0].id.charAt(0);
+      var cardX_idLetter = cardX[0].id.charAt(1);
+      var cardX_offsetX = (cardX_idNumber - 1) * 317;
+      var cardX_offsetY = -1;
 
-      console.log("🚀 ~ file: appSecondVersion.js:431 ~ cardX:", cardX)
-      
+      var cardY_idNumber = cardY[0].id.charAt(0);
+      var cardY_idLetter = cardY[0].id.charAt(1);
+      var cardY_offsetX = (cardY_idNumber - 1) * 317;
+      var cardY_offsetY = -1;
+
+      if (cardX_idLetter == "A") {
+        cardX_offsetY = 0;
+      } else if (cardX_idLetter == "B") {
+        cardX_offsetY = 1 * (backgroundSize.height / 4);
+      } else if (cardX_idLetter == "C") {
+        cardX_offsetY = 2 * (backgroundSize.height / 4);
+      } else if (cardX_idLetter == "D") {
+        cardX_offsetY = 3 * (backgroundSize.height / 4);
+      }
+
+      if (cardY_idLetter == "A") {
+        cardY_offsetY = 0;
+      } else if (cardY_idLetter == "B") {
+        cardY_offsetY = 1 * (backgroundSize.height / 4);
+      } else if (cardY_idLetter == "C") {
+        cardY_offsetY = 2 * (backgroundSize.height / 4);
+      } else if (cardY_idLetter == "D") {
+        cardY_offsetY = 3 * (backgroundSize.height / 4);
+      }
+
       $("#cardA .img").attr(
         "style",
         'background: url("' +
           cardX[0].img +
           '") ' +
-          -1 * cardX[0].img_x +
+          -cardX_offsetX +
           "px " +
-          -1 * cardX[0].img_y +
+          -cardX_offsetY +
           "px; background-size: " +
           backgroundSize.width +
           "px " +
@@ -447,11 +474,11 @@ window.onload = function () {
       $("#cardB .img").attr(
         "style",
         'background: url("' +
-          cardX[0].img +
+          cardY[0].img +
           '") ' +
-          -1 * cardX[0].img_x +
+          -cardY_offsetX +
           "px " +
-          -1 * cardX[0].img_y +
+          -cardY_offsetY +
           "px; background-size: " +
           backgroundSize.width +
           "px " +

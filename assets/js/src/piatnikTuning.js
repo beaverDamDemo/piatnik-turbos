@@ -1,6 +1,6 @@
 var backgroundSize = {
-    width: 2928,
-    height: 2229,
+    width: 2535,
+    height: 1269,
 };  
 var propertiesLabels = ["", "zyl:", "kW:", "ccm:", "km/h:"];
 var propertiesUnits = ["", "zyl", "kW", "ccm", "kmh"];
@@ -38,5 +38,5 @@ var karte = [
     ['8A', 'AMG 500 SL 6,0' , 111, 222, 6000, 250, 'assets/images/piatnikTuning/cars_set.jpg', 2, 4],
     ['8B',  'ISDERA Imperator 108i', 111, 222, 5000, 258, 'assets/images/piatnikTuning/cars_set.jpg', 2, 4],
     ['8C',  'Wolf Lamborghini', 111, 222, 5000, 296, 'assets/images/piatnikTuning/cars_set.jpg', 2, 4],
-    ['8D',  'Metalex Tatra', 111, 222, 4000, 265, 'assets/images/piatnikTuning/cars_set.jpg', 2, 4]
+    ['8D',  'Metalex Tatra', 111, 222, 4000, 265, 'assets/images/piatnikTuning/cars_set.jpg', 2, 4],
 ]
