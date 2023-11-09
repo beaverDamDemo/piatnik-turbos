@@ -1,4 +1,11 @@
 let numOfCards = undefined;
+var timeoutHideStatusText = 200;
+var timeoutCoinBegin = 10;
+var timeoutHideCoin = 100;
+var timeoutCardA_active = 400;
+var timeoutCompareCards = 900;
+var timeoutCardA_active_computer_move = 700;
+var timeoutCardB_active = 300;
 
 window.onload = function () {
   var numReturnPressed = 0;
@@ -74,11 +81,8 @@ window.onload = function () {
     }
   }
 
-  /**
-   *  audio part begin
-   */
+  //#region audio part begin
   loadAudio();
-
   function loadAudio() {
     let queue = new createjs.LoadQueue();
     createjs.Sound.alternateExtensions = ["mp3"];
@@ -113,9 +117,7 @@ window.onload = function () {
   function handleErrorAudio(e) {
     console.log("Error handling audio: ", e);
   }
-  /**
-   * audio part end
-   */
+  //#endregion
 
   var currentAttrX,
     currentAttrY,
@@ -135,7 +137,7 @@ window.onload = function () {
     console.log("temporary");
     $(statusText).empty().removeClass("active");
     makeAiMove();
-  }, 200);
+  }, timeoutHideStatusText);
 
   $(document).keypress(function (e1) {
     var key = e1.which;
@@ -175,10 +177,10 @@ window.onload = function () {
           $(statusText).empty();
           $(statusText).append("Your turn. Hit enter or click me...");
         }
-      }, 10);
+      }, timeoutCoinBegin);
       setTimeout(function () {
         $(".coin").hide();
-      }, 100);
+      }, timeoutHideCoin);
     } //return pressed==0
     else if (numReturnPressed == 1) {
       // makeMove();
@@ -245,7 +247,7 @@ window.onload = function () {
       $("#cardA").addClass("active");
       setTimeout(function () {
         $("#cardA ." + val).addClass("active");
-      }, 400);
+      }, timeoutCardA_active);
       // setTimeout(function() {
       //     $(statusText).empty().removeClass();
       //     $(statusText).append('Comparing values...');
@@ -253,7 +255,7 @@ window.onload = function () {
       // }, 1000)
       setTimeout(function () {
         compareCards("fromUserMove");
-      }, 900);
+      }, timeoutCompareCards);
       // setTimeout(function() {
       //     $(statusText).removeClass('active')
       //     $(statusText).empty();
@@ -269,7 +271,7 @@ window.onload = function () {
     $(statusText).removeClass("correct wrong active");
     setTimeout(function () {
       $("#cardA").addClass("active");
-    }, 700);
+    }, timeoutCardA_active_computer_move);
 
     var tempCurrent = [cardX[0].zyl, cardX[0].kw, cardX[0].ccm, cardX[0].kmh];
     var tempCurrent2 = [cardY[0].zyl, cardY[0].kw, cardY[0].ccm, cardY[0].kmh];
@@ -301,7 +303,7 @@ window.onload = function () {
             $("#cardA .zyl").addClass("active");
             setTimeout(function () {
               $("#cardB .zyl").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           case 1:
             $(statusText)
@@ -312,7 +314,7 @@ window.onload = function () {
             $("#cardA .kw").addClass("active");
             setTimeout(function () {
               $("#cardB .kw").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           case 2:
             $(statusText)
@@ -327,7 +329,7 @@ window.onload = function () {
             $("#cardA .ccm").addClass("active");
             setTimeout(function () {
               $("#cardB .ccm").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           case 3:
             $(statusText)
@@ -342,7 +344,7 @@ window.onload = function () {
             $("#cardA .kmh").addClass("active");
             setTimeout(function () {
               $("#cardB .kmh").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           default:
             console.log("Unexpected value");
@@ -363,7 +365,7 @@ window.onload = function () {
             $("#cardA .zyl").addClass("active");
             setTimeout(function () {
               $("#cardB .zyl").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           case 1:
             $(statusText)
@@ -372,7 +374,7 @@ window.onload = function () {
             $("#cardA .kw").addClass("active");
             setTimeout(function () {
               $("#cardB .kw").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           case 2:
             $(statusText)
@@ -381,7 +383,7 @@ window.onload = function () {
             $("#cardA .ccm").addClass("active");
             setTimeout(function () {
               $("#cardB .ccm").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           case 3:
             $(statusText)
@@ -390,7 +392,7 @@ window.onload = function () {
             $("#cardA .kmh").addClass("active");
             setTimeout(function () {
               $("#cardB .kmh").addClass("active");
-            }, 300);
+            }, timeoutCardB_active);
             break;
           default:
             console.log("Unexpected value");
