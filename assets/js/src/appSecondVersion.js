@@ -18,20 +18,20 @@ window.onload = function () {
   var cardY = [],
     cardX = [];
 
-  console.warn(
+  console.log(
     "Dodaj statistiko za vse avte. pa da preko cookijev ali kej podobnega shranjuje stat."
   );
-  console.warn("Pa dodaj prikaz kvalitete kart, poleg stevila");
-  console.warn("dodaj replay capability");
-  console.warn(
+  console.log("Pa dodaj prikaz kvalitete kart, poleg stevila");
+  console.log("dodaj replay capability");
+  console.log(
     "graficni prikaz stevil akart ne dela kadar zacne vodit igro AI ter tudi stevec spodaj ne dela ko zacne igro AI"
   );
-  console.warn(
+  console.log(
     "Ko AI nima vec kart je se vedno prikazano, na koncu, kto da ima eno hrbtno karto na voljo"
   );
-  console.warn("Dodaj congratulatlions sound");
-  console.warn("zakaj audio e dela prvih par iger?");
-  console.warn("ai wins dobi zeleno barvo");
+  console.log("Dodaj congratulatlions sound");
+  console.log("zakaj audio e dela prvih par iger?");
+  console.log("ai wins dobi zeleno barvo");
 
   cars = fillUpcars();
 
@@ -54,7 +54,7 @@ window.onload = function () {
   // })
 
   // $(resetCookies).on('click', function() {
-  //     console.warn(' here')
+  //     log.warn(' here')
   //     for( var i=0; i<cars.length; i++ ) {
   //         $.cookie(cars[i].id, [cars[i].name, 0,0,0])
   //     }
@@ -111,7 +111,7 @@ window.onload = function () {
     audioPlayer.off("complete");
   }
   function handleErrorAudio(e) {
-    console.warn("Error handling audio: ", e);
+    console.log("Error handling audio: ", e);
   }
   /**
    * audio part end
@@ -166,7 +166,7 @@ window.onload = function () {
           $(".coin").css("background-image", 'url("assets/images/cross.png")');
           $(".coin").show();
           $(statusText).empty();
-          $(statusText).append("AI's turn... Hit enter or click me...");
+          $(statusText).append("Computer's turn... Hit enter or click me...");
           $(statusText).append();
         } else {
           turnx = false;
@@ -292,7 +292,11 @@ window.onload = function () {
             $(statusText)
               .empty()
               .append(
-                "AI says: " + cardX[0].zyl + " " + propertiesUnits[1] + "."
+                "Computer says: " +
+                  cardX[0].zyl +
+                  " " +
+                  propertiesUnits[1] +
+                  "."
               );
             $("#cardA .zyl").addClass("active");
             setTimeout(function () {
@@ -303,7 +307,7 @@ window.onload = function () {
             $(statusText)
               .empty()
               .append(
-                "AI says: " + cardX[0].kw + " " + propertiesUnits[2] + "."
+                "Computer says: " + cardX[0].kw + " " + propertiesUnits[2] + "."
               );
             $("#cardA .kw").addClass("active");
             setTimeout(function () {
@@ -314,7 +318,11 @@ window.onload = function () {
             $(statusText)
               .empty()
               .append(
-                "AI says: " + cardX[0].ccm + " " + propertiesUnits[3] + "."
+                "Computer says: " +
+                  cardX[0].ccm +
+                  " " +
+                  propertiesUnits[3] +
+                  "."
               );
             $("#cardA .ccm").addClass("active");
             setTimeout(function () {
@@ -325,7 +333,11 @@ window.onload = function () {
             $(statusText)
               .empty()
               .append(
-                "AI says: " + cardX[0].kmh + " " + propertiesUnits[4] + "."
+                "Computer says: " +
+                  cardX[0].kmh +
+                  " " +
+                  propertiesUnits[4] +
+                  "."
               );
             $("#cardA .kmh").addClass("active");
             setTimeout(function () {
@@ -333,7 +345,7 @@ window.onload = function () {
             }, 300);
             break;
           default:
-            console.warn("Unexpected value");
+            console.log("Unexpected value");
         } //switch end
       } //first choice
       else {
@@ -347,7 +359,7 @@ window.onload = function () {
           case 0:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].zyl + " zyl.");
+              .append("Computer says: " + cardX[0].zyl + " zyl.");
             $("#cardA .zyl").addClass("active");
             setTimeout(function () {
               $("#cardB .zyl").addClass("active");
@@ -356,7 +368,7 @@ window.onload = function () {
           case 1:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].kw + " kW.");
+              .append("Computer says: " + cardX[0].kw + " kW.");
             $("#cardA .kw").addClass("active");
             setTimeout(function () {
               $("#cardB .kw").addClass("active");
@@ -365,7 +377,7 @@ window.onload = function () {
           case 2:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].ccm + " ccm.");
+              .append("Computer says: " + cardX[0].ccm + " ccm.");
             $("#cardA .ccm").addClass("active");
             setTimeout(function () {
               $("#cardB .ccm").addClass("active");
@@ -374,14 +386,14 @@ window.onload = function () {
           case 3:
             $(statusText)
               .empty()
-              .append("AI says: " + cardX[0].kmh + " km/h.");
+              .append("Computer says: " + cardX[0].kmh + " km/h.");
             $("#cardA .kmh").addClass("active");
             setTimeout(function () {
               $("#cardB .kmh").addClass("active");
             }, 300);
             break;
           default:
-            console.warn("Unexpected value");
+            console.log("Unexpected value");
         }
       } //secondChoice
     }
@@ -537,7 +549,7 @@ window.onload = function () {
         $(statusText)
           .empty()
           .removeClass()
-          .append("ai wins.")
+          .append("computer wins.")
           .addClass("wrong");
         $("#cardA .val.active").addClass("correct");
         $("#cardB .val.active").addClass("wrong");
@@ -565,7 +577,7 @@ window.onload = function () {
       }
       cardX.shift();
       cardY.shift();
-      $(laba).text("cards ai (x): " + cardX.length);
+      $(laba).text("cards computer (x): " + cardX.length);
       $(labb).text("cards user (y): " + cardY.length);
       $(statusText).addClass("active");
     }
