@@ -390,7 +390,6 @@ function loadCurrentCards() {
   $(".card .inner tr:nth-child(4) td").html(
     propertiesLabels[4].charAt(0).toUpperCase() + propertiesLabels[4].slice(1)
   );
-
   $("#cardA .id").html(cardX[0].id);
   $("#cardA .name").html(cardX[0].name);
   $("#cardA .zyl").html(cardX[0].zyl + " " + propertiesUnits[1]);
@@ -479,9 +478,23 @@ function loadCurrentCards() {
 
 //#region
 function removeSelectCardsOverlay() {
+  var b1 = true;
+  for (var i = 0; i < cars.length; i++) {
+    if (b1) {
+      cardX.push(cars[i]);
+      b1 = false;
+    } else {
+      cardY.push(cars[i]);
+      b1 = true;
+    }
+  }
   $("#overlay-select-cards").removeClass("active");
   $(statusText).empty().removeClass("active");
   $("#cardB").addClass("active");
+  loadCurrentCards();
+  updateUserCardsDetails();
+  disableUserActions();
+
   //following two events that do the same. click on statusText div and enter (return) hit.
   // $(statusText)
   //   .append("hit enter or click here to continue ...")
@@ -494,14 +507,37 @@ function removeSelectCardsOverlay() {
 }
 
 $(button_1).on("click", () => {
-  $("button").removeClass("active");
-  removeSelectCardsOverlay();
+  var scriptEle = document.createElement("script");
+  scriptEle.setAttribute("src", "assets/js/src/flotteFlitzer.js");
+  scriptEle.setAttribute("type", "text/javascript");
+  scriptEle.setAttribute("async", true);
+  document.body.appendChild(scriptEle);
+  scriptEle.addEventListener("load", () => {
+    cars = fillUpcars();
+    removeSelectCardsOverlay();
+  });
 });
 $(button_2).on("click", () => {
-  removeSelectCardsOverlay();
+  var scriptEle = document.createElement("script");
+  scriptEle.setAttribute("src", "assets/js/src/piatnikTuning.js");
+  scriptEle.setAttribute("type", "text/javascript");
+  scriptEle.setAttribute("async", true);
+  document.body.appendChild(scriptEle);
+  scriptEle.addEventListener("load", () => {
+    cars = fillUpcars();
+    removeSelectCardsOverlay();
+  });
 });
 $(button_3).on("click", () => {
-  removeSelectCardsOverlay();
+  var scriptEle = document.createElement("script");
+  scriptEle.setAttribute("src", "assets/js/src/piatnikTurbos.js");
+  scriptEle.setAttribute("type", "text/javascript");
+  scriptEle.setAttribute("async", true);
+  document.body.appendChild(scriptEle);
+  scriptEle.addEventListener("load", () => {
+    cars = fillUpcars();
+    removeSelectCardsOverlay();
+  });
 });
 $(button_4).on("click", () => {
   $("button").removeClass("active");
@@ -510,7 +546,15 @@ $(button_4).on("click", () => {
   $(button_4).addClass("active");
 });
 $(button_5).on("click", () => {
-  removeSelectCardsOverlay();
+  var scriptEle = document.createElement("script");
+  scriptEle.setAttribute("src", "assets/js/src/sportCars.js");
+  scriptEle.setAttribute("type", "text/javascript");
+  scriptEle.setAttribute("async", true);
+  document.body.appendChild(scriptEle);
+  scriptEle.addEventListener("load", () => {
+    cars = fillUpcars();
+    removeSelectCardsOverlay();
+  });
 });
 $(button_6).on("click", () => {
   $("button").removeClass("active");
@@ -520,12 +564,28 @@ $(button_6).on("click", () => {
 });
 $(input_4).keyup(function () {
   if ($(this).val() == "password") {
-    removeSelectCardsOverlay();
+    var scriptEle = document.createElement("script");
+    scriptEle.setAttribute("src", "assets/js/src/sloescort.js");
+    scriptEle.setAttribute("type", "text/javascript");
+    scriptEle.setAttribute("async", true);
+    document.body.appendChild(scriptEle);
+    scriptEle.addEventListener("load", () => {
+      cars = fillUpcars();
+      removeSelectCardsOverlay();
+    });
   }
 });
 $(input_6).keyup(function () {
   if ($(this).val() == "password") {
-    removeSelectCardsOverlay();
+    var scriptEle = document.createElement("script");
+    scriptEle.setAttribute("src", "assets/js/src/vaginas.js");
+    scriptEle.setAttribute("type", "text/javascript");
+    scriptEle.setAttribute("async", true);
+    document.body.appendChild(scriptEle);
+    scriptEle.addEventListener("load", () => {
+      cars = fillUpcars();
+      removeSelectCardsOverlay();
+    });
   }
 });
 //#endregion
@@ -555,8 +615,6 @@ window.onload = function () {
   console.log("zakaj audio e dela prvih par iger?");
   console.log("ai wins dobi zeleno barvo");
 
-  cars = fillUpcars();
-
   // for( var i=0; i<cars.length; i++ ) {
   //     if( $.cookie(cars[i].id) == undefined ) {
   //         for( var i=0; i<cars.length; i++ ) {
@@ -583,17 +641,6 @@ window.onload = function () {
   // })
 
   numOfCards = cars.length;
-
-  var b1 = true;
-  for (var i = 0; i < cars.length; i++) {
-    if (b1) {
-      cardX.push(cars[i]);
-      b1 = false;
-    } else {
-      cardY.push(cars[i]);
-      b1 = true;
-    }
-  }
 
   //#region audio part begin
   loadAudio();
@@ -637,10 +684,6 @@ window.onload = function () {
     currentAttrY,
     currentHigherIsBetter,
     xWon = undefined;
-
-  loadCurrentCards();
-  updateUserCardsDetails();
-  disableUserActions();
 
   $(document).keypress(function (e1) {
     var key = e1.which;
@@ -697,8 +740,6 @@ window.onload = function () {
     }
     numReturnPressed++;
   } //user action
-
-
 
   // $("#cardBDeep").click(function(e) {
   //     // na click dela ampak na hover nekako noce dela,t , kot da bi bil kak debounce efekt vmes, delay

@@ -6,6 +6,7 @@ var propertiesLabels = ["", "Motor:", "Leistung:", "Hubraum:", "Geschwindigkeit:
 var propertiesUnits = ["", "Zyl.", "kW", "ccm", "km/h"];
 var propertiesHigherIsBetter = [undefined, true, true, true, true];
 
+  
 var karte = [
     ['1A', 'Nissan Lady-Micra' , 4, 37, 998, 140, 'assets/images/piatnikTuning/cars_set.jpg', 1, 0],
     ['1B', 'Citroen Visa GTI Creation df', 4, 75, 1569, 188, 'assets/images/piatnikTuning/cars_set.jpg', 1, 0],
