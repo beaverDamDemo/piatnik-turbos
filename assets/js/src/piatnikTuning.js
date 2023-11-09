@@ -2,9 +2,9 @@ var backgroundSize = {
     width: 2535,
     height: 1269,
 };  
-var propertiesLabels = ["", "zyl:", "kW:", "ccm:", "km/h:"];
-var propertiesUnits = ["", "zyl", "kW", "ccm", "kmh"];
-var propertiesHigherIsBetter = [undefined, false, true, false, true];
+var propertiesLabels = ["", "Motor:", "Leistung:", "Hubraum:", "Geschwindigkeit:"];
+var propertiesUnits = ["", "Zyl.", "kW", "ccm", "km/h"];
+var propertiesHigherIsBetter = [undefined, true, true, true, true];
 
 var karte = [
     ['1A', 'Nissan Lady-Micra' , 4, 37, 998, 140, 'assets/images/piatnikTuning/cars_set.jpg', 1, 1],

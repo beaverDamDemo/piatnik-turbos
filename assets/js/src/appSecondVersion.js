@@ -67,7 +67,6 @@ window.onload = function () {
   //     }
   // })
 
-  // shuffle(cars);
   numOfCards = cars.length;
 
   var b1 = true;
@@ -126,18 +125,19 @@ window.onload = function () {
 
   loadCurrentCards();
   updateUserCardsDetails();
+  disableUserActions();
 
+  $(statusText).empty().removeClass("active");
   $("#cardB").addClass("active");
   //following two events that do the same. click on statusText div and enter (return) hit.
-  $(statusText)
-    .append("hit enter or click here to continue ...")
-    .addClass("active");
+  // $(statusText)
+  //   .append("hit enter or click here to continue ...")
+  //   .addClass("active");
 
   setTimeout(() => {
-    console.log("temporary");
-    $(statusText).empty().removeClass("active");
+    // $(statusText).empty().removeClass("active");
     makeAiMove();
-  }, timeoutHideStatusText);
+  }, 2000);
 
   $(document).keypress(function (e1) {
     var key = e1.which;
@@ -161,26 +161,27 @@ window.onload = function () {
       $(statusText).empty();
       $(statusText).append("throwing a coin...");
 
-      setTimeout(function () {
-        var rand = Math.random();
-        if (rand < 0.5) {
-          turnx = true;
-          $(".coin").css("background-image", 'url("assets/images/cross.png")');
-          $(".coin").show();
-          $(statusText).empty();
-          $(statusText).append("Computer's turn... Hit enter or click me...");
-          $(statusText).append();
-        } else {
-          turnx = false;
-          $(".coin").css("background-image", 'url("assets/images/head.png")');
-          $(".coin").show();
-          $(statusText).empty();
-          $(statusText).append("Your turn. Hit enter or click me...");
-        }
-      }, timeoutCoinBegin);
-      setTimeout(function () {
-        $(".coin").hide();
-      }, timeoutHideCoin);
+      console.log("temporarily disabled coin thing");
+      // setTimeout(function () {
+      //   var rand = Math.random();
+      //   if (rand < 0.5) {
+      //     turnx = true;
+      //     $(".coin").css("background-image", 'url("assets/images/cross.png")');
+      //     $(".coin").show();
+      //     $(statusText).empty();
+      //     $(statusText).append("Computer's turn... Hit enter or click me...");
+      //     $(statusText).append();
+      //   } else {
+      //     turnx = false;
+      //     $(".coin").css("background-image", 'url("assets/images/head.png")');
+      //     $(".coin").show();
+      //     $(statusText).empty();
+      //     $(statusText).append("Your turn. Hit enter or click me...");
+      //   }
+      // }, timeoutCoinBegin);
+      // setTimeout(function () {
+      //   $(".coin").hide();
+      // }, timeoutHideCoin);
     } //return pressed==0
     else if (numReturnPressed == 1) {
       // makeMove();
@@ -278,7 +279,7 @@ window.onload = function () {
 
     Promise.delay(firstAiPart, 1050)
       .delay(secondAiPart, 200)
-      .delay(fourthAiPart, 200);
+      .delay(thirdAiPart, 200);
 
     function firstAiPart() {
       if (Math.random() < intelligence) {
@@ -404,9 +405,7 @@ window.onload = function () {
       $(statusText).addClass("active");
     }
 
-    function thirdAiPart() {}
-
-    function fourthAiPart() {
+    function thirdAiPart() {
       compareCards("fromMakeAiMove");
     }
   }
@@ -519,6 +518,13 @@ window.onload = function () {
 
     // addDuelResult
     function firstPart() {
+      console.log(
+        "🚀 ~ currentAttrX , currentAttrY:",
+        currentAttrX,
+        currentAttrY,
+        currentHigherIsBetter
+      );
+
       if (currentAttrX == currentAttrY) {
         xWon = undefined;
         cardX[0].addDuelResult("tie");
@@ -673,10 +679,6 @@ window.onload = function () {
   }
 
   $("#checkbox-toggle-button").change(function () {
-    console.log(
-      "🚀 ~ file: app.js ~ line 508 ~ $ ~ this.checked",
-      this.checked
-    );
     if (this.checked) {
       applyBlueTheme();
     } else {
@@ -737,28 +739,15 @@ function fillUpcars() {
     img_y
   ) {
     this.id = id;
-    // console.log("this.id: ", this.id);
     this.name = name;
-    // console.log("this.name: ", this.name);
     this.zyl = zyl;
-    // console.log("this.zyl: ", this.zyl);
     this.kw = kw;
-    // console.log("this.kw: ", this.kw);
     this.ccm = ccm;
-    // console.log("this.ccm: ", this.ccm);
     this.kmh = kmh;
-    // console.log("this.kmh: ", this.kmh);
     this.img = img;
-    // console.log("this.img: ", this.img);
     this.firstChoice = c1;
-    // console.log("this.firstChoice: ", this.firstChoice);
     this.secondChoice = c2;
-    // console.log("this.secondChoice: ", this.secondChoice);
-
-    // console.log("kajjetox: ", kajjeto);
-
     this.img_x = kajjeto;
-
     this.img_y = img_x;
 
     this.duelsWon = 0;

@@ -1,6 +1,7 @@
 var propertiesLabels = ["", "narrowness:", "depth:", "age:", "color:"];
-var propertiesUnits = ["", "narrowness", "depth", "age", "color"];
-var propertiesHigherIsBetter = [undefined, false, true, false, true];
+var propertiesUnits = ["", "cm", "cm", "years", "color"];
+var propertiesHigherIsBetter = [undefined, true, true, true, true];
+
 var backgroundSize = {
   width: 1890,
   height: 1575,

@@ -1,6 +1,7 @@
-var propertiesLabels = ["", "zyl:", "kW:", "ccm:", "km/h:"];
-var propertiesUnits = ["", "zyl", "kW", "ccm", "kmh"];
-var propertiesHigherIsBetter = [undefined, false, true, false, true];
+var backgroundSize = undefined;
+var propertiesLabels = ["", "Motor:", "Leistung:", "Hubraum:", "Geschwindigkeit:"];
+var propertiesUnits = ["", "Zyl.", "kW", "ccm", "km/h"];
+var propertiesHigherIsBetter = [undefined, true, true, true, true];
 
 var karte = [
   [
