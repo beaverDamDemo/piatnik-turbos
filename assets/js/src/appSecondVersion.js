@@ -518,12 +518,19 @@ window.onload = function () {
 
     // addDuelResult
     function firstPart() {
-      console.log(
-        "🚀 ~ currentAttrX , currentAttrY:",
-        currentAttrX,
-        currentAttrY,
-        currentHigherIsBetter
-      );
+      if (currentAttrX) {
+        console.log(
+          "🚀 ~ currentAttrX , currentAttrY:",
+          currentAttrX,
+          currentAttrY,
+          currentHigherIsBetter
+        );
+      } else {
+        console.log(
+          `%c🚀 ~ currentAttrX , currentAttrY:  ${currentAttrX},  ${currentAttrY}, ${currentHigherIsBetter}`,
+          "color: red; background: black;"
+        );
+      }
 
       if (currentAttrX == currentAttrY) {
         xWon = undefined;
