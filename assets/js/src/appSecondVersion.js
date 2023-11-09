@@ -7,16 +7,30 @@ var timeoutCompareCards = 900;
 var timeoutCardA_active_computer_move = 700;
 var timeoutCardB_active = 300;
 
-//#region intro overlay
+//#region
+function removeSelectCardsOverlay() {
+  $("#overlay-select-cards").removeClass("active");
+  $(statusText).empty().removeClass("active");
+  $("#cardB").addClass("active");
+  //following two events that do the same. click on statusText div and enter (return) hit.
+  // $(statusText)
+  //   .append("hit enter or click here to continue ...")
+  //   .addClass("active");
+
+  setTimeout(() => {
+    // $(statusText).empty().removeClass("active");
+    makeAiMove();
+  }, 2000);
+}
 $(button_1).on("click", () => {
   $("button").removeClass("active");
-  $("#overlay-select-cards").removeClass("active");
+  removeSelectCardsOverlay();
 });
 $(button_2).on("click", () => {
-  $("#overlay-select-cards").removeClass("active");
+  removeSelectCardsOverlay();
 });
 $(button_3).on("click", () => {
-  $("#overlay-select-cards").removeClass("active");
+  removeSelectCardsOverlay();
 });
 $(button_4).on("click", () => {
   $("button").removeClass("active");
@@ -25,7 +39,7 @@ $(button_4).on("click", () => {
   $(button_4).addClass("active");
 });
 $(button_5).on("click", () => {
-  $("#overlay-select-cards").removeClass("active");
+  removeSelectCardsOverlay();
 });
 $(button_6).on("click", () => {
   $("button").removeClass("active");
@@ -35,12 +49,12 @@ $(button_6).on("click", () => {
 });
 $(input_4).keyup(function () {
   if ($(this).val() == "password") {
-    $("#overlay-select-cards").removeClass("active");
+    removeSelectCardsOverlay();
   }
 });
 $(input_6).keyup(function () {
   if ($(this).val() == "password") {
-    $("#overlay-select-cards").removeClass("active");
+    removeSelectCardsOverlay();
   }
 });
 //#endregion
@@ -164,18 +178,6 @@ window.onload = function () {
   loadCurrentCards();
   updateUserCardsDetails();
   disableUserActions();
-
-  $(statusText).empty().removeClass("active");
-  $("#cardB").addClass("active");
-  //following two events that do the same. click on statusText div and enter (return) hit.
-  // $(statusText)
-  //   .append("hit enter or click here to continue ...")
-  //   .addClass("active");
-
-  setTimeout(() => {
-    // $(statusText).empty().removeClass("active");
-    makeAiMove();
-  }, 2000);
 
   $(document).keypress(function (e1) {
     var key = e1.which;
