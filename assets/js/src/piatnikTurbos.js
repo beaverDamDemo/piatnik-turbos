@@ -1,11 +1,5 @@
-var backgroundSize = {
-  width: 200,
-  height: 200,
-};
-
-var v = "assets/images/sloescort/sloescort loaded.png";
-var propertiesLabels = ["", "age:", "height:", "weight:", "boobSize:"];
-var propertiesUnits = ["", "let", "cm", "kg", ""];
+var propertiesLabels = ["", "zyl:", "kW:", "ccm:", "km/h:"];
+var propertiesUnits = ["", "zyl", "kW", "ccm", "kmh"];
 var propertiesHigherIsBetter = [undefined, false, true, false, true];
 
 var karte = [
