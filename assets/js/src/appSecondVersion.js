@@ -117,7 +117,10 @@ window.onload = function () {
    * audio part end
    */
 
-  var currentAttrX, currentAttrY, currentHigherIsBetter, xWon = undefined;
+  var currentAttrX,
+    currentAttrY,
+    currentHigherIsBetter,
+    xWon = undefined;
 
   loadCurrentCards();
   updateUserCardsDetails();
@@ -415,21 +418,56 @@ window.onload = function () {
     $("#cardA .ccm").html(cardX[0].ccm + " " + propertiesUnits[3]);
     $("#cardA .kmh").html(cardX[0].kmh + " " + propertiesUnits[4]);
     $("#cardA img").attr("src", cardX[0].img);
-    $("#cardA .img").attr(
-      "style",
-      'background: url("' + cardX[0].img + '"); background-size: contain'
-    );
-
     $("#cardB .id").html(cardY[0].id);
     $("#cardB .name").html(cardY[0].name);
     $("#cardB .zyl").html(cardY[0].zyl + " " + propertiesUnits[1]);
     $("#cardB .kw").html(cardY[0].kw + " " + propertiesUnits[2]);
     $("#cardB .ccm").html(cardY[0].ccm + " " + propertiesUnits[3]);
     $("#cardB .kmh").html(cardY[0].kmh + " " + propertiesUnits[4]);
-    $("#cardB .img").attr(
-      "style",
-      'background: url("' + cardY[0].img + '"); background-size: contain'
-    );
+    $("#cardB img").attr("src", cardY[0].img);
+
+    if (backgroundSize) {
+
+      console.log("🚀 ~ file: appSecondVersion.js:431 ~ cardX:", cardX)
+      
+      $("#cardA .img").attr(
+        "style",
+        'background: url("' +
+          cardX[0].img +
+          '") ' +
+          -1 * cardX[0].img_x +
+          "px " +
+          -1 * cardX[0].img_y +
+          "px; background-size: " +
+          backgroundSize.width +
+          "px " +
+          backgroundSize.height +
+          "px"
+      );
+      $("#cardB .img").attr(
+        "style",
+        'background: url("' +
+          cardX[0].img +
+          '") ' +
+          -1 * cardX[0].img_x +
+          "px " +
+          -1 * cardX[0].img_y +
+          "px; background-size: " +
+          backgroundSize.width +
+          "px " +
+          backgroundSize.height +
+          "px"
+      );
+    } else {
+      $("#cardA .img").attr(
+        "style",
+        'background: url("' + cardX[0].img + '"); background-size: contain'
+      );
+      $("#cardB .img").attr(
+        "style",
+        'background: url("' + cardY[0].img + '"); background-size: contain'
+      );
+    }
   }
 
   function compareCards(previousMethod) {
@@ -441,7 +479,7 @@ window.onload = function () {
     // addDuelResult
     function firstPart() {
       if (currentAttrX == currentAttrY) {
-        xWon = undefined
+        xWon = undefined;
         cardX[0].addDuelResult("tie");
         cardY[0].addDuelResult("tie");
         cardX.push(cardX[0]);
@@ -458,7 +496,7 @@ window.onload = function () {
         !currentHigherIsBetter & (currentAttrX < currentAttrY)
       ) {
         //AI wins
-        xWon = true
+        xWon = true;
         cardX[0].addDuelResult("win");
         cardY[0].addDuelResult("lose");
         if (Math.random() < 0.5) {
@@ -478,7 +516,7 @@ window.onload = function () {
         $("#cardB .val.active").addClass("wrong");
         handleAudio("wrong_audio");
       } else {
-        xWon = false
+        xWon = false;
         cardX[0].addDuelResult("lose");
         cardY[0].addDuelResult("win");
         if (Math.random() < 0.5) {

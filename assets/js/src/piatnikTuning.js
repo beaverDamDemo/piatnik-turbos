@@ -1,3 +1,7 @@
+var backgroundSize = {
+    width: 2928,
+    height: 2229,
+};  
 var propertiesLabels = ["", "zyl:", "kW:", "ccm:", "km/h:"];
 var propertiesUnits = ["", "zyl", "kW", "ccm", "kmh"];
 var propertiesHigherIsBetter = [undefined, false, true, false, true];
