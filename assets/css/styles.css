@@ -24,16 +24,6 @@ body {
 	width: 1024px;
 }
 
-#overlay-select-cards {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: dodgerblue;
-	display: none;
-	z-index: 3;
-}
 #overlay-select-cards.active {
 	display: block;
 }
@@ -43,12 +33,81 @@ body {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-.hidden {
+
+/* Add some basic styles for the overlay div */
+#overlay-select-cards {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.8);
+	align-items: center;
+	justify-content: center;
 	display: none;
 }
-button.active {
-	filter: brightness(1.1);
-	border: 1px solid red;
+#overlay-select-cards.active {
+	display: flex;
+}
+/* Add some styles for the inner div */
+#overlay-select-cards .inner {
+	width: 80%;
+	max-width: 600px;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Add some styles for the heading */
+#overlay-select-cards h4 {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+/* Add some styles for the buttons */
+#overlay-select-cards button {
+	width: 100%;
+	height: 50px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+/* Add some colors for the buttons */
+#overlay-select-cards #button_1 {
+	background: #f44336;
+}
+
+#overlay-select-cards #button_2 {
+	background: #e91e63;
+}
+
+#overlay-select-cards #button_3 {
+	background: #9c27b0;
+}
+
+#overlay-select-cards #button_4 {
+	background: #673ab7;
+}
+
+#overlay-select-cards #button_5 {
+	background: #3f51b5;
+}
+
+#overlay-select-cards #button_6 {
+	background: #2196f3;
+}
+
+/* Add some styles for the hidden inputs */
+#overlay-select-cards input.hidden {
+	display: none;
 }
 
 header {
