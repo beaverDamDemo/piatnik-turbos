@@ -7,6 +7,44 @@ var timeoutCompareCards = 900;
 var timeoutCardA_active_computer_move = 700;
 var timeoutCardB_active = 300;
 
+//#region intro overlay
+$(button_1).on("click", () => {
+  $("button").removeClass("active");
+  $("#overlay-select-cards").removeClass("active");
+});
+$(button_2).on("click", () => {
+  $("#overlay-select-cards").removeClass("active");
+});
+$(button_3).on("click", () => {
+  $("#overlay-select-cards").removeClass("active");
+});
+$(button_4).on("click", () => {
+  $("button").removeClass("active");
+  $(input_4).removeClass("hidden");
+  $(input_6).addClass("hidden");
+  $(button_4).addClass("active");
+});
+$(button_5).on("click", () => {
+  $("#overlay-select-cards").removeClass("active");
+});
+$(button_6).on("click", () => {
+  $("button").removeClass("active");
+  $(input_4).addClass("hidden");
+  $(input_6).removeClass("hidden");
+  $(button_6).addClass("active");
+});
+$(input_4).keyup(function () {
+  if ($(this).val() == "password") {
+    $("#overlay-select-cards").removeClass("active");
+  }
+});
+$(input_6).keyup(function () {
+  if ($(this).val() == "password") {
+    $("#overlay-select-cards").removeClass("active");
+  }
+});
+//#endregion
+
 window.onload = function () {
   var numReturnPressed = 0;
   var turnx = true;

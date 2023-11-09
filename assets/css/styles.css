@@ -1,12 +1,15 @@
 @font-face {
-	font-family: 'tannenberg_fettregular';
-	src: url("../fonts/tannenbergfett-webfont.woff2") format("woff2"), url("../fonts/tannenbergfett-webfont.woff") format("woff");
+	font-family: "tannenberg_fettregular";
+	src:
+		url("../fonts/tannenbergfett-webfont.woff2") format("woff2"),
+		url("../fonts/tannenbergfett-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
-html, body {
-	font-family: 'tannenberg_fettregular', 'Open Sans', sans-serif;
+html,
+body {
+	font-family: "tannenberg_fettregular", "Open Sans", sans-serif;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -19,6 +22,33 @@ html, body {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 1024px;
+}
+
+#overlay-select-cards {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: dodgerblue;
+	display: none;
+	z-index: 3;
+}
+#overlay-select-cards.active {
+	display: block;
+}
+#overlay-select-cards .inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.hidden {
+	display: none;
+}
+button.active {
+	filter: brightness(1.1);
+	border: 1px solid red;
 }
 
 header {
@@ -93,7 +123,8 @@ header form output {
 }
 
 @keyframes scalex_an {
-	from, to {
+	from,
+	to {
 		transform: scaleX(1);
 	}
 
@@ -142,7 +173,8 @@ footer #detailsContainer details {
 	height: 48px;
 }
 
-.id, .name {
+.id,
+.name {
 	padding-top: 22px;
 	font-weight: bold;
 	text-transform: capitalize;
@@ -157,7 +189,8 @@ footer #detailsContainer details {
 	float: right;
 }
 
-img, .img {
+img,
+.img {
 	width: 317px;
 	height: 317px;
 	display: block;
@@ -232,14 +265,15 @@ table {
 .card-container .card {
 	height: 100%;
 	width: 100%;
-	font-family: 'Arial', sans-serif;
+	font-family: "Arial", sans-serif;
 	transform-style: preserve-3d;
-	transition: all .4s ease-in;
+	transition: all 0.4s ease-in;
 	transition: all 0.2s ease-out;
 	transform: rotateY(179.9deg);
 }
 
-.card-container .card-front, .card-container .card-back {
+.card-container .card-front,
+.card-container .card-back {
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -271,7 +305,8 @@ table {
 	outline: none;
 }
 
-#cardADeep, #cardBDeep {
+#cardADeep,
+#cardBDeep {
 	position: absolute;
 	width: 350px;
 	height: 522px;
@@ -280,7 +315,8 @@ table {
 	z-index: 0;
 }
 
-#cardADeep .inner, #cardBDeep .inner {
+#cardADeep .inner,
+#cardBDeep .inner {
 	width: 350px;
 	height: 522px;
 	position: absolute;
@@ -292,7 +328,8 @@ table {
 	background-size: 347px auto;
 }
 
-#cardADeep .inner:nth-of-type(2n), #cardBDeep .inner:nth-of-type(2n) {
+#cardADeep .inner:nth-of-type(2n),
+#cardBDeep .inner:nth-of-type(2n) {
 	border-color: #444;
 }
 
@@ -301,14 +338,18 @@ table {
 }
 
 @media screen and (max-width: 900px) {
-	#cardADeep, #cardA, #cardBackA {
+	#cardADeep,
+	#cardA,
+	#cardBackA {
 		left: 100px;
 		margin-left: 0;
 		margin-top: 16px;
 		top: 0;
 	}
 
-	#cardBDeep, #cardB, #cardBackB {
+	#cardBDeep,
+	#cardB,
+	#cardBackB {
 		left: 100px;
 		margin-left: 0;
 		margin-top: 40px;
@@ -369,7 +410,8 @@ table {
 }
 
 @keyframes scale-up-an {
-	50%, 87.5% {
+	50%,
+	87.5% {
 		transform: scale(1);
 	}
 
@@ -389,16 +431,16 @@ table {
 	width: 74px;
 	height: 36px;
 	box-sizing: border-box;
-  }
+}
 
-  .button-cover {
+.button-cover {
 	height: 36px;
 	margin: 0px;
 	box-shadow: 0 10px 20px -8px #c5d6d6;
 	border-radius: 4px;
-  }
+}
 
-  .button-cover:before {
+.button-cover:before {
 	counter-increment: button-counter;
 	content: counter(button-counter);
 	position: absolute;
@@ -408,37 +450,37 @@ table {
 	font-size: 12px;
 	line-height: 1;
 	padding: 5px;
-  }
+}
 
-  .button-cover,
-  .knobs,
-  .layer {
+.button-cover,
+.knobs,
+.layer {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-  }
+}
 
-  .button {
+.button {
 	position: relative;
 	top: 50%;
 	width: 74px;
 	height: 36px;
 	margin: -20px auto 0 auto;
 	overflow: hidden;
-  }
+}
 
-  .button.r,
-  .button.r .layer {
+.button.r,
+.button.r .layer {
 	border-radius: 100px;
-  }
+}
 
-  .button.b2 {
+.button.b2 {
 	border-radius: 2px;
-  }
+}
 
-  .checkbox {
+.checkbox {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -447,20 +489,20 @@ table {
 	opacity: 0;
 	cursor: pointer;
 	z-index: 3;
-  }
+}
 
-  .knobs {
+.knobs {
 	z-index: 2;
-  }
+}
 
-  .layer {
+.layer {
 	width: 100%;
 	background-color: #ebf7fc;
 	transition: 0.3s ease all;
 	z-index: 1;
-  }
+}
 
-  #button-3 .knobs:before {
+#button-3 .knobs:before {
 	content: "Mgta";
 	position: absolute;
 	top: 4px;
@@ -475,27 +517,29 @@ table {
 	padding: 9px 4px;
 	background-color: #ff1a8c;
 	border-radius: 50%;
-	transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
-  }
+	transition:
+		0.3s ease all,
+		left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
 
-  #button-3 .checkbox:active + .knobs:before {
+#button-3 .checkbox:active + .knobs:before {
 	width: 46px;
 	border-radius: 100px;
-  }
+}
 
-  #button-3 .checkbox:checked:active + .knobs:before {
+#button-3 .checkbox:checked:active + .knobs:before {
 	margin-left: -26px;
-  }
+}
 
-  #button-3 .checkbox:checked + .knobs:before {
+#button-3 .checkbox:checked + .knobs:before {
 	content: "Blue";
 	left: 42px;
 	background-color: #03a9f4;
-  }
+}
 
-  #button-3 .checkbox:checked ~ .layer {
+#button-3 .checkbox:checked ~ .layer {
 	background-color: #fcebeb;
-  }
+}
 
 #wrapper.blueTheme .id,
 #wrapper.blueTheme .val {
