@@ -1,11 +1,10 @@
+var backgroundSize = {
+  width: 2535,
+  height: 1269,
+};  
 var propertiesLabels = ["", "narrowness:", "depth:", "age:", "color:"];
 var propertiesUnits = ["", "cm", "cm", "years", "color"];
 var propertiesHigherIsBetter = [undefined, true, true, true, true];
-
-var backgroundSize = {
-  width: 1890,
-  height: 1575,
-};
 
 var karte = [
   [

@@ -1,9 +1,4 @@
-var backgroundSize = {
-  width: 200,
-  height: 200,
-};
-
-var v = "assets/images/sloescort/sloescort loaded.png";
+var backgroundSize = undefined;
 var propertiesLabels = ["", "age:", "height:", "weight:", "boobSize:"]
 var propertiesUnits = ["", "let", "cm", "kg", ""]
 var propertiesHigherIsBetter = [undefined, false, true, false, true]
