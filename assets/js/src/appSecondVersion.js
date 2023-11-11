@@ -928,3 +928,31 @@ function enableUserActions() {
 function disableUserActions() {
   $("#cardB .val").addClass("disabled");
 }
+
+$(buttonTestAll).on("click", function () {
+  console.log("%c click on buttonTestAll", "background: yellow; color: black;");
+});
+$(buttonTestUser).on("click", function () {
+  console.log(
+    "%c click on buttonTestUser",
+    "color: yellow; background: black;"
+  );
+});
+$(buttonLoginWrongPassword).on("click", function () {
+  console.log(
+    "%c click on buttonLoginWrongPassword",
+    "background: yellow; color: black;"
+  );
+});
+$(buttonLoginCorrectPassword).on("click", function () {
+  console.log(
+    "%c click on buttonLoginCorrectPassword",
+    "color: yellow; background: black;"
+  );
+});
+$(buttonAccessWithLegalAccount).on("click", function () {
+  console.log(
+    "%c click on buttonAccessWithLegalAccount",
+    "background: yellow; color: black;"
+  );
+});
