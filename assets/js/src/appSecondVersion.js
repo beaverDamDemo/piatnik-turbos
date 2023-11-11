@@ -1045,3 +1045,17 @@ $(buttonSignup).on("click", function () {
     }
   );
 });
+
+$("#login-btn").on("click", function () {
+  $("#register-btn").removeClass("active");
+  $(this).addClass("active");
+  $("#login-form").removeClass("hide").addClass("show");
+  $("#register-form").addClass("hide").removeClass("show");
+});
+
+$("#register-btn").on("click", function () {
+  $("#login-btn").removeClass("active");
+  $(this).addClass("active");
+  $("#login-form").addClass("hide").removeClass("show");
+  $("#register-form").removeClass("hide").addClass("show");
+});
