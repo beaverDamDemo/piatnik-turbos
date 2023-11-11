@@ -938,6 +938,7 @@ $(buttonTestAll).on("click", function () {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
+
 $(buttonTestUser).on("click", function () {
   console.log(
     "%c click on buttonTestUser test/user",
@@ -947,6 +948,7 @@ $(buttonTestUser).on("click", function () {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
+
 $(buttonLoginWrongPassword).on("click", function () {
   console.log(
     "%c click on buttonLoginWrongPassword auth/signin - wrong pwd",
@@ -956,8 +958,8 @@ $(buttonLoginWrongPassword).on("click", function () {
     "http://localhost:3000/api/auth/signin",
     {
       data: {
-        username: "username",
-        password: "password",
+        username: "mod",
+        password: "a12345678",
       },
     },
     function (data, status) {
@@ -965,6 +967,7 @@ $(buttonLoginWrongPassword).on("click", function () {
     }
   );
 });
+
 $(buttonLoginCorrectPassword).on("click", function () {
   console.log(
     "%c click on buttonLoginCorrectPassword auth/signin - correct pwd",
@@ -983,6 +986,7 @@ $(buttonLoginCorrectPassword).on("click", function () {
     }
   );
 });
+
 $(buttonAccessWithLegalAccount).on("click", function () {
   console.log(
     "%c click on buttonAccessWithLegalAccount test/user legal acc",
@@ -991,4 +995,53 @@ $(buttonAccessWithLegalAccount).on("click", function () {
   $.get("http://localhost:3000/api/test/user", function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
+});
+
+$(buttonAccessWithLegalAccountMod).on("click", function () {
+  console.log(
+    "%c click on buttonAccessWithLegalAccountMod test/user legal acc mod",
+    "color: yellow; background: black;"
+  );
+  $.get("http://localhost:3000/api/test/mod", function (data, status) {
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
+
+$(buttonAccessWithLegalAccountAdmin).on("click", function () {
+  console.log(
+    "%c click on buttonAccessWithLegalAccountAdmin test/user legal acc user",
+    "background: yellow; color: black;"
+  );
+  $.get("http://localhost:3000/api/test/admin", function (data, status) {
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
+
+$(buttonApiAuthAll).on("click", function () {
+  console.log(
+    "%c click on buttonApiAuthAll",
+    "color: yellow; background: black;"
+  );
+  $.post("http://localhost:3000/api/auth/all", {}, function (data, status) {
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
+});
+
+$(buttonSignup).on("click", function () {
+  console.log("%c click on buttonSignup", "background: yellow; color: black;");
+  $.post(
+    "http://localhost:3000/user/signup",
+    {
+      name: "user15000",
+      email: "user15000@user.com",
+      password: "user15000",
+      dateOfBirth: "09-19-2022",
+    },
+    function (data, status) {
+      console.log(
+        "Data status: " + data.status,
+        +"\ndata.message: " + data.message
+      );
+    }
+  );
 });
