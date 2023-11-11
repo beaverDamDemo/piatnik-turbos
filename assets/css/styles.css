@@ -611,3 +611,119 @@ table {
 #wrapper.blueTheme .card-container .card-front {
 	background-color: gold;
 }
+
+.login-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: Arial, sans-serif;
+}
+
+.login-container .form-container {
+	width: 500px;
+	max-width: 90%;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.login-container .form-switch {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.login-container .form-switch button {
+	width: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	color: #999;
+	background-color: transparent;
+	padding: 10px;
+}
+
+.login-container .form-switch button.active {
+	color: #04aa6d;
+	border-bottom: 2px solid #04aa6d;
+}
+
+.login-container .form-content {
+	position: relative;
+	height: 300px;
+}
+
+.login-container .form-content form {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.login-container .form-content form.hide {
+	opacity: 0;
+	transform: translateX(-50px);
+}
+
+.login-container .form-content form.show {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.login-container .input-group {
+	margin-bottom: 15px;
+}
+
+.login-container .input-group label {
+	display: block;
+	font-size: 14px;
+	color: #333;
+}
+
+.login-container .input-group input {
+	width: 100%;
+	border: 1px solid #ccc;
+	outline: none;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.login-container .input-group input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+	margin-right: 10px;
+}
+
+.login-container .input-group a {
+	display: block;
+	font-size: 14px;
+	color: #04aa6d;
+	text-decoration: none;
+}
+
+.login-container .submit-btn {
+	width: 100%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #04aa6d;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.login-container .submit-btn:hover {
+	opacity: 0.9;
+}
