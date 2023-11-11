@@ -1028,14 +1028,14 @@ $(buttonApiAuthAll).on("click", function () {
 });
 
 $(buttonSignup).on("click", function () {
-  console.log("%c click on buttonSignup", "background: yellow; color: black;");
+  console.log("%c click on buttonSignup", "background: red; color: black;");
   $.post(
     "http://localhost:3000/user/signup",
     {
-      name: "user15000",
-      email: "user15000@user.com",
-      password: "user15000",
-      dateOfBirth: "09-19-2022",
+      name: $("#register-name").val(),
+      email: $("#register-email").val(),
+      password: $("#register-password").val(),
+      dateOfBirth: "01-01-2000",
     },
     function (data, status) {
       console.log(
@@ -1058,4 +1058,39 @@ $("#register-btn").on("click", function () {
   $(this).addClass("active");
   $("#login-form").addClass("hide").removeClass("show");
   $("#register-form").removeClass("hide").addClass("show");
+});
+
+$(".submit-btn").on("click", function () {
+  console.log("🚀 ~ file: appSecondVersion.js:1069 ~ submit-btn");
+  if ($("#register-btn").hasClass("active")) {
+    $.post(
+      "http://localhost:3000/user/signup",
+      {
+        name: $("#register-name").val(),
+        email: $("#register-email").val(),
+        password: $("#register-password").val(),
+        dateOfBirth: "01-01-2000",
+      },
+      function (data, status) {
+        console.log(
+          "Data status: " + data.status,
+          +"\ndata.message: " + data.message
+        );
+      }
+    );
+  } else {
+    $.post(
+      "http://localhost:3000/user/signin",
+      {
+        email: $("#register-email").val(),
+        password: $("#register-password").val(),
+      },
+      function (data, status) {
+        console.log(
+          "Data status: " + data.status,
+          +"\ndata.message: " + data.message
+        );
+      }
+    );
+  }
 });
