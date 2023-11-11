@@ -930,29 +930,65 @@ function disableUserActions() {
 }
 
 $(buttonTestAll).on("click", function () {
-  console.log("%c click on buttonTestAll", "background: yellow; color: black;");
+  console.log(
+    "%c click on buttonTestAll   test / all;",
+    "background: yellow; color: black;"
+  );
+  $.get("http://localhost:3000/api/test/all", function (data, status) {
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
 });
 $(buttonTestUser).on("click", function () {
   console.log(
-    "%c click on buttonTestUser",
+    "%c click on buttonTestUser test/user",
     "color: yellow; background: black;"
   );
+  $.get("http://localhost:3000/api/test/user", function (data, status) {
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
 });
 $(buttonLoginWrongPassword).on("click", function () {
   console.log(
-    "%c click on buttonLoginWrongPassword",
+    "%c click on buttonLoginWrongPassword auth/signin - wrong pwd",
     "background: yellow; color: black;"
+  );
+  $.post(
+    "http://localhost:3000/api/auth/signin",
+    {
+      data: {
+        username: "username",
+        password: "password",
+      },
+    },
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
   );
 });
 $(buttonLoginCorrectPassword).on("click", function () {
   console.log(
-    "%c click on buttonLoginCorrectPassword",
+    "%c click on buttonLoginCorrectPassword auth/signin - correct pwd",
     "color: yellow; background: black;"
+  );
+  $.post(
+    "http://localhost:3000/api/auth/signin",
+    {
+      data: {
+        username: "username",
+        password: "password",
+      },
+    },
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
   );
 });
 $(buttonAccessWithLegalAccount).on("click", function () {
   console.log(
-    "%c click on buttonAccessWithLegalAccount",
+    "%c click on buttonAccessWithLegalAccount test/user legal acc",
     "background: yellow; color: black;"
   );
+  $.get("http://localhost:3000/api/test/user", function (data, status) {
+    console.log("Data: " + data + "\nStatus: " + status);
+  });
 });
