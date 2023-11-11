@@ -671,6 +671,7 @@ table {
 .login-container .form-content form.hide {
 	opacity: 0;
 	transform: translateX(-50px);
+	pointer-events: none;
 }
 
 .login-container .form-content form.show {

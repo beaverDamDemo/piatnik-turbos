@@ -1060,7 +1060,8 @@ $("#register-btn").on("click", function () {
   $("#register-form").removeClass("hide").addClass("show");
 });
 
-$(".submit-btn").on("click", function () {
+$(".submit-btn").on("click", function (event) {
+  event.preventDefault();
   console.log("🚀 ~ file: appSecondVersion.js:1069 ~ submit-btn");
   if ($("#register-btn").hasClass("active")) {
     $.post(
@@ -1079,11 +1080,20 @@ $(".submit-btn").on("click", function () {
       }
     );
   } else {
+    console.log(
+      "🚀 ~ file: appSecondVersion.js:1084 ~ $('#login-email').val():",
+      $("#login-email").val()
+    );
+    console.log(
+      "🚀 ~ file: appSecondVersion.js:1086 ~ $('#login-password').val():",
+      $("#login-password").val()
+    );
+
     $.post(
       "http://localhost:3000/user/signin",
       {
-        email: $("#register-email").val(),
-        password: $("#register-password").val(),
+        email: $("#login-email").val(),
+        password: $("#login-password").val(),
       },
       function (data, status) {
         console.log(
