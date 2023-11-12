@@ -429,6 +429,7 @@ table {
 
 .end-game {
 	position: absolute;
+	z-index: 9;
 	left: 0;
 	top: 0;
 	width: 100%;

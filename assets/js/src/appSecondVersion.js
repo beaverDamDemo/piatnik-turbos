@@ -257,12 +257,14 @@ function compareCards(previousMethod) {
       );
       $(".end-game__correct").addClass("active");
       // saveCookies(cars)
+      saveDataOnServer();
     } else if (cardY.length == 0) {
       $(".end-game__wrong .numOfUserActions").text(
         "number of user actions: " + numOfUserActions
       );
       $(".end-game__wrong").addClass("active");
       // saveCookies(cars)
+      saveDataOnServer();
     } else {
       loadCurrentCards();
       if (xWon == true) {
@@ -506,6 +508,40 @@ function removeSelectCardsOverlay() {
     // $(statusText).empty().removeClass("active");
     makeAiMove();
   }, 2000);
+}
+
+function saveDataOnServer() {
+  $.post(
+    "http://localhost:3000/user/save-game-results",
+    {
+      data: {
+        foo: "quux",
+      },
+    },
+    function (data, status) {
+      console.log("🚀 ~ file: appSecondVersion.js:522 ~ status:", status);
+      console.log("🚀 ~ file: appSecondVersion.js:522 ~ data:", data);
+      // if (data.status === "SUCCESS") {
+      //   modal.find("p").text("User Info loaded successfully");
+      //   modal.show();
+      // } else {
+      //   modal.find("p").text(data.message);
+      //   modal.show();
+      // }
+      // var res = JSON.parse(JSON.stringify(data)).data[0];
+
+      // $("#user-profile").find("div").empty();
+      // $("#user-profile")
+      //   .find("div")
+      //   .append("<p>name: " + res.name + "</p>");
+      // $("#user-profile")
+      //   .find("div")
+      //   .append("<p>email: " + res.email + "</p>");
+      // $("#user-profile")
+      //   .find("div")
+      //   .append("<p>date of birth: " + res.dateOfBirth + "</p>");
+    }
+  );
 }
 
 $(button_1).on("click", () => {
@@ -887,7 +923,7 @@ function fillUpcars() {
     "%cTemporarily shortened number of cards",
     "background: url(https://www.bing.com/sa/simg/hpc27_2x.png) no-repeat; color: white; font-size: x-large; padding: 20px 40px;"
   );
-  array = array.slice(0, 8);
+  array = array.slice(0, 6);
   return array;
 }
 
@@ -1108,6 +1144,9 @@ $(".submit-btn").on("click", function (event) {
           $("#overlay-select-cards").addClass("active");
           modal.find("p").text("Login Success");
           modal.show();
+          setTimeout(() => {
+            modal.hide();
+          }, 5000);
         } else {
           modal.find("p").text(data.message);
           modal.show();
