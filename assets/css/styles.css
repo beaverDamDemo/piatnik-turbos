@@ -24,18 +24,9 @@ body {
 	width: 1024px;
 }
 
-#overlay-select-cards.active {
-	display: block;
-}
-#overlay-select-cards .inner {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-
 /* Add some basic styles for the overlay div */
 #overlay-select-cards {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -45,8 +36,19 @@ body {
 	background: rgba(0, 0, 0, 0.8);
 	align-items: center;
 	justify-content: center;
-	display: none;
 }
+
+#overlay-select-cards.active {
+	display: block;
+}
+
+#overlay-select-cards .inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 #overlay-select-cards.active {
 	display: flex;
 }
@@ -613,18 +615,20 @@ table {
 }
 
 .login-container {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	z-index: 4;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #673ab7;
+	background-color: #111d;
 }
-
+.login-container.active {
+	display: flex;
+}
 .login-container .form-container {
 	width: 500px;
 	max-width: 90%;
@@ -726,4 +730,41 @@ table {
 
 .login-container .submit-btn:hover {
 	opacity: 0.9;
+}
+
+.login-container .close-button {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+}
+
+.login-container .close-button .close-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 2px;
+}
+
+.login-container .close-button .close-icon::before,
+.login-container .close-button .close-icon::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #04aa6d;
+	transform: rotate(45deg);
+}
+
+.login-container .close-button .close-icon::after {
+	transform: rotate(-45deg);
 }

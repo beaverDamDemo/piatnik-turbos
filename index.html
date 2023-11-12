@@ -62,7 +62,10 @@
 
     <div id="wrapper" class="overlayed">
       <!-- HTML code for the login and register form -->
-      <div class="login-container">
+      <div class="login-container active">
+        <div class="close-button">
+          <span class="close-icon"></span>
+        </div>
         <div class="form-container">
           <div class="form-switch">
             <button id="login-btn" class="active">Login</button>
@@ -88,16 +91,16 @@
                   required
                 />
               </div>
-              <div class="input-group">
+              <!-- <div class="input-group">
                 <input type="checkbox" id="remember-me" name="remember-me" />
                 <label for="remember-me">Remember me</label>
-              </div>
+              </div> -->
               <div class="input-group">
                 <button type="submit" class="submit-btn">Login</button>
               </div>
-              <div class="input-group">
+              <!-- <div class="input-group">
                 <a href="#">Forgot password?</a>
-              </div>
+              </div> -->
             </form>
             <form id="register-form" class="hide">
               <div class="input-group">
@@ -141,84 +144,73 @@
               </div>
             </form>
           </div>
-        </div>
-        <div>
           <button
             id="buttonTestAll"
             type="submit"
-            class="submit-btn"
-            style="background: yellow; color: black"
+            style="background: yellow; color: black; display: inline-block"
           >
             test/all
           </button>
           <button
             id="buttonTestUser"
             type="submit"
-            class="submit-btn"
-            style="color: yellow; background: black"
+            style="color: yellow; background: black; display: inline-block"
           >
             test/user
           </button>
           <button
             id="buttonLoginWrongPassword"
             type="submit"
-            class="submit-btn"
-            style="background: yellow; color: black"
+            style="background: yellow; color: black; display: inline-block"
           >
             auth/signin - wrong pwd
           </button>
           <button
             id="buttonLoginCorrectPassword"
             type="submit"
-            class="submit-btn"
-            style="color: yellow; background: black"
+            style="color: yellow; background: black; display: inline-block"
           >
             auth/signin - correct pwd
           </button>
           <button
             id="buttonAccessWithLegalAccount"
             type="submit"
-            class="submit-btn"
-            style="background: yellow; color: black"
+            style="background: yellow; color: black; display: inline-block"
           >
             test/user legal acc
           </button>
           <button
             id="buttonAccessWithLegalAccountMod"
             type="submit"
-            class="submit-btn"
-            style="color: yellow; background: black"
+            style="color: yellow; background: black; display: inline-block"
           >
             test/user legal acc mod
           </button>
           <button
             id="buttonAccessWithLegalAccountAdmin"
             type="submit"
-            class="submit-btn"
-            style="background: yellow; color: black"
+            style="background: yellow; color: black; display: inline-block"
           >
             test/user legal acc admin
           </button>
           <button
             id="buttonApiAuthAll"
             type="submit"
-            class="submit-btn"
-            style="color: yellow; background: black"
+            style="color: yellow; background: black; display: inline-block"
           >
             buttonApiAuthAll
           </button>
           <button
             id="buttonSignup"
             type="submit"
-            class="submit-btn"
-            style="background: red; color: black"
+            style="background: red; color: black; display: inline-block"
           >
             User Signup
           </button>
         </div>
       </div>
 
-      <div id="overlay-select-cards" class="active">
+      <div id="overlay-select-cards" class="">
         <div class="inner">
           <h4>Select one:</h4>
           <div>

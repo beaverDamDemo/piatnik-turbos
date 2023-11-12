@@ -1096,6 +1096,10 @@ $(".submit-btn").on("click", function (event) {
         password: $("#login-password").val(),
       },
       function (data, status) {
+        if (data.status === "SUCCESS") {
+          $(".login-container").removeClass("active");
+          $("#overlay-select-cards").addClass("active");
+        }
         console.log(
           "Data status: " + data.status,
           +"\ndata.message: " + data.message
@@ -1103,4 +1107,10 @@ $(".submit-btn").on("click", function (event) {
       }
     );
   }
+});
+
+$(".login-container .close-button").on("click", function () {
+  console.log(" here");
+  $(".login-container").removeClass("active");
+  $("#overlay-select-cards").addClass("active");
 });
