@@ -1138,3 +1138,40 @@ $(window).click(function (event) {
     modal.hide();
   }
 });
+
+$("#button-user-profile").on("click", function () {
+  $("#user-profile").toggleClass("active");
+  if ($("#user-profile").hasClass("active")) {
+    $.post(
+      "http://localhost:3000/user/user-info",
+      {
+        email: $("#login-email").val(),
+      },
+      function (data, status) {
+        if (data.status === "SUCCESS") {
+          modal.find("p").text("User Info loaded successfully");
+          modal.show();
+        } else {
+          modal.find("p").text(data.message);
+          modal.show();
+        }
+        var res = JSON.parse(JSON.stringify(data)).data[0];
+
+        $("#user-profile").find("div").empty();
+        $("#user-profile")
+          .find("div")
+          .append("<p>name: " + res.name + "</p>");
+        $("#user-profile")
+          .find("div")
+          .append("<p>email: " + res.email + "</p>");
+        $("#user-profile")
+          .find("div")
+          .append("<p>date of birth: " + res.dateOfBirth + "</p>");
+      }
+    );
+  }
+});
+
+$("#user-profile .close").on("click", function () {
+  $("#user-profile").removeClass("active");
+});
