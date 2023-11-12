@@ -13,6 +13,8 @@ var numOfUserActions = 0;
 var cars = [];
 var cardY = [],
   cardX = [];
+var modal = $("#modal");
+var span = $(".modal-close");
 
 function makeAiMove() {
   $("details#cara").text(cardX[0].getDuelStats());
@@ -881,6 +883,11 @@ function fillUpcars() {
   }
 
   shuffle(array);
+  console.log(
+    "%cTemporarily shortened number of cards",
+    "background: url(https://www.bing.com/sa/simg/hpc27_2x.png) no-repeat; color: white; font-size: x-large; padding: 20px 40px;"
+  );
+  array = array.slice(0, 8);
   return array;
 }
 
@@ -1099,6 +1106,11 @@ $(".submit-btn").on("click", function (event) {
         if (data.status === "SUCCESS") {
           $(".login-container").removeClass("active");
           $("#overlay-select-cards").addClass("active");
+          modal.find("p").text("Login Success");
+          modal.show();
+        } else {
+          modal.find("p").text(data.message);
+          modal.show();
         }
         console.log(
           "Data status: " + data.status,
@@ -1113,4 +1125,16 @@ $(".login-container .close-button").on("click", function () {
   console.log(" here");
   $(".login-container").removeClass("active");
   $("#overlay-select-cards").addClass("active");
+});
+
+// When the user clicks on <span> (x), close the modal
+span.click(function () {
+  modal.hide();
+});
+
+// When the user clicks anywhere outside of the modal, close it
+$(window).click(function (event) {
+  if (event.target == modal[0]) {
+    modal.hide();
+  }
 });
