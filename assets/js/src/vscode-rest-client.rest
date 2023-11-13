@@ -1,0 +1,107 @@
+###
+POST http://localhost:3000/car/save-game-results
+content-type: application/json
+
+{
+"data": {
+"cardsPack": "flotteFlitzer",
+"cars": [
+{
+  "id": "8C",
+  "name": "Lotus Esprit Turbo",
+  "zyl": 4,
+  "kw": 160,
+  "ccm": 2174,
+  "kmh": 245,
+  "img": "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
+  "firstChoice": 2,
+  "secondChoice": 3,
+  "img_x": 2429,
+  "img_y": 644,
+  "duelsWon": 0,
+  "duelsLost": 1,
+  "duelsTie": 0
+},
+{
+  "id": "2A",
+  "name": "Jehle Pantera",
+  "zyl": 8,
+  "kw": 331,
+  "ccm": 5600,
+  "kmh": 305,
+  "img": "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
+  "firstChoice": 2,
+  "secondChoice": 3,
+  "img_x": 344,
+  "img_y": 0,
+  "duelsWon": 1,
+  "duelsLost": 0,
+  "duelsTie": 0
+},
+{
+  "id": "6B",
+  "name": "Sethera",
+  "zyl": 6,
+  "kw": 105,
+  "ccm": 2664,
+  "kmh": 190,
+  "img": "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
+  "firstChoice": 2,
+  "secondChoice": 3,
+  "img_x": 1749,
+  "img_y": 322,
+  "duelsWon": 0,
+  "duelsLost": 1,
+  "duelsTie": 0
+},
+{
+  "id": "4D",
+  "name": "Lamborghini Jalpa",
+  "zyl": 8,
+  "kw": 188,
+  "ccm": 3485,
+  "kmh": 243,
+  "img": "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
+  "firstChoice": 2,
+  "secondChoice": 3,
+  "img_x": 1039,
+  "img_y": 940,
+  "duelsWon": 1,
+  "duelsLost": 0,
+  "duelsTie": 0
+},
+{
+  "id": "8D",
+  "name": "MVS Venturi",
+  "zyl": 6,
+  "kw": 147,
+  "ccm": 2458,
+  "kmh": 250,
+  "img": "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
+  "firstChoice": 2,
+  "secondChoice": 3,
+  "img_x": 2429,
+  "img_y": 940,
+  "duelsWon": 0,
+  "duelsLost": 1,
+  "duelsTie": 0
+},
+{
+  "id": "2B",
+  "name": "Callaway Corvette Twin Turbo",
+  "zyl": 8,
+  "kw": 281,
+  "ccm": 5733,
+  "kmh": 304,
+  "img": "assets/images/flotteFlitzer/flotteFlitzer loaded.jpg",
+  "firstChoice": 2,
+  "secondChoice": 3,
+  "img_x": 344,
+  "img_y": 322,
+  "duelsWon": 1,
+  "duelsLost": 0,
+  "duelsTie": 0
+}
+]
+}
+}

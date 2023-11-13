@@ -13,6 +13,7 @@ var numOfUserActions = 0;
 var cars = [];
 var cardY = [],
   cardX = [];
+var cardsPack = "";
 var modal = $("#modal");
 var span = $(".modal-close");
 
@@ -158,20 +159,6 @@ function compareCards(previousMethod) {
 
   // addDuelResult
   function firstPart() {
-    if (currentAttrX) {
-      console.log(
-        "🚀 ~ currentAttrX , currentAttrY:",
-        currentAttrX,
-        currentAttrY,
-        currentHigherIsBetter
-      );
-    } else {
-      console.log(
-        `%c🚀 ~ currentAttrX , currentAttrY:  ${currentAttrX},  ${currentAttrY}, ${currentHigherIsBetter}`,
-        "color: red; background: black;"
-      );
-    }
-
     if (currentAttrX == currentAttrY) {
       xWon = undefined;
       cardX[0].addDuelResult("tie");
@@ -256,19 +243,15 @@ function compareCards(previousMethod) {
         "number of user actions: " + numOfUserActions
       );
       $(".end-game__correct").addClass("active");
-      // saveCookies(cars)
-      saveDataOnServer();
+
+      saveDataOnServer(true);
     } else if (cardY.length == 0) {
       $(".end-game__wrong .numOfUserActions").text(
         "number of user actions: " + numOfUserActions
       );
       $(".end-game__wrong").addClass("active");
-      // saveCookies(cars)
-      saveDataOnServer();
-    } else {
-      loadCurrentCards();
+
       if (xWon == true) {
-        //AI wins
         makeAiMove();
       } else if (xWon == false) {
         userMove();
@@ -280,30 +263,8 @@ function compareCards(previousMethod) {
         }
       }
     }
-
-    function saveCookies() {
-      console.log("Saving cookies currently disabled");
-      // for( var i=0; i<cars.length; i++ ) {
-
-      //     var cv = $.cookie(cars[i].id).split(',')
-      //     console.log('current: ', cv)
-      //     var newc = [
-      //         cars[i].duelsWon,
-      //         cars[i].duelsLost,
-      //         cars[i].duelsTie
-      //     ]
-      //     console.log("Have to be added: ", newc)
-      //     var newarray = [
-      //         cv[0],
-      //         parseInt(cv[1])+newc[0],
-      //         parseInt(cv[2])+newc[1],
-      //         parseInt(cv[3])+newc[2]
-      //     ]
-      //     $.cookie(cars[i].id, newarray)
-      // }
-    }
   }
-} //compareCards
+}
 
 function updateUserCardsDetails() {
   $("#userCards").empty();
@@ -510,12 +471,13 @@ function removeSelectCardsOverlay() {
   }, 2000);
 }
 
-function saveDataOnServer() {
+function saveDataOnServer(hasUserWon) {
   $.post(
-    "http://localhost:3000/user/save-game-results",
+    "http://localhost:3000/car/save-game-results",
     {
       data: {
-        foo: "quux",
+        cardsPack: cardsPack,
+        cars: cars,
       },
     },
     function (data, status) {
@@ -542,6 +504,23 @@ function saveDataOnServer() {
       //   .append("<p>date of birth: " + res.dateOfBirth + "</p>");
     }
   );
+
+  console.log(
+    "🚀 ~ file: appSecondVersion.js:513 ~  ).val():",
+    $("#login-email").val()
+  );
+
+  $.post(
+    "http://localhost:3000/user/save-user-result",
+    {
+      hasUserWon: hasUserWon,
+      email: $("#login-email").val(),
+    },
+    function (data, status) {
+      console.log("🚀 ~ file: appSecondVersion.js:522 ~ status:", status);
+      console.log("🚀 ~ file: appSecondVersion.js:522 ~ data:", data);
+    }
+  );
 }
 
 $(button_1).on("click", () => {
@@ -554,6 +533,7 @@ $(button_1).on("click", () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
+  cardsPack = "flotteFlitzer";
 });
 $(button_2).on("click", () => {
   var scriptEle = document.createElement("script");
@@ -565,6 +545,7 @@ $(button_2).on("click", () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
+  cardsPack = "piatnikTuning";
 });
 $(button_3).on("click", () => {
   var scriptEle = document.createElement("script");
@@ -576,6 +557,7 @@ $(button_3).on("click", () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
+  cardsPack = "piatnikTurbos";
 });
 $(button_4).on("click", () => {
   $("button").removeClass("active");
@@ -593,6 +575,7 @@ $(button_5).on("click", () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
+  cardsPack = "sportCars";
 });
 $(button_6).on("click", () => {
   $("button").removeClass("active");
@@ -611,6 +594,7 @@ $(input_4).keyup(function () {
       cars = fillUpcars();
       removeSelectCardsOverlay();
     });
+    cardsPack = "sloescort";
   }
 });
 $(input_6).keyup(function () {
@@ -624,6 +608,7 @@ $(input_6).keyup(function () {
       cars = fillUpcars();
       removeSelectCardsOverlay();
     });
+    cardsPack = "vaginas";
   }
 });
 //#endregion
@@ -923,7 +908,7 @@ function fillUpcars() {
     "%cTemporarily shortened number of cards",
     "background: url(https://www.bing.com/sa/simg/hpc27_2x.png) no-repeat; color: white; font-size: x-large; padding: 20px 40px;"
   );
-  array = array.slice(0, 6);
+  array = array.slice(0, 2);
   return array;
 }
 
@@ -1203,9 +1188,24 @@ $("#button-user-profile").on("click", function () {
         $("#user-profile")
           .find("div")
           .append("<p>email: " + res.email + "</p>");
+        if (!res.matchesLost) res.matchesLost = 0;
+        if (!res.matchesWon) res.matchesWon = 0;
         $("#user-profile")
           .find("div")
-          .append("<p>date of birth: " + res.dateOfBirth + "</p>");
+          .append("<p>matches won: " + res.matchesWon + "</p>");
+        $("#user-profile")
+          .find("div")
+          .append("<p>matches lost: " + res.matchesLost + "</p>");
+
+        $("#user-profile")
+          .find("div")
+          .append(
+            "<p>percentage won: " +
+              Math.round(
+                (res.matchesWon / (res.matchesWon + res.matchesLost)) * 100
+              ) +
+              " %</p>"
+          );
       }
     );
   }
@@ -1213,4 +1213,36 @@ $("#button-user-profile").on("click", function () {
 
 $("#user-profile .close").on("click", function () {
   $("#user-profile").removeClass("active");
+});
+
+$("#button-cards-stats").on("click", function () {
+  // $("#cards-stats").toggleClass("active");
+  // if ($("#cards-stats").hasClass("active")) {
+  //   $.post(
+  //     "http://localhost:3000/user/user-info",
+  //     {
+  //       email: $("#login-email").val(),
+  //     },
+  //     function (data, status) {
+  //       if (data.status === "SUCCESS") {
+  //         modal.find("p").text("User Info loaded successfully");
+  //         modal.show();
+  //       } else {
+  //         modal.find("p").text(data.message);
+  //         modal.show();
+  //       }
+  //       var res = JSON.parse(JSON.stringify(data)).data[0];
+  //       $("#cards-stats").find("div").empty();
+  //       $("#cards-stats")
+  //         .find("div")
+  //         .append("<p>name: " + res.name + "</p>");
+  //       $("#cards-stats")
+  //         .find("div")
+  //         .append("<p>email: " + res.email + "</p>");
+  //       $("#cards-stats")
+  //         .find("div")
+  //         .append("<p>date of birth: " + res.dateOfBirth + "</p>");
+  //     }
+  //   );
+  // }
 });

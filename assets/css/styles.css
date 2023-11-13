@@ -116,6 +116,12 @@ body {
 	background: #21e5f3;
 	font-family: "tannenberg_fettregular";
 }
+
+#overlay-select-cards #button-cards-stats {
+	background: rgb(16, 255, 155);
+	font-family: "tannenberg_fettregular";
+}
+
 /* Add some styles for the hidden inputs */
 #overlay-select-cards input.hidden {
 	display: none;
