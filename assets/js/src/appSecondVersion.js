@@ -1216,33 +1216,36 @@ $("#user-profile .close").on("click", function () {
 });
 
 $("#button-cards-stats").on("click", function () {
-  // $("#cards-stats").toggleClass("active");
-  // if ($("#cards-stats").hasClass("active")) {
-  //   $.post(
-  //     "http://localhost:3000/user/user-info",
-  //     {
-  //       email: $("#login-email").val(),
-  //     },
-  //     function (data, status) {
-  //       if (data.status === "SUCCESS") {
-  //         modal.find("p").text("User Info loaded successfully");
-  //         modal.show();
-  //       } else {
-  //         modal.find("p").text(data.message);
-  //         modal.show();
-  //       }
-  //       var res = JSON.parse(JSON.stringify(data)).data[0];
-  //       $("#cards-stats").find("div").empty();
-  //       $("#cards-stats")
-  //         .find("div")
-  //         .append("<p>name: " + res.name + "</p>");
-  //       $("#cards-stats")
-  //         .find("div")
-  //         .append("<p>email: " + res.email + "</p>");
-  //       $("#cards-stats")
-  //         .find("div")
-  //         .append("<p>date of birth: " + res.dateOfBirth + "</p>");
-  //     }
-  //   );
-  // }
+  $("#cards-stats").toggleClass("active");
+
+  if ($("#cards-stats").hasClass("active")) {
+    $.get("http://localhost:3000/car/cards-stats", function (data, status) {
+      console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
+      $("#cards-stats").find("div").empty();
+
+      if (data.status === "SUCCESS") {
+        for (let i = 0; i < data.data.length; i++) {
+          $("#cards-stats")
+            .find("div")
+            .append(
+              "<p>" +
+                data.data[i].cardsPack +
+                " - " +
+                data.data[i].name +
+                " duelsLost: " +
+                data.data[i].duelsLost +
+                " duelsTie: " +
+                data.data[i].duelsTie +
+                " duelsWon " +
+                data.data[i].duelsWon +
+                "</p>"
+            );
+        }
+      }
+    });
+  }
+});
+
+$("#cards-stats .close").on("click", function () {
+  $("#cards-stats").removeClass("active");
 });
