@@ -243,15 +243,17 @@ function compareCards(previousMethod) {
         "number of user actions: " + numOfUserActions
       );
       $(".end-game__correct").addClass("active");
-
       saveDataOnServer(true);
     } else if (cardY.length == 0) {
       $(".end-game__wrong .numOfUserActions").text(
         "number of user actions: " + numOfUserActions
       );
       $(".end-game__wrong").addClass("active");
-
+      saveDataOnServer(false);
+    } else {
+      loadCurrentCards();
       if (xWon == true) {
+        //AI wins
         makeAiMove();
       } else if (xWon == false) {
         userMove();
