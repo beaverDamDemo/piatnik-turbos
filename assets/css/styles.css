@@ -894,3 +894,22 @@ table {
 	text-decoration: none;
 	cursor: pointer;
 }
+#cards-stats table {
+	border-collapse: collapse;
+}
+
+#cards-stats table,
+#cards-stats th,
+#cards-stats td {
+	border: 1px solid black;
+}
+
+#cards-stats th,
+#cards-stats td {
+	padding: 10px;
+}
+
+#cards-stats th:nth-child(2),
+#cards-stats td:nth-child(2) {
+	width: 300px;
+}

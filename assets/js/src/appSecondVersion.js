@@ -908,7 +908,7 @@ function fillUpcars() {
     "%cTemporarily shortened number of cards",
     "background: url(https://www.bing.com/sa/simg/hpc27_2x.png) no-repeat; color: white; font-size: x-large; padding: 20px 40px;"
   );
-  array = array.slice(0, 2);
+  // array = array.slice(0, 12);
   return array;
 }
 
@@ -1090,7 +1090,6 @@ $("#register-btn").on("click", function () {
 
 $(".submit-btn").on("click", function (event) {
   event.preventDefault();
-  console.log("🚀 ~ file: appSecondVersion.js:1069 ~ submit-btn");
   if ($("#register-btn").hasClass("active")) {
     $.post(
       "http://localhost:3000/user/signup",
@@ -1108,15 +1107,6 @@ $(".submit-btn").on("click", function (event) {
       }
     );
   } else {
-    console.log(
-      "🚀 ~ file: appSecondVersion.js:1084 ~ $('#login-email').val():",
-      $("#login-email").val()
-    );
-    console.log(
-      "🚀 ~ file: appSecondVersion.js:1086 ~ $('#login-password').val():",
-      $("#login-password").val()
-    );
-
     $.post(
       "http://localhost:3000/user/signin",
       {
