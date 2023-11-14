@@ -1249,3 +1249,9 @@ $("#button-cards-stats").on("click", function () {
 $("#cards-stats .close").on("click", function () {
   $("#cards-stats").removeClass("active");
 });
+
+$(buttonEmptyCardsStats).on("click", function () {
+  $.get("http://localhost:3000/car/empty-cards-stats", function (data, status) {
+    console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
+  });
+});
