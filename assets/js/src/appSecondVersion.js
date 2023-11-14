@@ -475,7 +475,7 @@ function removeSelectCardsOverlay() {
 
 function saveDataOnServer(hasUserWon) {
   $.post(
-    "http://localhost:3000/car/save-game-results",
+    "https://tothepointcodeloginexpressjs.onrender.com/car/save-game-results",
     {
       data: {
         cardsPack: cardsPack,
@@ -513,7 +513,7 @@ function saveDataOnServer(hasUserWon) {
   );
 
   $.post(
-    "http://localhost:3000/user/save-user-result",
+    "https://tothepointcodeloginexpressjs.onrender.com/user/save-user-result",
     {
       hasUserWon: hasUserWon,
       email: $("#login-email").val(),
@@ -964,7 +964,7 @@ $(buttonTestAll).on("click", function () {
     "%c click on buttonTestAll   test / all;",
     "background: yellow; color: black;"
   );
-  $.get("http://localhost:3000/api/test/all", function (data, status) {
+  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/all", function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -974,7 +974,7 @@ $(buttonTestUser).on("click", function () {
     "%c click on buttonTestUser test/user",
     "color: yellow; background: black;"
   );
-  $.get("http://localhost:3000/api/test/user", function (data, status) {
+  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/user", function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -985,7 +985,7 @@ $(buttonLoginWrongPassword).on("click", function () {
     "background: yellow; color: black;"
   );
   $.post(
-    "http://localhost:3000/api/auth/signin",
+    "https://tothepointcodeloginexpressjs.onrender.com/api/auth/signin",
     {
       data: {
         username: "mod",
@@ -1004,7 +1004,7 @@ $(buttonLoginCorrectPassword).on("click", function () {
     "color: yellow; background: black;"
   );
   $.post(
-    "http://localhost:3000/api/auth/signin",
+    "https://tothepointcodeloginexpressjs.onrender.com/api/auth/signin",
     {
       data: {
         username: "username",
@@ -1022,7 +1022,7 @@ $(buttonAccessWithLegalAccount).on("click", function () {
     "%c click on buttonAccessWithLegalAccount test/user legal acc",
     "background: yellow; color: black;"
   );
-  $.get("http://localhost:3000/api/test/user", function (data, status) {
+  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/user", function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -1032,7 +1032,7 @@ $(buttonAccessWithLegalAccountMod).on("click", function () {
     "%c click on buttonAccessWithLegalAccountMod test/user legal acc mod",
     "color: yellow; background: black;"
   );
-  $.get("http://localhost:3000/api/test/mod", function (data, status) {
+  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/mod", function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -1042,7 +1042,7 @@ $(buttonAccessWithLegalAccountAdmin).on("click", function () {
     "%c click on buttonAccessWithLegalAccountAdmin test/user legal acc user",
     "background: yellow; color: black;"
   );
-  $.get("http://localhost:3000/api/test/admin", function (data, status) {
+  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/admin", function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -1052,7 +1052,7 @@ $(buttonApiAuthAll).on("click", function () {
     "%c click on buttonApiAuthAll",
     "color: yellow; background: black;"
   );
-  $.post("http://localhost:3000/api/auth/all", {}, function (data, status) {
+  $.post("https://tothepointcodeloginexpressjs.onrender.com/api/auth/all", {}, function (data, status) {
     console.log("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -1060,7 +1060,7 @@ $(buttonApiAuthAll).on("click", function () {
 $(buttonSignup).on("click", function () {
   console.log("%c click on buttonSignup", "background: red; color: black;");
   $.post(
-    "http://localhost:3000/user/signup",
+    "https://tothepointcodeloginexpressjs.onrender.com/user/signup",
     {
       name: $("#register-name").val(),
       email: $("#register-email").val(),
@@ -1094,7 +1094,7 @@ $(".submit-btn").on("click", function (event) {
   event.preventDefault();
   if ($("#register-btn").hasClass("active")) {
     $.post(
-      "http://localhost:3000/user/signup",
+      "https://tothepointcodeloginexpressjs.onrender.com/user/signup",
       {
         name: $("#register-name").val(),
         email: $("#register-email").val(),
@@ -1110,7 +1110,7 @@ $(".submit-btn").on("click", function (event) {
     );
   } else {
     $.post(
-      "http://localhost:3000/user/signin",
+      "https://tothepointcodeloginexpressjs.onrender.com/user/signin",
       {
         email: $("#login-email").val(),
         password: $("#login-password").val(),
@@ -1159,7 +1159,7 @@ $("#button-user-profile").on("click", function () {
   $("#user-profile").toggleClass("active");
   if ($("#user-profile").hasClass("active")) {
     $.post(
-      "http://localhost:3000/user/user-info",
+      "https://tothepointcodeloginexpressjs.onrender.com/user/user-info",
       {
         email: $("#login-email").val(),
       },
@@ -1211,7 +1211,7 @@ $("#button-cards-stats").on("click", function () {
   $("#cards-stats").toggleClass("active");
 
   if ($("#cards-stats").hasClass("active")) {
-    $.get("http://localhost:3000/car/cards-stats", function (data, status) {
+    $.get("https://tothepointcodeloginexpressjs.onrender.com/car/cards-stats", function (data, status) {
       console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
       $("#cards-stats").find("div").empty();
 
@@ -1243,7 +1243,7 @@ $("#cards-stats .close").on("click", function () {
 });
 
 $(buttonEmptyCardsStats).on("click", function () {
-  $.get("http://localhost:3000/car/empty-cards-stats", function (data, status) {
+  $.get("https://tothepointcodeloginexpressjs.onrender.com/car/empty-cards-stats", function (data, status) {
     console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
   });
 });
