@@ -1131,7 +1131,7 @@ $(".submit-btn").on("click", function (event) {
           modal.show();
           setTimeout(() => {
             modal.hide();
-          }, 5000);
+          }, 3500);
         } else {
           modal.find("p").text(data.message);
           modal.show();

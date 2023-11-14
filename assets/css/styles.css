@@ -870,8 +870,13 @@ table {
 	text-align: right;
 	padding: 10px;
 }
+
 #cards-stats.active {
 	display: block;
+}
+
+#cards-stats h3 {
+	text-align: center;
 }
 
 #cards-stats .close {
