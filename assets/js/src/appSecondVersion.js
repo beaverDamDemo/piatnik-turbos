@@ -964,9 +964,12 @@ $(buttonTestAll).on("click", function () {
     "%c click on buttonTestAll   test / all;",
     "background: yellow; color: black;"
   );
-  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/all", function (data, status) {
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
+  $.get(
+    "https://tothepointcodeloginexpressjs.onrender.com/api/test/all",
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
+  );
 });
 
 $(buttonTestUser).on("click", function () {
@@ -974,9 +977,12 @@ $(buttonTestUser).on("click", function () {
     "%c click on buttonTestUser test/user",
     "color: yellow; background: black;"
   );
-  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/user", function (data, status) {
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
+  $.get(
+    "https://tothepointcodeloginexpressjs.onrender.com/api/test/user",
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
+  );
 });
 
 $(buttonLoginWrongPassword).on("click", function () {
@@ -1022,9 +1028,12 @@ $(buttonAccessWithLegalAccount).on("click", function () {
     "%c click on buttonAccessWithLegalAccount test/user legal acc",
     "background: yellow; color: black;"
   );
-  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/user", function (data, status) {
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
+  $.get(
+    "https://tothepointcodeloginexpressjs.onrender.com/api/test/user",
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
+  );
 });
 
 $(buttonAccessWithLegalAccountMod).on("click", function () {
@@ -1032,9 +1041,12 @@ $(buttonAccessWithLegalAccountMod).on("click", function () {
     "%c click on buttonAccessWithLegalAccountMod test/user legal acc mod",
     "color: yellow; background: black;"
   );
-  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/mod", function (data, status) {
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
+  $.get(
+    "https://tothepointcodeloginexpressjs.onrender.com/api/test/mod",
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
+  );
 });
 
 $(buttonAccessWithLegalAccountAdmin).on("click", function () {
@@ -1042,9 +1054,12 @@ $(buttonAccessWithLegalAccountAdmin).on("click", function () {
     "%c click on buttonAccessWithLegalAccountAdmin test/user legal acc user",
     "background: yellow; color: black;"
   );
-  $.get("https://tothepointcodeloginexpressjs.onrender.com/api/test/admin", function (data, status) {
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
+  $.get(
+    "https://tothepointcodeloginexpressjs.onrender.com/api/test/admin",
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
+  );
 });
 
 $(buttonApiAuthAll).on("click", function () {
@@ -1052,9 +1067,13 @@ $(buttonApiAuthAll).on("click", function () {
     "%c click on buttonApiAuthAll",
     "color: yellow; background: black;"
   );
-  $.post("https://tothepointcodeloginexpressjs.onrender.com/api/auth/all", {}, function (data, status) {
-    console.log("Data: " + data + "\nStatus: " + status);
-  });
+  $.post(
+    "https://tothepointcodeloginexpressjs.onrender.com/api/auth/all",
+    {},
+    function (data, status) {
+      console.log("Data: " + data + "\nStatus: " + status);
+    }
+  );
 });
 
 $(buttonSignup).on("click", function () {
@@ -1211,30 +1230,40 @@ $("#button-cards-stats").on("click", function () {
   $("#cards-stats").toggleClass("active");
 
   if ($("#cards-stats").hasClass("active")) {
-    $.get("https://tothepointcodeloginexpressjs.onrender.com/car/cards-stats", function (data, status) {
-      console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
-      $("#cards-stats").find("div").empty();
+    $.get(
+      "https://tothepointcodeloginexpressjs.onrender.com/car/cards-stats",
+      function (data, status) {
+        console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
+        $("#cards-stats").find("div").empty();
 
-      if (data.status === "SUCCESS") {
-        for (let i = 0; i < data.data.length; i++) {
-          $("#cards-stats")
-            .find("div")
-            .append(
-              "<p>" +
-                data.data[i].cardsPack +
-                " - " +
-                data.data[i].name +
-                " duelsLost: " +
-                data.data[i].duelsLost +
-                " duelsTie: " +
-                data.data[i].duelsTie +
-                " duelsWon " +
-                data.data[i].duelsWon +
-                "</p>"
-            );
+        if (data.status === "SUCCESS") {
+          for (let i = 0; i < data.data.length; i++) {
+            $("#cards-stats").find("table").append(`
+              <tr>
+                <td>${data.data[i].cardsPack}</td>
+                <td>${data.data[i].name}</td>
+                <td>${data.data[i].duelsWon}</td>
+                <td>${data.data[i].duelsTie}</td>
+                <td>${data.data[i].duelsLost}</td>
+              </tr>
+            `);
+            // .append(
+            //   "<p>" +
+            //     data.data[i].cardsPack +
+            //     " - " +
+            //     data.data[i].name +
+            //     " duelsLost: " +
+            //     data.data[i].duelsLost +
+            //     " duelsTie: " +
+            //     data.data[i].duelsTie +
+            //     " duelsWon " +
+            //     data.data[i].duelsWon +
+            //     "</p>"
+            // );
+          }
         }
       }
-    });
+    );
   }
 });
 
@@ -1243,7 +1272,10 @@ $("#cards-stats .close").on("click", function () {
 });
 
 $(buttonEmptyCardsStats).on("click", function () {
-  $.get("https://tothepointcodeloginexpressjs.onrender.com/car/empty-cards-stats", function (data, status) {
-    console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
-  });
+  $.get(
+    "https://tothepointcodeloginexpressjs.onrender.com/car/empty-cards-stats",
+    function (data, status) {
+      console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
+    }
+  );
 });
