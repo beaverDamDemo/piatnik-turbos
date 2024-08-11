@@ -52,6 +52,7 @@ body {
 #overlay-select-cards.active {
 	display: flex;
 }
+
 /* Add some styles for the inner div */
 #overlay-select-cards .inner {
 	width: 80%;
@@ -199,6 +200,7 @@ header form output {
 }
 
 @keyframes scalex_an {
+
 	from,
 	to {
 		transform: scaleX(1);
@@ -214,9 +216,11 @@ footer {
 	background: url("../images/background-dark.jpg");
 	color: #fff;
 }
+
 footer #detailsContainer {
 	text-align: right;
 }
+
 footer #detailsContainer details {
 	font-size: 0.75em;
 	line-height: 1em;
@@ -414,6 +418,7 @@ table {
 }
 
 @media screen and (max-width: 900px) {
+
 	#cardADeep,
 	#cardA,
 	#cardBackA {
@@ -487,6 +492,7 @@ table {
 }
 
 @keyframes scale-up-an {
+
 	50%,
 	87.5% {
 		transform: scale(1);
@@ -599,22 +605,22 @@ table {
 		left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
 }
 
-#button-3 .checkbox:active + .knobs:before {
+#button-3 .checkbox:active+.knobs:before {
 	width: 46px;
 	border-radius: 100px;
 }
 
-#button-3 .checkbox:checked:active + .knobs:before {
+#button-3 .checkbox:checked:active+.knobs:before {
 	margin-left: -26px;
 }
 
-#button-3 .checkbox:checked + .knobs:before {
+#button-3 .checkbox:checked+.knobs:before {
 	content: "Blue";
 	left: 42px;
 	background-color: #03a9f4;
 }
 
-#button-3 .checkbox:checked ~ .layer {
+#button-3 .checkbox:checked~.layer {
 	background-color: #fcebeb;
 }
 
@@ -622,10 +628,12 @@ table {
 #wrapper.blueTheme .val {
 	color: blue;
 }
+
 #wrapper.blueTheme .val.active {
 	background-color: blue;
 	color: gold;
 }
+
 #wrapper.blueTheme .card-container .card-front {
 	background-color: gold;
 }
@@ -642,9 +650,11 @@ table {
 	justify-content: center;
 	background-color: #111d;
 }
+
 .login-container.active {
 	display: flex;
 }
+
 .login-container .form-container {
 	width: 500px;
 	max-width: 90%;
@@ -787,25 +797,34 @@ table {
 
 /* The Modal (background) */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 7; /* Sit on top */
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 7;
+	/* Sit on top */
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal .modal-content {
 	position: relative;
 	background-color: #fefefe;
-	margin: 10% auto; /* 10% from the top and centered */
+	margin: 10% auto;
+	/* 10% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+	width: 80%;
+	/* Could be more or less, depending on screen size */
 	box-shadow:
 		0 4px 8px 0 rgba(0, 0, 0, 0.2),
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -837,6 +856,7 @@ table {
 	background: url("../images/wood.jpeg");
 	text-align: center;
 }
+
 #user-profile.active {
 	display: block;
 }
@@ -895,6 +915,7 @@ table {
 	text-decoration: none;
 	cursor: pointer;
 }
+
 #cards-stats table {
 	border-collapse: collapse;
 }

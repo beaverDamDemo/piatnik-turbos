@@ -1,7 +1,7 @@
 var backgroundSize = {
   width: 2535,
   height: 1269,
-};  
+};
 var propertiesLabels = ["", "Motor:", "Leistung:", "Hubraum:", "Geschwindigkeit:"];
 var propertiesUnits = ["", "Zyl.", "kW", "ccm", "km/h"];
 var propertiesHigherIsBetter = [undefined, true, true, true, true];

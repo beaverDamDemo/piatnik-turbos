@@ -370,7 +370,7 @@ window.onload = function () {
       $(statusText).addClass("active");
     }
 
-    function thirdAiPart() {}
+    function thirdAiPart() { }
 
     function fourthAiPart() {
       compareCards("fromMakeAiMove");
@@ -388,16 +388,16 @@ window.onload = function () {
     $("#cardA .img").attr(
       "style",
       'background: url("' +
-        cardX[0].img +
-        '") ' +
-        -1 * cardX[0].img_x +
-        "px " +
-        -1 * cardX[0].img_y +
-        "px; background-size: " +
-        backgroundSize.width +
-        "px " +
-        backgroundSize.height +
-        "px"
+      cardX[0].img +
+      '") ' +
+      -1 * cardX[0].img_x +
+      "px " +
+      -1 * cardX[0].img_y +
+      "px; background-size: " +
+      backgroundSize.width +
+      "px " +
+      backgroundSize.height +
+      "px"
     );
 
     $("#cardB .id").html(cardY[0].id);
@@ -409,16 +409,16 @@ window.onload = function () {
     $("#cardB .img").attr(
       "style",
       'background: url("' +
-        cardY[0].img +
-        '") ' +
-        -1 * cardY[0].img_x +
-        "px " +
-        -1 * cardY[0].img_y +
-        "px; background-size: " +
-        backgroundSize.width +
-        "px " +
-        backgroundSize.height +
-        "px"
+      cardY[0].img +
+      '") ' +
+      -1 * cardY[0].img_x +
+      "px " +
+      -1 * cardY[0].img_y +
+      "px; background-size: " +
+      backgroundSize.width +
+      "px " +
+      backgroundSize.height +
+      "px"
     );
   }
 
@@ -603,24 +603,24 @@ function updateCardLengthGraphicView(c, d) {
   for (let i = 0; i < c - 1; i++) {
     $("#cardADeep").append(
       "<div class='inner' style='z-index:" +
-        (numOfCards - i) +
-        "; transform: translate(" +
-        i * 2 +
-        "px, " +
-        i * 2 +
-        "px)'></div>"
+      (numOfCards - i) +
+      "; transform: translate(" +
+      i * 2 +
+      "px, " +
+      i * 2 +
+      "px)'></div>"
     );
   }
   $("#cardBDeep").empty();
   for (let i = 0; i < d - 1; i++) {
     $("#cardBDeep").append(
       "<div class='inner' style='z-index:" +
-        (numOfCards - i) +
-        "; transform: translate(" +
-        i * 2 +
-        "px, " +
-        i * 2 +
-        "px)'></div>"
+      (numOfCards - i) +
+      "; transform: translate(" +
+      i * 2 +
+      "px, " +
+      i * 2 +
+      "px)'></div>"
     );
   }
 }
@@ -1194,7 +1194,7 @@ Promise.delay = function (fn, t) {
   // fn is an optional argument
   if (!t) {
     t = fn;
-    fn = function () {};
+    fn = function () { };
   }
   return delay(t).then(fn);
 };

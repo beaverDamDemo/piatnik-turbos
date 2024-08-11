@@ -406,30 +406,30 @@ function loadCurrentCards() {
     $("#cardA .img").attr(
       "style",
       'background: url("' +
-        cardX[0].img +
-        '") ' +
-        -cardX_offsetX +
-        "px " +
-        -cardX_offsetY +
-        "px; background-size: " +
-        backgroundSize.width +
-        "px " +
-        backgroundSize.height +
-        "px"
+      cardX[0].img +
+      '") ' +
+      -cardX_offsetX +
+      "px " +
+      -cardX_offsetY +
+      "px; background-size: " +
+      backgroundSize.width +
+      "px " +
+      backgroundSize.height +
+      "px"
     );
     $("#cardB .img").attr(
       "style",
       'background: url("' +
-        cardY[0].img +
-        '") ' +
-        -cardY_offsetX +
-        "px " +
-        -cardY_offsetY +
-        "px; background-size: " +
-        backgroundSize.width +
-        "px " +
-        backgroundSize.height +
-        "px"
+      cardY[0].img +
+      '") ' +
+      -cardY_offsetX +
+      "px " +
+      -cardY_offsetY +
+      "px; background-size: " +
+      backgroundSize.width +
+      "px " +
+      backgroundSize.height +
+      "px"
     );
   } else {
     $("#cardA .img").attr(
@@ -586,7 +586,7 @@ $(button_6).on("click", () => {
   $(button_6).addClass("active");
 });
 $(input_4).keyup(function () {
-  if ($(this).val() == "password") {
+  if ($(this).val() == "1234") {
     var scriptEle = document.createElement("script");
     scriptEle.setAttribute("src", "assets/js/src/sloescort.js");
     scriptEle.setAttribute("type", "text/javascript");
@@ -600,7 +600,7 @@ $(input_4).keyup(function () {
   }
 });
 $(input_6).keyup(function () {
-  if ($(this).val() == "password") {
+  if ($(this).val() == "1234") {
     var scriptEle = document.createElement("script");
     scriptEle.setAttribute("src", "assets/js/src/vaginas.js");
     scriptEle.setAttribute("type", "text/javascript");
@@ -801,24 +801,24 @@ function updateCardLengthGraphicView(c, d) {
   for (var i = 0; i < c - 1; i++) {
     $("#cardADeep").append(
       "<div class='inner' style='z-index:" +
-        (numOfCards - i) +
-        "; transform: translate(" +
-        i * 2 +
-        "px, " +
-        i * 2 +
-        "px)'></div>"
+      (numOfCards - i) +
+      "; transform: translate(" +
+      i * 2 +
+      "px, " +
+      i * 2 +
+      "px)'></div>"
     );
   }
   $("#cardBDeep").empty();
   for (var i = 0; i < d - 1; i++) {
     $("#cardBDeep").append(
       "<div class='inner' style='z-index:" +
-        (numOfCards - i) +
-        "; transform: translate(" +
-        i * 2 +
-        "px, " +
-        i * 2 +
-        "px)'></div>"
+      (numOfCards - i) +
+      "; transform: translate(" +
+      i * 2 +
+      "px, " +
+      i * 2 +
+      "px)'></div>"
     );
   }
 }
@@ -940,7 +940,7 @@ Promise.delay = function (fn, t) {
   // fn is an optional argument
   if (!t) {
     t = fn;
-    fn = function () {};
+    fn = function () { };
   }
   return delay(t).then(fn);
 };
@@ -1212,10 +1212,10 @@ $("#button-user-profile").on("click", function () {
           .find("div")
           .append(
             "<p>percentage won: " +
-              Math.round(
-                (res.matchesWon / (res.matchesWon + res.matchesLost)) * 100
-              ) +
-              " %</p>"
+            Math.round(
+              (res.matchesWon / (res.matchesWon + res.matchesLost)) * 100
+            ) +
+            " %</p>"
           );
       }
     );
