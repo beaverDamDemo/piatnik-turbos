@@ -391,45 +391,13 @@ var propertiesHigherIsBetter = [undefined, false, false, false, true];
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var karte = [
   [
     "1A",
     "Aria",
     3,
     7,
-    333333,
+    18,
     444444,
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
@@ -441,7 +409,7 @@ var karte = [
     "2A",
     "Beatrix",
     5.5,
-    12,
+    22,
     333333,
     444444,
     "assets/images/vaginas/vaginas loaded.jpg",
@@ -453,7 +421,7 @@ var karte = [
   [
     "3A",
     "Calista",
-    7,
+    27,
     9,
     333333,
     444444,
@@ -465,7 +433,7 @@ var karte = [
   ],
   [
     "4A",
-    "Celia",
+    16,
     4.5,
     6,
     333333,
@@ -477,7 +445,7 @@ var karte = [
     0,
   ],
   [
-    "5A",
+    19,
     "Clover",
     6,
     5,
@@ -489,19 +457,19 @@ var karte = [
     315 - 60,
     0,
   ],
-  [
-    "6A",
-    "Eleanora",
-    3.5,
-    11,
-    333333,
-    444444,
-    "assets/images/vaginas/vaginas loaded.jpg",
-    2,
-    3,
-    1050 - 60,
-    0,
-  ],
+  25,
+  "6A",
+  "Eleanora",
+  3.5,
+  11,
+  333333,
+  444444,
+  "assets/images/vaginas/vaginas loaded.jpg",
+  2,
+  3,
+  1050 - 60,
+  0,
+  29,
   [
     "7A",
     "Elsa",
@@ -513,7 +481,7 @@ var karte = [
     2,
     1,
     1260 - 60,
-    0,
+    21,
   ],
   [
     "8A",
@@ -525,7 +493,7 @@ var karte = [
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
     1,
-    1470 - 60,
+    17,
     0,
   ],
   [
@@ -537,7 +505,7 @@ var karte = [
     444444,
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
-    3,
+    24,
     0 - 60,
     315,
   ],
@@ -549,7 +517,7 @@ var karte = [
     333333,
     444444,
     "assets/images/vaginas/vaginas loaded.jpg",
-    2,
+    28,
     3,
     210 - 60,
     315,
@@ -561,7 +529,7 @@ var karte = [
     6,
     333333,
     444444,
-    "assets/images/vaginas/vaginas loaded.jpg",
+    20,
     2,
     3,
     420 - 60,
@@ -573,7 +541,7 @@ var karte = [
     7.5,
     12,
     333333,
-    444444,
+    23,
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
     3,
@@ -585,7 +553,7 @@ var karte = [
     "Niamh",
     3,
     9,
-    222222,
+    26,
     444444,
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
@@ -597,7 +565,7 @@ var karte = [
     "6B",
     "Nova",
     5.5,
-    5,
+    30,
     222222,
     333333,
     "assets/images/vaginas/vaginas loaded.jpg",
@@ -609,7 +577,7 @@ var karte = [
   [
     "7B",
     "Nyx",
-    7,
+    15,
     8,
     222222,
     444444,
@@ -621,7 +589,7 @@ var karte = [
   ],
   [
     "8B",
-    "Odessa",
+    35,
     4.5,
     11,
     333333,
@@ -633,7 +601,7 @@ var karte = [
     315,
   ],
   [
-    "1C",
+    40,
     "Pearl",
     6,
     13,
@@ -645,19 +613,19 @@ var karte = [
     0 - 60,
     630,
   ],
-  [
-    "2C",
-    "Ruelle",
-    3.5,
-    10,
-    777777,
-    888888,
-    "assets/images/vaginas/vaginas loaded.jpg",
-    2,
-    3,
-    210 - 60,
-    630,
-  ],
+  45,
+  "2C",
+  "Ruelle",
+  3.5,
+  10,
+  777777,
+  888888,
+  "assets/images/vaginas/vaginas loaded.jpg",
+  2,
+  3,
+  210 - 60,
+  630,
+  50,
   [
     "3C",
     "Selena",
@@ -669,7 +637,7 @@ var karte = [
     2,
     3,
     420 - 60,
-    630,
+    55,
   ],
   [
     "4C",
@@ -681,7 +649,7 @@ var karte = [
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
     3,
-    630 - 60,
+    60,
     630,
   ],
   [
@@ -693,7 +661,7 @@ var karte = [
     888888,
     "assets/images/vaginas/vaginas loaded.jpg",
     1,
-    3,
+    36,
     315 - 60,
     630,
   ],
@@ -705,7 +673,7 @@ var karte = [
     777777,
     888888,
     "assets/images/vaginas/vaginas loaded.jpg",
-    2,
+    41,
     3,
     1050 - 60,
     630,
@@ -717,7 +685,7 @@ var karte = [
     5,
     666666,
     888888,
-    "assets/images/vaginas/vaginas loaded.jpg",
+    46,
     2,
     3,
     1260 - 60,
@@ -729,7 +697,7 @@ var karte = [
     7.5,
     8,
     777777,
-    888888,
+    51,
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
     3,
@@ -741,7 +709,7 @@ var karte = [
     "Zephyr",
     3,
     11,
-    777777,
+    56,
     888888,
     "assets/images/vaginas/vaginas loaded.jpg",
     2,
@@ -753,7 +721,7 @@ var karte = [
     "2D",
     "Aveline",
     5.5,
-    13,
+    37,
     666666,
     888888,
     "assets/images/vaginas/vaginas loaded.jpg",
@@ -765,7 +733,7 @@ var karte = [
   [
     "3D",
     "Camille",
-    7,
+    42,
     10,
     777777,
     888888,
@@ -777,7 +745,7 @@ var karte = [
   ],
   [
     "4D",
-    "Cassandra",
+    47,
     4.5,
     7,
     777777,
@@ -789,7 +757,7 @@ var karte = [
     945,
   ],
   [
-    "5D",
+    52,
     "Delphine",
     6,
     6,
@@ -801,43 +769,43 @@ var karte = [
     315 - 60,
     945,
   ],
-  [
-    "6D",
-    "Elodie",
-    3.5,
-    12,
-    666666,
-    777777,
-    "assets/images/vaginas/vaginas loaded.jpg",
-    2,
-    3,
-    1050 - 60,
-    945,
-  ],
+  57,
+  "6D",
+  "Elodie",
+  3.5,
+  12,
+  666666,
+  777777,
+  "assets/images/vaginas/vaginas loaded.jpg",
+  2,
+  3,
+  1050 - 60,
+  945,
+],
   [
     "7D",
-    "Elora",
-    8,
-    9,
-    666666,
-    888888,
-    "assets/images/vaginas/vaginas loaded.jpg",
-    2,
-    3,
-    1260 - 60,
-    945,
+  "Elora",
+  8,
+  9,
+  666666,
+  888888,
+  "assets/images/vaginas/vaginas loaded.jpg",
+  2,
+  3,
+  1260 - 60,
+  945,
   ],
-  [
-    "8D",
-    "Elowen",
-    2.5,
-    5,
-    333333,
-    444444,
-    "assets/images/vaginas/vaginas loaded.jpg",
-    2,
-    3,
-    1470 - 60,
-    945,
-  ],
+[
+  "8D",
+  "Elowen",
+  2.5,
+  5,
+  333333,
+  444444,
+  "assets/images/vaginas/vaginas loaded.jpg",
+  2,
+  3,
+  1470 - 60,
+  945,
+],
 ];
