@@ -17,6 +17,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "2A",
@@ -28,6 +30,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "3A",
@@ -39,6 +43,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "4A",
@@ -50,6 +56,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "5A",
@@ -61,6 +69,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "6A",
@@ -72,6 +82,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "7A",
@@ -83,6 +95,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     1,
+    undefined,
+    undefined,
   ],
   [
     "8A",
@@ -94,6 +108,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     1,
+    undefined,
+    undefined,
   ],
   [
     "1B",
@@ -105,6 +121,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     24,
+    undefined,
+    undefined,
   ],
   [
     "2B",
@@ -116,6 +134,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     28,
     3,
+    undefined,
+    undefined,
   ],
   [
     "3B",
@@ -127,6 +147,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "4B",
@@ -138,6 +160,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "5B",
@@ -149,6 +173,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "6B",
@@ -160,6 +186,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "7B",
@@ -171,6 +199,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "8B",
@@ -182,6 +212,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "1C",
@@ -193,6 +225,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "2C",
@@ -204,6 +238,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "3C",
@@ -215,6 +251,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "4C",
@@ -226,6 +264,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "5C",
@@ -237,6 +277,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     1,
     2,
+    undefined,
+    undefined,
   ],
   [
     "6C",
@@ -248,6 +290,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "7C",
@@ -259,6 +303,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "8C",
@@ -270,6 +316,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "1D",
@@ -281,6 +329,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "2D",
@@ -292,6 +342,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "3D",
@@ -303,6 +355,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "4D",
@@ -314,6 +368,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "5D",
@@ -325,6 +381,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "6D",
@@ -336,6 +394,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "7D",
@@ -347,6 +407,8 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     2,
     3,
+    undefined,
+    undefined,
   ],
   [
     "8D",
@@ -358,5 +420,7 @@ var karte = [
     "assets/images/vaginas/vaginas-prod.jpg",
     0,
     3,
+    undefined,
+    undefined,
   ],
 ];

@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<html>
 
 <head>
   <meta charset="utf-8" />
@@ -14,18 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-
+  <link rel="stylesheet" href="assets/css/login-styles.css">
   <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
   <div id="loader" class="active"></div>
   <style type="text/css">
     #loader {
@@ -119,39 +107,35 @@
             </div>
           </form>
         </div>
-        <button id="buttonTestAll" type="submit" style="background: yellow; color: black; display: inline-block">
+        <h5>Buttons for API - check console</h5>
+        <button id="buttonTestAll" class="login-page-buttons" type="submit">
           test/all
         </button>
-        <button id="buttonTestUser" type="submit" style="color: yellow; background: black; display: inline-block">
+        <button id="buttonTestUser" class="login-page-buttons" type="submit">
           test/user
         </button>
-        <button id="buttonLoginWrongPassword" type="submit"
-          style="background: yellow; color: black; display: inline-block">
+        <button id="buttonLoginWrongPassword" class="login-page-buttons" type="submit">
           auth/signin - wrong pwd
         </button>
-        <button id="buttonLoginCorrectPassword" type="submit"
-          style="color: yellow; background: black; display: inline-block">
+        <button id="buttonLoginCorrectPassword" class="login-page-buttons" type="submit">
           auth/signin - correct pwd
         </button>
-        <button id="buttonAccessWithLegalAccount" type="submit"
-          style="background: yellow; color: black; display: inline-block">
+        <button id="buttonAccessWithLegalAccount" class="login-page-buttons" type="submit">
           test/user legal acc
         </button>
-        <button id="buttonAccessWithLegalAccountMod" type="submit"
-          style="color: yellow; background: black; display: inline-block">
+        <button id="buttonAccessWithLegalAccountMod" class="login-page-buttons" type="submit">
           test/user legal acc mod
         </button>
-        <button id="buttonAccessWithLegalAccountAdmin" type="submit"
-          style="background: yellow; color: black; display: inline-block">
+        <button id="buttonAccessWithLegalAccountAdmin" class="login-page-buttons" type="submit">
           test/user legal acc admin
         </button>
-        <button id="buttonApiAuthAll" type="submit" style="color: yellow; background: black; display: inline-block">
+        <button id="buttonApiAuthAll" class="login-page-buttons" type="submit">
           buttonApiAuthAll
         </button>
-        <button id="buttonSignup" type="submit" style="background: red; color: black; display: inline-block">
+        <button id="buttonSignup" class="login-page-buttons" type="submit">
           User Signup
         </button>
-        <button id="buttonEmptyCardsStats" type="submit" style="color: red; background: black; display: inline-block">
+        <button id="buttonEmptyCardsStats" class="login-page-buttons" type="submit">
           Empty Cards Stats
         </button>
       </div>
@@ -346,6 +330,7 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script src="assets/js/src/appSecondVersion.js"></script>
+  <script src="assets/js/src/login.js"></script>
 </body>
 
 </html>

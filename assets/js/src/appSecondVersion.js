@@ -13,18 +13,18 @@ var numOfUserActions = 0;
 var cars = [];
 var cardY = [],
   cardX = [];
-var cardsPack = "";
-var modal = $("#modal");
-var span = $(".modal-close");
+var cardsPack = '';
+var modal = $('#modal');
+var span = $('.modal-close');
 
 function makeAiMove() {
-  $("details#cara").text(cardX[0].getDuelStats());
-  $("details#carb").text(cardY[0].getDuelStats());
-  $("#cardB").addClass("active");
+  $('details#cara').text(cardX[0].getDuelStats());
+  $('details#carb').text(cardY[0].getDuelStats());
+  $('#cardB').addClass('active');
   disableUserActions();
-  $(statusText).removeClass("correct wrong active");
+  $(statusText).removeClass('correct wrong active');
   setTimeout(function () {
-    $("#cardA").addClass("active");
+    $('#cardA').addClass('active');
   }, timeoutCardA_active_computer_move);
 
   var tempCurrent = [cardX[0].zyl, cardX[0].kw, cardX[0].ccm, cardX[0].kmh];
@@ -48,48 +48,48 @@ function makeAiMove() {
           $(statusText)
             .empty()
             .append(
-              "Computer says: " + cardX[0].zyl + " " + propertiesUnits[1] + "."
+              'Computer says: ' + cardX[0].zyl + ' ' + propertiesUnits[1] + '.',
             );
-          $("#cardA .zyl").addClass("active");
+          $('#cardA .zyl').addClass('active');
           setTimeout(function () {
-            $("#cardB .zyl").addClass("active");
+            $('#cardB .zyl').addClass('active');
           }, timeoutCardB_active);
           break;
         case 1:
           $(statusText)
             .empty()
             .append(
-              "Computer says: " + cardX[0].kw + " " + propertiesUnits[2] + "."
+              'Computer says: ' + cardX[0].kw + ' ' + propertiesUnits[2] + '.',
             );
-          $("#cardA .kw").addClass("active");
+          $('#cardA .kw').addClass('active');
           setTimeout(function () {
-            $("#cardB .kw").addClass("active");
+            $('#cardB .kw').addClass('active');
           }, timeoutCardB_active);
           break;
         case 2:
           $(statusText)
             .empty()
             .append(
-              "Computer says: " + cardX[0].ccm + " " + propertiesUnits[3] + "."
+              'Computer says: ' + cardX[0].ccm + ' ' + propertiesUnits[3] + '.',
             );
-          $("#cardA .ccm").addClass("active");
+          $('#cardA .ccm').addClass('active');
           setTimeout(function () {
-            $("#cardB .ccm").addClass("active");
+            $('#cardB .ccm').addClass('active');
           }, timeoutCardB_active);
           break;
         case 3:
           $(statusText)
             .empty()
             .append(
-              "Computer says: " + cardX[0].kmh + " " + propertiesUnits[4] + "."
+              'Computer says: ' + cardX[0].kmh + ' ' + propertiesUnits[4] + '.',
             );
-          $("#cardA .kmh").addClass("active");
+          $('#cardA .kmh').addClass('active');
           setTimeout(function () {
-            $("#cardB .kmh").addClass("active");
+            $('#cardB .kmh').addClass('active');
           }, timeoutCardB_active);
           break;
         default:
-          console.log("Unexpected value");
+          console.log('Unexpected value');
       } //switch end
     } //first choice
     else {
@@ -103,51 +103,51 @@ function makeAiMove() {
         case 0:
           $(statusText)
             .empty()
-            .append("Computer says: " + cardX[0].zyl + " zyl.");
-          $("#cardA .zyl").addClass("active");
+            .append('Computer says: ' + cardX[0].zyl + ' zyl.');
+          $('#cardA .zyl').addClass('active');
           setTimeout(function () {
-            $("#cardB .zyl").addClass("active");
+            $('#cardB .zyl').addClass('active');
           }, timeoutCardB_active);
           break;
         case 1:
           $(statusText)
             .empty()
-            .append("Computer says: " + cardX[0].kw + " kW.");
-          $("#cardA .kw").addClass("active");
+            .append('Computer says: ' + cardX[0].kw + ' kW.');
+          $('#cardA .kw').addClass('active');
           setTimeout(function () {
-            $("#cardB .kw").addClass("active");
+            $('#cardB .kw').addClass('active');
           }, timeoutCardB_active);
           break;
         case 2:
           $(statusText)
             .empty()
-            .append("Computer says: " + cardX[0].ccm + " ccm.");
-          $("#cardA .ccm").addClass("active");
+            .append('Computer says: ' + cardX[0].ccm + ' ccm.');
+          $('#cardA .ccm').addClass('active');
           setTimeout(function () {
-            $("#cardB .ccm").addClass("active");
+            $('#cardB .ccm').addClass('active');
           }, timeoutCardB_active);
           break;
         case 3:
           $(statusText)
             .empty()
-            .append("Computer says: " + cardX[0].kmh + " km/h.");
-          $("#cardA .kmh").addClass("active");
+            .append('Computer says: ' + cardX[0].kmh + ' km/h.');
+          $('#cardA .kmh').addClass('active');
           setTimeout(function () {
-            $("#cardB .kmh").addClass("active");
+            $('#cardB .kmh').addClass('active');
           }, timeoutCardB_active);
           break;
         default:
-          console.log("Unexpected value");
+          console.log('Unexpected value');
       }
     } //secondChoice
   }
 
   function secondAiPart() {
-    $(statusText).addClass("active");
+    $(statusText).addClass('active');
   }
 
   function thirdAiPart() {
-    compareCards("fromMakeAiMove");
+    compareCards('fromMakeAiMove');
   }
 }
 
@@ -161,22 +161,22 @@ function compareCards(previousMethod) {
   function firstPart() {
     if (currentAttrX == currentAttrY) {
       xWon = undefined;
-      cardX[0].addDuelResult("tie");
-      cardY[0].addDuelResult("tie");
+      cardX[0].addDuelResult('tie');
+      cardY[0].addDuelResult('tie');
       cardX.push(cardX[0]);
       cardY.push(cardY[0]);
-      $(statusText).empty().append("it's a tie.").removeClass("correct wrong");
-      $("#cardA .val.active").addClass("tie");
-      $("#cardB .val.active").addClass("tie");
-      handleAudio("tie_audio");
+      $(statusText).empty().append("it's a tie.").removeClass('correct wrong');
+      $('#cardA .val.active').addClass('tie');
+      $('#cardB .val.active').addClass('tie');
+      handleAudio('tie_audio');
     } else if (
       currentHigherIsBetter & (currentAttrX > currentAttrY) ||
       !currentHigherIsBetter & (currentAttrX < currentAttrY)
     ) {
       //AI wins
       xWon = true;
-      cardX[0].addDuelResult("win");
-      cardY[0].addDuelResult("lose");
+      cardX[0].addDuelResult('win');
+      cardY[0].addDuelResult('lose');
       if (Math.random() < 0.5) {
         cardX.push(cardX[0]);
         cardX.push(cardY[0]);
@@ -188,15 +188,15 @@ function compareCards(previousMethod) {
       $(statusText)
         .empty()
         .removeClass()
-        .append("computer wins.")
-        .addClass("wrong");
-      $("#cardA .val.active").addClass("correct");
-      $("#cardB .val.active").addClass("wrong");
-      handleAudio("wrong_audio");
+        .append('computer wins.')
+        .addClass('wrong');
+      $('#cardA .val.active').addClass('correct');
+      $('#cardB .val.active').addClass('wrong');
+      handleAudio('wrong_audio');
     } else {
       xWon = false;
-      cardX[0].addDuelResult("lose");
-      cardY[0].addDuelResult("win");
+      cardX[0].addDuelResult('lose');
+      cardY[0].addDuelResult('win');
       if (Math.random() < 0.5) {
         cardY.push(cardX[0]);
         cardY.push(cardY[0]);
@@ -208,47 +208,47 @@ function compareCards(previousMethod) {
       $(statusText)
         .empty()
         .removeClass()
-        .append("you win.")
-        .addClass("correct");
-      $("#cardA .val.active").addClass("wrong");
-      $("#cardB .val.active").addClass("correct");
-      handleAudio("correct_audio");
+        .append('you win.')
+        .addClass('correct');
+      $('#cardA .val.active').addClass('wrong');
+      $('#cardB .val.active').addClass('correct');
+      handleAudio('correct_audio');
     }
     cardX.shift();
     cardY.shift();
-    $(laba).text("cards computer (x): " + cardX.length);
-    $(labb).text("cards user (y): " + cardY.length);
-    $(statusText).addClass("active");
+    $(laba).text('cards computer (x): ' + cardX.length);
+    $(labb).text('cards user (y): ' + cardY.length);
+    $(statusText).addClass('active');
   }
 
   function secondPart() {
-    $(".val").removeClass("active wrong correct tie");
+    $('.val').removeClass('active wrong correct tie');
     if (cardX.length == 0) {
-      $("#cardA").hide();
+      $('#cardA').hide();
     } else if (cardY.length == 0) {
-      $("#cardB").hide();
+      $('#cardB').hide();
     }
-    $(".card-container").removeClass("active");
+    $('.card-container').removeClass('active');
   }
 
   function thirdPart() {
-    $(statusText).removeClass("active");
+    $(statusText).removeClass('active');
     updateCardLengthGraphicView(cardX.length, cardY.length);
     updateUserCardsDetails();
   }
 
   function fourthPart() {
     if (cardX.length == 0) {
-      $(".end-game__correct .numOfUserActions").text(
-        "number of user actions: " + numOfUserActions
+      $('.end-game__correct .numOfUserActions').text(
+        'number of user actions: ' + numOfUserActions,
       );
-      $(".end-game__correct").addClass("active");
+      $('.end-game__correct').addClass('active');
       saveDataOnServer(true);
     } else if (cardY.length == 0) {
-      $(".end-game__wrong .numOfUserActions").text(
-        "number of user actions: " + numOfUserActions
+      $('.end-game__wrong .numOfUserActions').text(
+        'number of user actions: ' + numOfUserActions,
       );
-      $(".end-game__wrong").addClass("active");
+      $('.end-game__wrong').addClass('active');
       saveDataOnServer(false);
     } else {
       loadCurrentCards();
@@ -258,7 +258,7 @@ function compareCards(previousMethod) {
       } else if (xWon == false) {
         userMove();
       } else {
-        if (previousMethod == "fromUserMove") {
+        if (previousMethod == 'fromUserMove') {
           userMove();
         } else {
           makeAiMove();
@@ -269,65 +269,65 @@ function compareCards(previousMethod) {
 }
 
 function updateUserCardsDetails() {
-  $("#userCards").empty();
+  $('#userCards').empty();
   for (var i = 0; i < cardY.length; i++) {
-    $("#userCards").append("<p>" + cardY[i].name + "</p>");
+    $('#userCards').append('<p>' + cardY[i].name + '</p>');
   }
 }
 
 function userMove() {
-  $("details#cara").text(cardX[0].getDuelStats());
-  $("details#carb").text(cardY[0].getDuelStats());
+  $('details#cara').text(cardX[0].getDuelStats());
+  $('details#carb').text(cardY[0].getDuelStats());
   enableUserActions();
-  $("#cardB").addClass("active");
-  $(statusText).removeClass("active");
+  $('#cardB').addClass('active');
+  $(statusText).removeClass('active');
 
-  $("#cardB .zyl")
-    .unbind("click")
+  $('#cardB .zyl')
+    .unbind('click')
     .click(function () {
       currentAttrY = cardY[0].zyl;
       currentAttrX = cardX[0].zyl;
       currentHigherIsBetter = propertiesHigherIsBetter[1];
-      $("#cardB .zyl").addClass("active");
+      $('#cardB .zyl').addClass('active');
       disableUserActions();
-      secondPart("zyl");
+      secondPart('zyl');
     }); //zyl
-  $("#cardB .kw")
-    .unbind("click")
+  $('#cardB .kw')
+    .unbind('click')
     .click(function () {
       currentAttrY = cardY[0].kw;
       currentAttrX = cardX[0].kw;
       currentHigherIsBetter = propertiesHigherIsBetter[2];
-      $("#cardB .kw").addClass("active");
+      $('#cardB .kw').addClass('active');
       disableUserActions();
-      secondPart("kw");
+      secondPart('kw');
     }); //kw
-  $("#cardB .ccm")
-    .unbind("click")
+  $('#cardB .ccm')
+    .unbind('click')
     .click(function () {
       currentAttrY = cardY[0].ccm;
       currentAttrX = cardX[0].ccm;
       currentHigherIsBetter = propertiesHigherIsBetter[3];
-      $("#cardB .ccm").addClass("active");
+      $('#cardB .ccm').addClass('active');
       disableUserActions();
-      secondPart("ccm");
+      secondPart('ccm');
     }); //ccm
-  $("#cardB .kmh")
-    .unbind("click")
+  $('#cardB .kmh')
+    .unbind('click')
     .click(function () {
       currentAttrY = cardY[0].kmh;
       currentAttrX = cardX[0].kmh;
       currentHigherIsBetter = propertiesHigherIsBetter[4];
-      $("#cardB .kmh").addClass("active");
+      $('#cardB .kmh').addClass('active');
       disableUserActions();
-      secondPart("kmh");
+      secondPart('kmh');
     }); //kmh
 
   function secondPart(val) {
     numOfUserActions++;
-    $("#cardA").addClass("active");
+    $('#cardA').addClass('active');
     setTimeout(function () {
-      $("#cardA ." + val).addClass("active");
+      $('#cardA .' + val).addClass('active');
     }, timeoutCardA_active);
     // setTimeout(function() {
     //     $(statusText).empty().removeClass();
@@ -335,7 +335,7 @@ function userMove() {
     //     $(statusText).addClass('active')
     // }, 1000)
     setTimeout(function () {
-      compareCards("fromUserMove");
+      compareCards('fromUserMove');
     }, timeoutCompareCards);
     // setTimeout(function() {
     //     $(statusText).removeClass('active')
@@ -345,32 +345,32 @@ function userMove() {
 }
 
 function loadCurrentCards() {
-  $(".card .inner tr:nth-child(1) td").html(
-    propertiesLabels[1].charAt(0).toUpperCase() + propertiesLabels[1].slice(1)
+  $('.card .inner tr:nth-child(1) td').html(
+    propertiesLabels[1].charAt(0).toUpperCase() + propertiesLabels[1].slice(1),
   );
-  $(".card .inner tr:nth-child(2) td").html(
-    propertiesLabels[2].charAt(0).toUpperCase() + propertiesLabels[2].slice(1)
+  $('.card .inner tr:nth-child(2) td').html(
+    propertiesLabels[2].charAt(0).toUpperCase() + propertiesLabels[2].slice(1),
   );
-  $(".card .inner tr:nth-child(3) td").html(
-    propertiesLabels[3].charAt(0).toUpperCase() + propertiesLabels[3].slice(1)
+  $('.card .inner tr:nth-child(3) td').html(
+    propertiesLabels[3].charAt(0).toUpperCase() + propertiesLabels[3].slice(1),
   );
-  $(".card .inner tr:nth-child(4) td").html(
-    propertiesLabels[4].charAt(0).toUpperCase() + propertiesLabels[4].slice(1)
+  $('.card .inner tr:nth-child(4) td').html(
+    propertiesLabels[4].charAt(0).toUpperCase() + propertiesLabels[4].slice(1),
   );
-  $("#cardA .id").html(cardX[0].id);
-  $("#cardA .name").html(cardX[0].name);
-  $("#cardA .zyl").html(cardX[0].zyl + " " + propertiesUnits[1]);
-  $("#cardA .kw").html(cardX[0].kw + " " + propertiesUnits[2]);
-  $("#cardA .ccm").html(cardX[0].ccm + " " + propertiesUnits[3]);
-  $("#cardA .kmh").html(cardX[0].kmh + " " + propertiesUnits[4]);
-  $("#cardA img").attr("src", cardX[0].img);
-  $("#cardB .id").html(cardY[0].id);
-  $("#cardB .name").html(cardY[0].name);
-  $("#cardB .zyl").html(cardY[0].zyl + " " + propertiesUnits[1]);
-  $("#cardB .kw").html(cardY[0].kw + " " + propertiesUnits[2]);
-  $("#cardB .ccm").html(cardY[0].ccm + " " + propertiesUnits[3]);
-  $("#cardB .kmh").html(cardY[0].kmh + " " + propertiesUnits[4]);
-  $("#cardB img").attr("src", cardY[0].img);
+  $('#cardA .id').html(cardX[0].id);
+  $('#cardA .name').html(cardX[0].name);
+  $('#cardA .zyl').html(cardX[0].zyl + ' ' + propertiesUnits[1]);
+  $('#cardA .kw').html(cardX[0].kw + ' ' + propertiesUnits[2]);
+  $('#cardA .ccm').html(cardX[0].ccm + ' ' + propertiesUnits[3]);
+  $('#cardA .kmh').html(cardX[0].kmh + ' ' + propertiesUnits[4]);
+  $('#cardA img').attr('src', cardX[0].img);
+  $('#cardB .id').html(cardY[0].id);
+  $('#cardB .name').html(cardY[0].name);
+  $('#cardB .zyl').html(cardY[0].zyl + ' ' + propertiesUnits[1]);
+  $('#cardB .kw').html(cardY[0].kw + ' ' + propertiesUnits[2]);
+  $('#cardB .ccm').html(cardY[0].ccm + ' ' + propertiesUnits[3]);
+  $('#cardB .kmh').html(cardY[0].kmh + ' ' + propertiesUnits[4]);
+  $('#cardB img').attr('src', cardY[0].img);
 
   if (backgroundSize) {
     var cardX_idNumber = cardX[0].id.charAt(0);
@@ -383,62 +383,62 @@ function loadCurrentCards() {
     var cardY_offsetX = (cardY_idNumber - 1) * 317;
     var cardY_offsetY = -1;
 
-    if (cardX_idLetter == "A") {
+    if (cardX_idLetter == 'A') {
       cardX_offsetY = 0;
-    } else if (cardX_idLetter == "B") {
+    } else if (cardX_idLetter == 'B') {
       cardX_offsetY = 1 * (backgroundSize.height / 4);
-    } else if (cardX_idLetter == "C") {
+    } else if (cardX_idLetter == 'C') {
       cardX_offsetY = 2 * (backgroundSize.height / 4);
-    } else if (cardX_idLetter == "D") {
+    } else if (cardX_idLetter == 'D') {
       cardX_offsetY = 3 * (backgroundSize.height / 4);
     }
 
-    if (cardY_idLetter == "A") {
+    if (cardY_idLetter == 'A') {
       cardY_offsetY = 0;
-    } else if (cardY_idLetter == "B") {
+    } else if (cardY_idLetter == 'B') {
       cardY_offsetY = 1 * (backgroundSize.height / 4);
-    } else if (cardY_idLetter == "C") {
+    } else if (cardY_idLetter == 'C') {
       cardY_offsetY = 2 * (backgroundSize.height / 4);
-    } else if (cardY_idLetter == "D") {
+    } else if (cardY_idLetter == 'D') {
       cardY_offsetY = 3 * (backgroundSize.height / 4);
     }
 
-    $("#cardA .img").attr(
-      "style",
+    $('#cardA .img').attr(
+      'style',
       'background: url("' +
-      cardX[0].img +
-      '") ' +
-      -cardX_offsetX +
-      "px " +
-      -cardX_offsetY +
-      "px; background-size: " +
-      backgroundSize.width +
-      "px " +
-      backgroundSize.height +
-      "px"
+        cardX[0].img +
+        '") ' +
+        -cardX_offsetX +
+        'px ' +
+        -cardX_offsetY +
+        'px; background-size: ' +
+        backgroundSize.width +
+        'px ' +
+        backgroundSize.height +
+        'px',
     );
-    $("#cardB .img").attr(
-      "style",
+    $('#cardB .img').attr(
+      'style',
       'background: url("' +
-      cardY[0].img +
-      '") ' +
-      -cardY_offsetX +
-      "px " +
-      -cardY_offsetY +
-      "px; background-size: " +
-      backgroundSize.width +
-      "px " +
-      backgroundSize.height +
-      "px"
+        cardY[0].img +
+        '") ' +
+        -cardY_offsetX +
+        'px ' +
+        -cardY_offsetY +
+        'px; background-size: ' +
+        backgroundSize.width +
+        'px ' +
+        backgroundSize.height +
+        'px',
     );
   } else {
-    $("#cardA .img").attr(
-      "style",
-      'background: url("' + cardX[0].img + '"); background-size: contain'
+    $('#cardA .img').attr(
+      'style',
+      'background: url("' + cardX[0].img + '"); background-size: contain',
     );
-    $("#cardB .img").attr(
-      "style",
-      'background: url("' + cardY[0].img + '"); background-size: contain'
+    $('#cardB .img').attr(
+      'style',
+      'background: url("' + cardY[0].img + '"); background-size: contain',
     );
   }
 }
@@ -455,9 +455,9 @@ function removeSelectCardsOverlay() {
       b1 = true;
     }
   }
-  $("#overlay-select-cards").removeClass("active");
-  $(statusText).empty().removeClass("active");
-  $("#cardB").addClass("active");
+  $('#overlay-select-cards').removeClass('active');
+  $(statusText).empty().removeClass('active');
+  $('#cardB').addClass('active');
   loadCurrentCards();
   updateUserCardsDetails();
   disableUserActions();
@@ -475,7 +475,7 @@ function removeSelectCardsOverlay() {
 
 function saveDataOnServer(hasUserWon) {
   $.post(
-    "https://tothepointcodeloginexpressjs.onrender.com/car/save-game-results",
+    'https://tothepointcodeloginexpressjs.onrender.com/car/save-game-results',
     {
       data: {
         cardsPack: cardsPack,
@@ -483,8 +483,8 @@ function saveDataOnServer(hasUserWon) {
       },
     },
     function (data, status) {
-      console.log("🚀 ~ file: appSecondVersion.js:522 ~ status:", status);
-      console.log("🚀 ~ file: appSecondVersion.js:522 ~ data:", data);
+      console.log('🚀 ~ file: appSecondVersion.js:522 ~ status:', status);
+      console.log('🚀 ~ file: appSecondVersion.js:522 ~ data:', data);
       // if (data.status === "SUCCESS") {
       //   modal.find("p").text("User Info loaded successfully");
       //   modal.show();
@@ -504,141 +504,141 @@ function saveDataOnServer(hasUserWon) {
       // $("#user-profile")
       //   .find("div")
       //   .append("<p>date of birth: " + res.dateOfBirth + "</p>");
-    }
+    },
   );
 
   console.log(
-    "🚀 ~ file: appSecondVersion.js:513 ~  ).val():",
-    $("#login-email").val()
+    '🚀 ~ file: appSecondVersion.js:513 ~  ).val():',
+    $('#login-email').val(),
   );
 
   $.post(
-    "https://tothepointcodeloginexpressjs.onrender.com/user/save-user-result",
+    'https://tothepointcodeloginexpressjs.onrender.com/user/save-user-result',
     {
       hasUserWon: hasUserWon,
-      email: $("#login-email").val(),
+      email: $('#login-email').val(),
     },
     function (data, status) {
-      console.log("🚀 ~ file: appSecondVersion.js:522 ~ status:", status);
-      console.log("🚀 ~ file: appSecondVersion.js:522 ~ data:", data);
-    }
+      console.log('🚀 ~ file: appSecondVersion.js:522 ~ status:', status);
+      console.log('🚀 ~ file: appSecondVersion.js:522 ~ data:', data);
+    },
   );
 }
 
-$(button_1).on("click", () => {
-  var scriptEle = document.createElement("script");
-  scriptEle.setAttribute("src", "assets/js/src/flotteFlitzer.js");
-  scriptEle.setAttribute("type", "text/javascript");
-  scriptEle.setAttribute("async", true);
+$(button_1).on('click', () => {
+  var scriptEle = document.createElement('script');
+  scriptEle.setAttribute('src', 'assets/js/src/flotteFlitzer.js');
+  scriptEle.setAttribute('type', 'text/javascript');
+  scriptEle.setAttribute('async', true);
   document.body.appendChild(scriptEle);
-  scriptEle.addEventListener("load", () => {
+  scriptEle.addEventListener('load', () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
-  cardsPack = "flotteFlitzer";
+  cardsPack = 'flotteFlitzer';
 });
-$(button_2).on("click", () => {
-  var scriptEle = document.createElement("script");
-  scriptEle.setAttribute("src", "assets/js/src/piatnikTuning.js");
-  scriptEle.setAttribute("type", "text/javascript");
-  scriptEle.setAttribute("async", true);
+$(button_2).on('click', () => {
+  var scriptEle = document.createElement('script');
+  scriptEle.setAttribute('src', 'assets/js/src/piatnikTuning.js');
+  scriptEle.setAttribute('type', 'text/javascript');
+  scriptEle.setAttribute('async', true);
   document.body.appendChild(scriptEle);
-  scriptEle.addEventListener("load", () => {
+  scriptEle.addEventListener('load', () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
-  cardsPack = "piatnikTuning";
+  cardsPack = 'piatnikTuning';
 });
-$(button_3).on("click", () => {
-  var scriptEle = document.createElement("script");
-  scriptEle.setAttribute("src", "assets/js/src/piatnikTurbos.js");
-  scriptEle.setAttribute("type", "text/javascript");
-  scriptEle.setAttribute("async", true);
+$(button_3).on('click', () => {
+  var scriptEle = document.createElement('script');
+  scriptEle.setAttribute('src', 'assets/js/src/piatnikTurbos.js');
+  scriptEle.setAttribute('type', 'text/javascript');
+  scriptEle.setAttribute('async', true);
   document.body.appendChild(scriptEle);
-  scriptEle.addEventListener("load", () => {
+  scriptEle.addEventListener('load', () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
-  cardsPack = "piatnikTurbos";
+  cardsPack = 'piatnikTurbos';
 });
-$(button_4).on("click", () => {
-  $("button").removeClass("active");
-  $(input_4).removeClass("hidden");
-  $(input_6).addClass("hidden");
-  $(button_4).addClass("active");
+$(button_4).on('click', () => {
+  $('button').removeClass('active');
+  $(input_4).removeClass('hidden');
+  $(input_6).addClass('hidden');
+  $(button_4).addClass('active');
 });
-$(button_5).on("click", () => {
-  var scriptEle = document.createElement("script");
-  scriptEle.setAttribute("src", "assets/js/src/sportCars.js");
-  scriptEle.setAttribute("type", "text/javascript");
-  scriptEle.setAttribute("async", true);
+$(button_5).on('click', () => {
+  var scriptEle = document.createElement('script');
+  scriptEle.setAttribute('src', 'assets/js/src/sportCars.js');
+  scriptEle.setAttribute('type', 'text/javascript');
+  scriptEle.setAttribute('async', true);
   document.body.appendChild(scriptEle);
-  scriptEle.addEventListener("load", () => {
+  scriptEle.addEventListener('load', () => {
     cars = fillUpcars();
     removeSelectCardsOverlay();
   });
-  cardsPack = "sportCars";
+  cardsPack = 'sportCars';
 });
-$(button_6).on("click", () => {
-  $("button").removeClass("active");
-  $(input_4).addClass("hidden");
-  $(input_6).removeClass("hidden");
-  $(button_6).addClass("active");
+$(button_6).on('click', () => {
+  $('button').removeClass('active');
+  $(input_4).addClass('hidden');
+  $(input_6).removeClass('hidden');
+  $(button_6).addClass('active');
 });
 $(input_4).keyup(function () {
-  if ($(this).val() == "1234") {
-    var scriptEle = document.createElement("script");
-    scriptEle.setAttribute("src", "assets/js/src/sloescort.js");
-    scriptEle.setAttribute("type", "text/javascript");
-    scriptEle.setAttribute("async", true);
+  if ($(this).val() == '1234') {
+    var scriptEle = document.createElement('script');
+    scriptEle.setAttribute('src', 'assets/js/src/sloescort.js');
+    scriptEle.setAttribute('type', 'text/javascript');
+    scriptEle.setAttribute('async', true);
     document.body.appendChild(scriptEle);
-    scriptEle.addEventListener("load", () => {
+    scriptEle.addEventListener('load', () => {
       cars = fillUpcars();
       removeSelectCardsOverlay();
     });
-    cardsPack = "sloescort";
+    cardsPack = 'sloescort';
   }
 });
 $(input_6).keyup(function () {
-  if ($(this).val() == "1234") {
-    var scriptEle = document.createElement("script");
-    scriptEle.setAttribute("src", "assets/js/src/vaginas.js");
-    scriptEle.setAttribute("type", "text/javascript");
-    scriptEle.setAttribute("async", true);
+  if ($(this).val() == '1234') {
+    var scriptEle = document.createElement('script');
+    scriptEle.setAttribute('src', 'assets/js/src/vaginas.js');
+    scriptEle.setAttribute('type', 'text/javascript');
+    scriptEle.setAttribute('async', true);
     document.body.appendChild(scriptEle);
-    scriptEle.addEventListener("load", () => {
+    scriptEle.addEventListener('load', () => {
       cars = fillUpcars();
       removeSelectCardsOverlay();
     });
-    cardsPack = "vaginas";
+    cardsPack = 'vaginas';
   }
 });
 //#endregion
 
 window.onload = function () {
-  $("input[type=range]").change(function () {
+  $('input[type=range]').change(function () {
     intelligence = $(this).val();
-    $("output[name=intelligenceOutput]").val(intelligence + "%");
+    $('output[name=intelligenceOutput]').val(intelligence + '%');
     intelligence = intelligence / 100;
   });
 
-  $("#loader").removeClass("active");
-  $("#wrapper").removeClass("overlayed");
+  $('#loader').removeClass('active');
+  $('#wrapper').removeClass('overlayed');
 
   console.log(
-    "Dodaj statistiko za vse avte. pa da preko cookijev ali kej podobnega shranjuje stat."
+    'Dodaj statistiko za vse avte. pa da preko cookijev ali kej podobnega shranjuje stat.',
   );
-  console.log("Pa dodaj prikaz kvalitete kart, poleg stevila");
-  console.log("dodaj replay capability");
+  console.log('Pa dodaj prikaz kvalitete kart, poleg stevila');
+  console.log('dodaj replay capability');
   console.log(
-    "graficni prikaz stevil akart ne dela kadar zacne vodit igro AI ter tudi stevec spodaj ne dela ko zacne igro AI"
+    'graficni prikaz stevil akart ne dela kadar zacne vodit igro AI ter tudi stevec spodaj ne dela ko zacne igro AI',
   );
   console.log(
-    "Ko AI nima vec kart je se vedno prikazano, na koncu, kto da ima eno hrbtno karto na voljo"
+    'Ko AI nima vec kart je se vedno prikazano, na koncu, kto da ima eno hrbtno karto na voljo',
   );
-  console.log("Dodaj congratulatlions sound");
-  console.log("zakaj audio e dela prvih par iger?");
-  console.log("ai wins dobi zeleno barvo");
+  console.log('Dodaj congratulatlions sound');
+  console.log('zakaj audio e dela prvih par iger?');
+  console.log('ai wins dobi zeleno barvo');
 
   // for( var i=0; i<cars.length; i++ ) {
   //     if( $.cookie(cars[i].id) == undefined ) {
@@ -671,37 +671,37 @@ window.onload = function () {
   loadAudio();
   function loadAudio() {
     var queue = new createjs.LoadQueue();
-    createjs.Sound.alternateExtensions = ["mp3"];
+    createjs.Sound.alternateExtensions = ['mp3'];
     queue.installPlugin(createjs.Sound);
-    queue.on("complete", handleCompleteAudio);
-    queue.on("error", handleErrorAudio);
+    queue.on('complete', handleCompleteAudio);
+    queue.on('error', handleErrorAudio);
     queue.loadFile({
-      id: "correct_audio",
-      src: "assets/sounds/success_01.mp3",
+      id: 'correct_audio',
+      src: 'assets/sounds/success_01.mp3',
     });
-    queue.loadFile({ id: "wrong_audio", src: "assets/sounds/fail_01.mp3" });
-    queue.loadFile({ id: "tie_audio", src: "assets/sounds/urlo_01.mp3" });
+    queue.loadFile({ id: 'wrong_audio', src: 'assets/sounds/fail_01.mp3' });
+    queue.loadFile({ id: 'tie_audio', src: 'assets/sounds/urlo_01.mp3' });
     var dfd = $.Deferred();
     function handleCompleteAudio(e) {
-      dfd.resolve("sounds ready");
+      dfd.resolve('sounds ready');
     }
     return dfd.promise();
   }
   window.handleAudio = function (audioFile) {
     var instance = createjs.Sound.play(audioFile);
-    if (audioFile == "introSound") {
+    if (audioFile == 'introSound') {
       window.audioCurrentlyPlaying = true;
-      instance.on("complete", handleComplete);
+      instance.on('complete', handleComplete);
     }
   };
   function handleComplete(e) {
     window.audioCurrentlyPlaying = false;
   }
   function onAudioComplete(e) {
-    audioPlayer.off("complete");
+    audioPlayer.off('complete');
   }
   function handleErrorAudio(e) {
-    console.log("Error handling audio: ", e);
+    console.log('Error handling audio: ', e);
   }
   //#endregion
 
@@ -719,20 +719,20 @@ window.onload = function () {
 
   updateCardLengthGraphicView(
     Math.floor(numOfCards / 2),
-    Math.floor(numOfCards / 2)
+    Math.floor(numOfCards / 2),
   );
   $(statusText).click(function () {
     userAction();
   });
 
   function userAction() {
-    console.log(" I am inside user action, ", numReturnPressed);
+    console.log(' I am inside user action, ', numReturnPressed);
 
     if (numReturnPressed == 0) {
       $(statusText).empty();
-      $(statusText).append("throwing a coin...");
+      $(statusText).append('throwing a coin...');
 
-      console.log("temporarily disabled coin thing");
+      console.log('temporarily disabled coin thing');
       // setTimeout(function () {
       //   var rand = Math.random();
       //   if (rand < 0.5) {
@@ -779,7 +779,7 @@ window.onload = function () {
   //     })
   // }
 
-  $("#checkbox-toggle-button").change(function () {
+  $('#checkbox-toggle-button').change(function () {
     if (this.checked) {
       applyBlueTheme();
     } else {
@@ -788,37 +788,37 @@ window.onload = function () {
   });
 
   function applyBlueTheme() {
-    $("#wrapper").addClass("blueTheme");
+    $('#wrapper').addClass('blueTheme');
   }
 
   function applyMagentaTheme() {
-    $("#wrapper").removeClass("blueTheme");
+    $('#wrapper').removeClass('blueTheme');
   }
 }; //window.onload
 
 function updateCardLengthGraphicView(c, d) {
-  $("#cardADeep").empty();
+  $('#cardADeep').empty();
   for (var i = 0; i < c - 1; i++) {
-    $("#cardADeep").append(
+    $('#cardADeep').append(
       "<div class='inner' style='z-index:" +
-      (numOfCards - i) +
-      "; transform: translate(" +
-      i * 2 +
-      "px, " +
-      i * 2 +
-      "px)'></div>"
+        (numOfCards - i) +
+        '; transform: translate(' +
+        i * 2 +
+        'px, ' +
+        i * 2 +
+        "px)'></div>",
     );
   }
-  $("#cardBDeep").empty();
+  $('#cardBDeep').empty();
   for (var i = 0; i < d - 1; i++) {
-    $("#cardBDeep").append(
+    $('#cardBDeep').append(
       "<div class='inner' style='z-index:" +
-      (numOfCards - i) +
-      "; transform: translate(" +
-      i * 2 +
-      "px, " +
-      i * 2 +
-      "px)'></div>"
+        (numOfCards - i) +
+        '; transform: translate(' +
+        i * 2 +
+        'px, ' +
+        i * 2 +
+        "px)'></div>",
     );
   }
 }
@@ -837,7 +837,7 @@ function fillUpcars() {
     c2,
     kajjeto,
     img_x,
-    img_y
+    img_y,
   ) {
     this.id = id;
     this.name = name;
@@ -857,32 +857,32 @@ function fillUpcars() {
     this.toString = function () {
       return (
         this.name +
-        " " +
+        ' ' +
         this.id +
-        " " +
+        ' ' +
         this.zyl +
-        " " +
+        ' ' +
         this.kw +
-        " " +
+        ' ' +
         this.ccm +
-        " " +
+        ' ' +
         this.kmh
       );
     };
     this.addDuelResult = function (r) {
-      if (r == "tie") {
+      if (r == 'tie') {
         this.duelsTie++;
       } else {
-        r == "win" ? this.duelsWon++ : this.duelsLost++;
+        r == 'win' ? this.duelsWon++ : this.duelsLost++;
       }
     };
     this.getDuelStats = function () {
       return (
-        "won: " +
+        'won: ' +
         this.duelsWon +
-        ", tie: " +
+        ', tie: ' +
         this.duelsTie +
-        ", lost: " +
+        ', lost: ' +
         this.duelsLost
       );
     };
@@ -900,15 +900,15 @@ function fillUpcars() {
       karte[i][8 - 1],
       karte[i][9 - 1],
       karte[i][10 - 1],
-      karte[i][11 - 1]
+      karte[i][11 - 1],
     );
     array.push(tmp);
   }
 
   shuffle(array);
   console.log(
-    "%cTemporarily shortened number of cards",
-    "background: url(https://www.bing.com/sa/simg/hpc27_2x.png) no-repeat; color: white; font-size: x-large; padding: 20px 40px;"
+    '%cTemporarily shortened number of cards',
+    'background: url(https://www.bing.com/sa/simg/hpc27_2x.png) no-repeat; color: white; font-size: x-large; padding: 20px 40px;',
   );
   // array = array.slice(0, 12);
   return array;
@@ -940,7 +940,7 @@ Promise.delay = function (fn, t) {
   // fn is an optional argument
   if (!t) {
     t = fn;
-    fn = function () { };
+    fn = function () {};
   }
   return delay(t).then(fn);
 };
@@ -953,329 +953,8 @@ Promise.prototype.delay = function (fn, t) {
 };
 
 function enableUserActions() {
-  $("#cardB .val").removeClass("disabled");
+  $('#cardB .val').removeClass('disabled');
 }
 function disableUserActions() {
-  $("#cardB .val").addClass("disabled");
+  $('#cardB .val').addClass('disabled');
 }
-
-$(buttonTestAll).on("click", function () {
-  console.log(
-    "%c click on buttonTestAll   test / all;",
-    "background: yellow; color: black;"
-  );
-  $.get(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/test/all",
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonTestUser).on("click", function () {
-  console.log(
-    "%c click on buttonTestUser test/user",
-    "color: yellow; background: black;"
-  );
-  $.get(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/test/user",
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonLoginWrongPassword).on("click", function () {
-  console.log(
-    "%c click on buttonLoginWrongPassword auth/signin - wrong pwd",
-    "background: yellow; color: black;"
-  );
-  $.post(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/auth/signin",
-    {
-      data: {
-        username: "mod",
-        password: "a12345678",
-      },
-    },
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonLoginCorrectPassword).on("click", function () {
-  console.log(
-    "%c click on buttonLoginCorrectPassword auth/signin - correct pwd",
-    "color: yellow; background: black;"
-  );
-  $.post(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/auth/signin",
-    {
-      data: {
-        username: "username",
-        password: "password",
-      },
-    },
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonAccessWithLegalAccount).on("click", function () {
-  console.log(
-    "%c click on buttonAccessWithLegalAccount test/user legal acc",
-    "background: yellow; color: black;"
-  );
-  $.get(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/test/user",
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonAccessWithLegalAccountMod).on("click", function () {
-  console.log(
-    "%c click on buttonAccessWithLegalAccountMod test/user legal acc mod",
-    "color: yellow; background: black;"
-  );
-  $.get(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/test/mod",
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonAccessWithLegalAccountAdmin).on("click", function () {
-  console.log(
-    "%c click on buttonAccessWithLegalAccountAdmin test/user legal acc user",
-    "background: yellow; color: black;"
-  );
-  $.get(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/test/admin",
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonApiAuthAll).on("click", function () {
-  console.log(
-    "%c click on buttonApiAuthAll",
-    "color: yellow; background: black;"
-  );
-  $.post(
-    "https://tothepointcodeloginexpressjs.onrender.com/api/auth/all",
-    {},
-    function (data, status) {
-      console.log("Data: " + data + "\nStatus: " + status);
-    }
-  );
-});
-
-$(buttonSignup).on("click", function () {
-  console.log("%c click on buttonSignup", "background: red; color: black;");
-  $.post(
-    "https://tothepointcodeloginexpressjs.onrender.com/user/signup",
-    {
-      name: $("#register-name").val(),
-      email: $("#register-email").val(),
-      password: $("#register-password").val(),
-      dateOfBirth: "01-01-2000",
-    },
-    function (data, status) {
-      console.log(
-        "Data status: " + data.status,
-        +"\ndata.message: " + data.message
-      );
-    }
-  );
-});
-
-$("#login-btn").on("click", function () {
-  $("#register-btn").removeClass("active");
-  $(this).addClass("active");
-  $("#login-form").removeClass("hide").addClass("show");
-  $("#register-form").addClass("hide").removeClass("show");
-});
-
-$("#register-btn").on("click", function () {
-  $("#login-btn").removeClass("active");
-  $(this).addClass("active");
-  $("#login-form").addClass("hide").removeClass("show");
-  $("#register-form").removeClass("hide").addClass("show");
-});
-
-$(".submit-btn").on("click", function (event) {
-  event.preventDefault();
-  if ($("#register-btn").hasClass("active")) {
-    $.post(
-      "https://tothepointcodeloginexpressjs.onrender.com/user/signup",
-      {
-        name: $("#register-name").val(),
-        email: $("#register-email").val(),
-        password: $("#register-password").val(),
-        dateOfBirth: "01-01-2000",
-      },
-      function (data, status) {
-        console.log(
-          "Data status: " + data.status,
-          +"\ndata.message: " + data.message
-        );
-      }
-    );
-  } else {
-    $.post(
-      "https://tothepointcodeloginexpressjs.onrender.com/user/signin",
-      {
-        email: $("#login-email").val(),
-        password: $("#login-password").val(),
-      },
-      function (data, status) {
-        if (data.status === "SUCCESS") {
-          $(".login-container").removeClass("active");
-          $("#overlay-select-cards").addClass("active");
-          modal.find("p").text("Login Success");
-          modal.show();
-          setTimeout(() => {
-            modal.hide();
-          }, 3500);
-        } else {
-          modal.find("p").text(data.message);
-          modal.show();
-        }
-        console.log(
-          "Data status: " + data.status,
-          +"\ndata.message: " + data.message
-        );
-      }
-    );
-  }
-});
-
-$(".login-container .close-button").on("click", function () {
-  console.log(" here");
-  $(".login-container").removeClass("active");
-  $("#overlay-select-cards").addClass("active");
-});
-
-// When the user clicks on <span> (x), close the modal
-span.click(function () {
-  modal.hide();
-});
-
-// When the user clicks anywhere outside of the modal, close it
-$(window).click(function (event) {
-  if (event.target == modal[0]) {
-    modal.hide();
-  }
-});
-
-$("#button-user-profile").on("click", function () {
-  $("#user-profile").toggleClass("active");
-  if ($("#user-profile").hasClass("active")) {
-    $.post(
-      "https://tothepointcodeloginexpressjs.onrender.com/user/user-info",
-      {
-        email: $("#login-email").val(),
-      },
-      function (data, status) {
-        if (data.status === "SUCCESS") {
-          modal.find("p").text("User Info loaded successfully");
-          modal.show();
-        } else {
-          modal.find("p").text(data.message);
-          modal.show();
-        }
-        var res = JSON.parse(JSON.stringify(data)).data[0];
-
-        $("#user-profile").find("div").empty();
-        $("#user-profile")
-          .find("div")
-          .append("<p>name: " + res.name + "</p>");
-        $("#user-profile")
-          .find("div")
-          .append("<p>email: " + res.email + "</p>");
-        if (!res.matchesLost) res.matchesLost = 0;
-        if (!res.matchesWon) res.matchesWon = 0;
-        $("#user-profile")
-          .find("div")
-          .append("<p>matches won: " + res.matchesWon + "</p>");
-        $("#user-profile")
-          .find("div")
-          .append("<p>matches lost: " + res.matchesLost + "</p>");
-
-        $("#user-profile")
-          .find("div")
-          .append(
-            "<p>percentage won: " +
-            Math.round(
-              (res.matchesWon / (res.matchesWon + res.matchesLost)) * 100
-            ) +
-            " %</p>"
-          );
-      }
-    );
-  }
-});
-
-$("#user-profile .close").on("click", function () {
-  $("#user-profile").removeClass("active");
-});
-
-$("#button-cards-stats").on("click", function () {
-  $("#cards-stats").toggleClass("active");
-
-  if ($("#cards-stats").hasClass("active")) {
-    $.get(
-      "https://tothepointcodeloginexpressjs.onrender.com/car/cards-stats",
-      function (data, status) {
-        console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
-        $("#cards-stats").find("div").empty();
-
-        if (data.status === "SUCCESS") {
-          for (let i = 0; i < data.data.length; i++) {
-            $("#cards-stats").find("table").append(`
-              <tr>
-                <td>${data.data[i].cardsPack}</td>
-                <td>${data.data[i].name}</td>
-                <td>${data.data[i].duelsWon}</td>
-                <td>${data.data[i].duelsTie}</td>
-                <td>${data.data[i].duelsLost}</td>
-              </tr>
-            `);
-            // .append(
-            //   "<p>" +
-            //     data.data[i].cardsPack +
-            //     " - " +
-            //     data.data[i].name +
-            //     " duelsLost: " +
-            //     data.data[i].duelsLost +
-            //     " duelsTie: " +
-            //     data.data[i].duelsTie +
-            //     " duelsWon " +
-            //     data.data[i].duelsWon +
-            //     "</p>"
-            // );
-          }
-        }
-      }
-    );
-  }
-});
-
-$("#cards-stats .close").on("click", function () {
-  $("#cards-stats").removeClass("active");
-});
-
-$(buttonEmptyCardsStats).on("click", function () {
-  $.get(
-    "https://tothepointcodeloginexpressjs.onrender.com/car/empty-cards-stats",
-    function (data, status) {
-      console.log("🚀 ~ file: appSecondVersion.js:1226 ~ data:", data);
-    }
-  );
-});
