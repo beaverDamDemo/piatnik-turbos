@@ -1,36 +1,20 @@
+const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
+
 $(buttonTestAll).on('click', function () {
-  console.log(
-    '%c click on buttonTestAll   test / all;',
-    'background: yellow; color: black;',
-  );
-  $.get(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/test/all',
-    function (data, status) {
-      console.log('Data: ' + data + '\nStatus: ' + status);
-    },
-  );
+  $.get(`${baseUrl}/api/test/all`, function (data, status) {
+    console.log('Data: ' + data + '\nStatus: ' + status);
+  });
 });
 
 $(buttonTestUser).on('click', function () {
-  console.log(
-    '%c click on buttonTestUser test/user',
-    'color: yellow; background: black;',
-  );
-  $.get(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/test/user',
-    function (data, status) {
-      console.log('Data: ' + data + '\nStatus: ' + status);
-    },
-  );
+  $.get(`${baseUrl}/api/test/user`, function (data, status) {
+    console.log('Data: ' + data + '\nStatus: ' + status);
+  });
 });
 
 $(buttonLoginWrongPassword).on('click', function () {
-  console.log(
-    '%c click on buttonLoginWrongPassword auth/signin - wrong pwd',
-    'background: yellow; color: black;',
-  );
   $.post(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/auth/signin',
+    `${baseUrl}/api/auth/signin`,
     {
       data: {
         username: 'mod',
@@ -44,12 +28,8 @@ $(buttonLoginWrongPassword).on('click', function () {
 });
 
 $(buttonLoginCorrectPassword).on('click', function () {
-  console.log(
-    '%c click on buttonLoginCorrectPassword auth/signin - correct pwd',
-    'color: yellow; background: black;',
-  );
   $.post(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/auth/signin',
+    `${baseUrl}/api/auth/signin`,
     {
       data: {
         username: 'username',
@@ -63,62 +43,32 @@ $(buttonLoginCorrectPassword).on('click', function () {
 });
 
 $(buttonAccessWithLegalAccount).on('click', function () {
-  console.log(
-    '%c click on buttonAccessWithLegalAccount test/user legal acc',
-    'background: yellow; color: black;',
-  );
-  $.get(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/test/user',
-    function (data, status) {
-      console.log('Data: ' + data + '\nStatus: ' + status);
-    },
-  );
+  $.get(`${baseUrl}/api/test/user`, function (data, status) {
+    console.log('Data: ' + data + '\nStatus: ' + status);
+  });
 });
 
 $(buttonAccessWithLegalAccountMod).on('click', function () {
-  console.log(
-    '%c click on buttonAccessWithLegalAccountMod test/user legal acc mod',
-    'color: yellow; background: black;',
-  );
-  $.get(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/test/mod',
-    function (data, status) {
-      console.log('Data: ' + data + '\nStatus: ' + status);
-    },
-  );
+  $.get(`${baseUrl}/api/test/mod`, function (data, status) {
+    console.log('Data: ' + data + '\nStatus: ' + status);
+  });
 });
 
 $(buttonAccessWithLegalAccountAdmin).on('click', function () {
-  console.log(
-    '%c click on buttonAccessWithLegalAccountAdmin test/user legal acc user',
-    'background: yellow; color: black;',
-  );
-  $.get(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/test/admin',
-    function (data, status) {
-      console.log('Data: ' + data + '\nStatus: ' + status);
-    },
-  );
+  $.get(`${baseUrl}/api/test/admin`, function (data, status) {
+    console.log('Data: ' + data + '\nStatus: ' + status);
+  });
 });
 
 $(buttonApiAuthAll).on('click', function () {
-  console.log(
-    '%c click on buttonApiAuthAll',
-    'color: yellow; background: black;',
-  );
-  $.post(
-    'https://tothepointcodeloginexpressjs.onrender.com/api/auth/all',
-    {},
-    function (data, status) {
-      console.log('Data: ' + data + '\nStatus: ' + status);
-    },
-  );
+  $.post(`${baseUrl}/api/auth/all`, {}, function (data, status) {
+    console.log('Data: ' + data + '\nStatus: ' + status);
+  });
 });
 
 $(buttonSignup).on('click', function () {
-  console.log('%c click on buttonSignup', 'background: red; color: black;');
   $.post(
-    'https://tothepointcodeloginexpressjs.onrender.com/user/signup',
+    `${baseUrl}/user/signup`,
     {
       name: $('#register-name').val(),
       email: $('#register-email').val(),
@@ -152,7 +102,7 @@ $('.submit-btn').on('click', function (event) {
   event.preventDefault();
   if ($('#register-btn').hasClass('active')) {
     $.post(
-      'https://tothepointcodeloginexpressjs.onrender.com/user/signup',
+      `${baseUrl}/user/signup`,
       {
         name: $('#register-name').val(),
         email: $('#register-email').val(),
@@ -168,7 +118,7 @@ $('.submit-btn').on('click', function (event) {
     );
   } else {
     $.post(
-      'https://tothepointcodeloginexpressjs.onrender.com/user/signin',
+      `${baseUrl}/user/signin`,
       {
         email: $('#login-email').val(),
         password: $('#login-password').val(),
@@ -196,7 +146,6 @@ $('.submit-btn').on('click', function (event) {
 });
 
 $('.login-container .close-button').on('click', function () {
-  console.log(' here');
   $('.login-container').removeClass('active');
   $('#overlay-select-cards').addClass('active');
 });
@@ -217,7 +166,7 @@ $('#button-user-profile').on('click', function () {
   $('#user-profile').toggleClass('active');
   if ($('#user-profile').hasClass('active')) {
     $.post(
-      'https://tothepointcodeloginexpressjs.onrender.com/user/user-info',
+      `${baseUrl}/user/user-info`,
       {
         email: $('#login-email').val(),
       },
@@ -269,15 +218,13 @@ $('#button-cards-stats').on('click', function () {
   $('#cards-stats').toggleClass('active');
 
   if ($('#cards-stats').hasClass('active')) {
-    $.get(
-      'https://tothepointcodeloginexpressjs.onrender.com/car/cards-stats',
-      function (data, status) {
-        console.log('🚀 ~ file: appSecondVersion.js:1226 ~ data:', data);
-        $('#cards-stats').find('div').empty();
+    $.get(`${baseUrl}/car/cards-stats`, function (data, status) {
+      console.log('🚀 ~ file: appSecondVersion.js:1226 ~ data:', data);
+      $('#cards-stats').find('div').empty();
 
-        if (data.status === 'SUCCESS') {
-          for (let i = 0; i < data.data.length; i++) {
-            $('#cards-stats').find('table').append(`
+      if (data.status === 'SUCCESS') {
+        for (let i = 0; i < data.data.length; i++) {
+          $('#cards-stats').find('table').append(`
               <tr>
                 <td>${data.data[i].cardsPack}</td>
                 <td>${data.data[i].name}</td>
@@ -286,23 +233,22 @@ $('#button-cards-stats').on('click', function () {
                 <td>${data.data[i].duelsLost}</td>
               </tr>
             `);
-            // .append(
-            //   "<p>" +
-            //     data.data[i].cardsPack +
-            //     " - " +
-            //     data.data[i].name +
-            //     " duelsLost: " +
-            //     data.data[i].duelsLost +
-            //     " duelsTie: " +
-            //     data.data[i].duelsTie +
-            //     " duelsWon " +
-            //     data.data[i].duelsWon +
-            //     "</p>"
-            // );
-          }
+          // .append(
+          //   "<p>" +
+          //     data.data[i].cardsPack +
+          //     " - " +
+          //     data.data[i].name +
+          //     " duelsLost: " +
+          //     data.data[i].duelsLost +
+          //     " duelsTie: " +
+          //     data.data[i].duelsTie +
+          //     " duelsWon " +
+          //     data.data[i].duelsWon +
+          //     "</p>"
+          // );
         }
-      },
-    );
+      }
+    });
   }
 });
 
@@ -311,10 +257,7 @@ $('#cards-stats .close').on('click', function () {
 });
 
 $(buttonEmptyCardsStats).on('click', function () {
-  $.get(
-    'https://tothepointcodeloginexpressjs.onrender.com/car/empty-cards-stats',
-    function (data, status) {
-      console.log('🚀 ~ file: appSecondVersion.js:1226 ~ data:', data);
-    },
-  );
+  $.get(`${baseUrl}/car/empty-cards-stats`, function (data) {
+    console.log('🚀 ~ file: appSecondVersion.js:1226 ~ data:', data);
+  });
 });
