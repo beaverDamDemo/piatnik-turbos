@@ -268,3 +268,9 @@ $(buttonEmptyCardsStats).on('click', function () {
     console.log('🚀 ~ file: appSecondVersion.js:1226 ~ data:', data);
   });
 });
+
+$(sample).on('click', function () {
+  $.get(`${baseUrl}/sample`, function (data) {
+    console.log('🛍️ ~ data:', data);
+  });
+});
