@@ -1,5 +1,5 @@
-// const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
-const baseUrl = 'localhost:3000';
+const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
+// const baseUrl = 'localhost:3000';
 
 $(buttonTestAll).on('click', function () {
   $.get(`${baseUrl}/api/test/all`, function (data, status) {
