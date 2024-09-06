@@ -1,4 +1,5 @@
-const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
+// const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
+const baseUrl = 'localhost:3000';
 
 $(buttonTestAll).on('click', function () {
   $.get(`${baseUrl}/api/test/all`, function (data, status) {
@@ -254,6 +255,12 @@ $('#button-cards-stats').on('click', function () {
 
 $('#cards-stats .close').on('click', function () {
   $('#cards-stats').removeClass('active');
+});
+
+$(getCardsStats).on('click', function () {
+  $.get(`${baseUrl}/car/cards-stats`, function (data) {
+    console.log('🛍️ ~ data:', data);
+  });
 });
 
 $(buttonEmptyCardsStats).on('click', function () {
