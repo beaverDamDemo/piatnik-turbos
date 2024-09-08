@@ -756,7 +756,8 @@ table {
 
 #cards-stats th,
 #cards-stats td {
-  padding: 10px;
+  font-size: 0.8em;
+  padding: 4px 10px;
 }
 
 #cards-stats th:nth-child(2),
