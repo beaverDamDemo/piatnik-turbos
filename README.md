@@ -7,7 +7,7 @@ to run type "nodemon server.js"
 
 # login
 
-you can skip the login thing with the X button
+you can skip the login thing with the X button. You can try password 1234 for user fjasdojf
 
 # restricted area
 

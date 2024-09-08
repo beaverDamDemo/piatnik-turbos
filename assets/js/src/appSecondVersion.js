@@ -507,10 +507,7 @@ function saveDataOnServer(hasUserWon) {
     },
   );
 
-  console.log(
-    '🚀 ~ file: appSecondVersion.js:513 ~  ).val():',
-    $('#login-email').val(),
-  );
+  console.log('🚀 ~     #login-email.val()', $('#login-email').val());
 
   $.post(
     'https://tothepointcodeloginexpressjs.onrender.com/user/save-user-result',
