@@ -1,5 +1,5 @@
-const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
-// const baseUrl = 'localhost:3000';
+// const baseUrl = 'https://tothepointcodeloginexpressjs.onrender.com';
+const baseUrl = 'http://localhost:3000';
 
 $(buttonTestAll).on('click', function () {
   $.get(`${baseUrl}/api/test/all`, function (data, status) {
@@ -224,6 +224,15 @@ $('#button-cards-stats').on('click', function () {
       $('#cards-stats').find('div').empty();
 
       if (data.status === 'SUCCESS') {
+        data.data.sort((a, b) => {
+          if (a.cardsPack === b.cardsPack) {
+            const ratioA = a.duelsWon / a.duelsLost;
+            const ratioB = b.duelsWon / b.duelsLost;
+            return ratioB - ratioA; // Sort by duelsWon:duelsLost ratio in descending order
+          }
+          return a.cardsPack - b.cardsPack; // Sort by cardsPack in ascending order
+        });
+
         for (let i = 0; i < data.data.length; i++) {
           $('#cards-stats').find('table').append(`
               <tr>
@@ -234,19 +243,6 @@ $('#button-cards-stats').on('click', function () {
                 <td>${data.data[i].duelsLost}</td>
               </tr>
             `);
-          // .append(
-          //   "<p>" +
-          //     data.data[i].cardsPack +
-          //     " - " +
-          //     data.data[i].name +
-          //     " duelsLost: " +
-          //     data.data[i].duelsLost +
-          //     " duelsTie: " +
-          //     data.data[i].duelsTie +
-          //     " duelsWon " +
-          //     data.data[i].duelsWon +
-          //     "</p>"
-          // );
         }
       }
     });
