@@ -610,6 +610,20 @@ $(input_6).keyup(function () {
     cardsPack = 'vaginas';
   }
 });
+$(input_7).keyup(function () {
+  if ($(this).val() == '1234') {
+    var scriptEle = document.createElement('script');
+    scriptEle.setAttribute('src', 'assets/js/src/lokomotive.js');
+    scriptEle.setAttribute('type', 'text/javascript');
+    scriptEle.setAttribute('async', true);
+    document.body.appendChild(scriptEle);
+    scriptEle.addEventListener('load', () => {
+      cars = fillUpcars();
+      removeSelectCardsOverlay();
+    });
+    cardsPack = 'lokomotive';
+  }
+});
 //#endregion
 
 window.onload = function () {

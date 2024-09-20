@@ -105,8 +105,13 @@ body {
   font-family: 'tannenberg_fettregular';
 }
 
-#overlay-select-cards #button-user-profile {
+#overlay-select-cards #button_7 {
   background: #21e5f3;
+  font-family: 'tannenberg_fettregular';
+}
+
+#overlay-select-cards #button-user-profile {
+  background: #21f3bf;
   font-family: 'tannenberg_fettregular';
 }
 

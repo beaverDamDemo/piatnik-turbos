@@ -1,0 +1,84 @@
+SNBC
+Lokomotiven-Nr.:
+Länge über Puffer:
+Höchstgeschw.:
+Leistung:
+Gewicht:
+Baujahr:
+4844
+SNCF
+Lokomotiven-Nr.:
+Länge über Puffer:
+5518
+17,34 m
+120 km/h
+CR
+Lokomotiven-Nr.:- Länge über Puffer: Höchstgeschw.:. Leistung:
+24,23 m
+145 km/h
+1400 PS
+110,0 t
+Gewicht:
+1962
+Baujahr:
+Höchstgeschw.:
+4620 PS
+Leistung:
+220,7 t
+Gewicht:
+1937
+Baujahr:
+B+M
+Lokomotiven-Nr.:- Länge über Puffer:
+Höchstgeschw.: Leistung:
+Gewicht:
+Baujahr:
+200
+20,02 m 135 km/h
+OSE
+Lokomotiven-Nr.:
+Länge über Puffer:
+Höchstgeschw.:
+Leistung:
+3600 PS
+177,6 t 1966
+Gewicht:
+Baujahr:
+A-452 19,04 m
+130 km/h
+2700 PS
+112,8t
+Amtrak
+Lokomotiven-Nr.: Länge über Puffer:-
+Höchstgeschw.:
+Leistung:-
+Gewicht:
+1973
+Baujahr:
+PC
+Lokomotiven-Nr.: Länge über Puffer:- Höchstgeschw.:
+BB 68000
+17,90 m
+130 km/h
+2270 PS
+106,0 t 1963
+Gewicht:
+Baujahr:
+Leistung:
+8127 21,18 m
+113 km/h
+4398 PS 174,5 t 1965
+DSB
+AM 307
+Lokomotiven-Nr.: Länge über Puffer: Höchstgeschw..
+Leistung:
+16,60 m
+143 km/h
+1750 PS
+117,9 t
+Gewicht:
+1953
+Baujahr:
+MX 1017 18,65 m
+133 km/h
+1950 PS 101,6 t 1955

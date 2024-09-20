@@ -1,0 +1,104 @@
+JNR
+Lokomotiven-Nr.:-
+Länge über Puffer:
+Höchstgeschw.:
+Leistung:
+Gewicht:
+Baujahr:
+Tokaido
+303,03 m
+250 km/h
+DB
+Lokomotiven-Nr.:
+Länge über Puffer:-
+Höchstgeschw.:
+Leistung:
+12077 PS
+655,0 t
+1964
+Gewicht:
+Baujahr:
+ET 403
+109,22 m
+- 200 km/h
+5200 PS
+DB
+Lokomotiven-Nr.:
+Länge über Puffer:-
+Höchstgeschw.:
+Leistung:
+237,0 t
+1972
+Gewicht:
+Baujahr:
+Südkorea
+Lokomotiven-Nr.:-
+Länge über Puffer:-
+Höchstgeschw.:
+Leistung:-
+Gewicht:
+Baujahr:
+202.004
+18,00 m
+FS
+Lokomotiven-Nr.:
+Länge über Puffer:
+Höchstgeschw.:
+Leistung:-
+140 km/h
+2500 PS
+84,0 t
+1972
+Gewicht:
+Baujahr:
+E 656
+18,50 m
+200 km/h
+5600 PS
+89,0 t
+1974
+8001
+20,70 m
+120 km/h
+2950 PS
+129,0 t
+1970
+DB
+Lokomotiven-Nr.:
+Länge über Puffer:-
+Höchstgeschw.:
+Leistung:-
+Gewicht:
+Baujahr:
+219-001-5
+16,40 m
+130 km/h
+2150 PS
+77,0 t
+1965
+FS
+Lokomotiven-Nr.:
+Länge über Puffer:
+Höchstgeschw.:
+Leistung:
+Gewicht:
+Baujahr:
+D 443.1993
+13,24 m
+130 km/h
+-2000 PS
+CFL
+Lokomotiven-Nr.:
+Länge über Puffer:
+Höchstgeschw.:-
+Leistung:-
+69,5 t
+Gewicht:
+1967
+Baujahr:
+1817
+17,80 m
+125 km/h
+1600 PS
+102,0 t
+1964
